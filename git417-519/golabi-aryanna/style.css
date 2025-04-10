@@ -1,0 +1,451 @@
+@font-face {
+  font-family: "Amatic SC";
+  src: local("Amatic SC"),
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end reset*/
+
+
+#homeHero{
+  padding-top: 100px;
+  width: 1280px;
+}
+
+body {
+  width: 1280px;
+	margin: 0 auto;
+}
+
+p, small{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Philosopher', sans-serif;
+}
+
+label, legend{
+  font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  font-family: 'Philosopher', sans-serif;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.errorMessage {
+  font-size: 16px;
+  color: #ff0814;
+}
+/*DARK MODE COLORS*/
+.darkMode {
+  background-color: #2b2e24 !important;
+  color: #e3e4e0;
+}
+
+/** header styles **/
+header {
+  background-color: #394032 ;
+  position: fixed;
+  width: 1280px;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 5px 4px -4px #131313;
+}
+
+nav {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li img {
+  height: 70px;
+}
+
+nav li a {
+  font-weight: bold;
+  font-size: 25px;
+  color: #e3e4e0;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #e3e4e0;
+  text-decoration-thickness: 1.5px;  
+}
+
+#lightModeButton, #darkModeButton{
+  border: none;
+  background-color: #394032;
+  color: #e3e4e0;
+  cursor: pointer;
+  max-width: 325px;
+  border-radius: .5em;
+  padding: 1em;
+  margin-left: 60px;
+  margin-bottom: 25px;
+  float: right;
+}
+#lightModeButton:hover, #darkModeButton:hover{
+  text-decoration: underline;
+  text-decoration-color: #e3e4e0;
+  text-decoration-thickness: 1.5px;  
+}
+
+/** about**/
+.sectionChange{
+  background-color: #e4e0e037;
+}
+#aboutSection{
+  display: grid;
+  grid-template: 1fr 1fr;
+  padding-bottom: 25px;
+  margin-top: 25px;
+}
+
+#aboutSection h2{
+  margin-left: 58px;
+  text-align: left;
+  font-size: 25px;
+  padding-top: 25px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;  
+}
+
+#aboutSection p{
+  margin-left: 58px;
+  margin-right: 10px;
+  padding: 30px 0px 20px 0px;
+  width: 500px;
+  font-size: 16px;
+  line-height: 1.5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#aboutSection img{
+  margin-right: 58px;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  height: 400px;
+  float: right;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/**product  NEEDS HELP!!!!!!**/
+.spacing{
+  box-sizing: border-box;
+  padding: 10px 50px 40px 50px;
+}
+#featuredProductSection {
+  margin-top: 30px;
+}
+
+#featuredProductSection h2 {
+  font-size: 25px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+#featProdBtns {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: space-between;
+}
+
+#featProdBtns button {
+  border: none;
+  background-color: #394032;
+  color: #e3e4e0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  max-width: 325px;
+  border-radius: .5em;
+  padding: 1em;
+}
+
+button{
+  border: 2px #e3e4e0;
+}
+
+#featProdBtns button:hover {
+  text-decoration: underline;
+  text-decoration-color: #e3e4e0;
+  text-decoration-thickness: 1.5px; 
+  cursor: pointer;
+}
+
+#featProdBtns button:active {
+  text-decoration: underline;
+  text-decoration-color: #e3e4e0;
+  text-decoration-thickness: 1.5px; 
+}
+
+.currentProduct {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 25px;
+}
+
+.currentProduct img {
+  max-width: 516px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.currentProduct h3 {
+  max-width: 516px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 25px;
+  font-weight: bold;
+  align-self: end;
+}
+
+.currentProduct p {
+  max-width: 516px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/** coupon game**/
+#guessingGameSection {
+  padding-bottom: 25px;
+  margin-top: 50px;
+}
+
+#guessingGameSection h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#gameForm {
+  width: 1030px;
+  margin: 25px auto 0;
+  padding: 25px;
+  text-align: center;
+}
+
+#gameForm label {
+  font-size: 20px;
+}
+
+#gameInput {
+  margin-top: 25px;
+  height: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#gameForm p {
+  margin-top: 10px;
+}
+
+#gameSubmit {
+  margin-top: 25px;
+  padding: 10px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background-color: #394032 ;
+  color: #e3e4e0;
+  cursor: pointer;
+}
+
+#gameSubmit:hover {
+  text-decoration: underline;
+  text-decoration-color: #e3e4e0;
+  text-decoration-thickness: 1.5px; 
+}
+
+/** contact **/
+#contactSection {
+  padding-bottom: 25px;
+  margin-top: 25px;
+}
+
+#contactSection img{
+  margin-left: 58px;
+  height: 600px;
+  float: left;
+}
+
+#contactSection h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#contactForm {
+  width: 1030px;
+  margin: 25px auto 0;
+  padding: 25px;
+  text-align: center; 
+  display: block;
+}
+
+#contactForm p, #contactForm input, #contactForm label, #contactForm textarea, #contactForm legend{
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+#contactForm input{
+margin-bottom: 29px;
+}
+
+#fullNameInput, #phoneInput, #emailInput {
+  width: 499px;
+}
+
+#contactFormSubmit {
+  padding: 10px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background-color: #394032 ;
+  color: #e3e4e0;
+  cursor: pointer;
+}
+
+#contactFormSubmit:hover {
+  text-decoration: underline;
+  text-decoration-color: #e3e4e0;
+  text-decoration-thickness: 1.5px; 
+}
+
+#contactFormSubmit:active {
+  background-color: #000000;/*make sure user can see this*/
+  color: #e3e4e0;
+}
+
+#formSuccess {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#formSuccess h3 {
+  font-size: 20px;
+}
+
+#formSuccess p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/** footer **/
+footer {
+  background-color: #394032 ;
+  padding: 25px;
+  text-align: center;
+}
+
+footer small {
+  color: #e3e4e0;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+footer br {
+  display: block;
+  margin-top: 10px;
+}
+
+#socialMedia img{
+	height: 40px;
+	width: 40px;
+  margin: 10px;
+}

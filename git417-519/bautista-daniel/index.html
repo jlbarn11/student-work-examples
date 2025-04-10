@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>GIT417-Final Project</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
+        <script src="https://kit.fontawesome.com/2f2ba49294.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <nav>
+                    <a href="#"><i class="fab fa-xbox" id="xbox-logo"></i></a>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Consoles</a></li>
+                    </ul>
+                </nav>
+                <button id="dark-mode-btn"><i class="fas fa-moon"></i>   <i class="fas fa-sun"></i></button>
+            </header>
+
+            <main>
+                <h1>Xbox Series X &amp; Series S Available Now!</h1>
+                <img src="images/xbox-consoles.jpg" alt="Xbox Series X and Series S consoles and controllers with a white background.">
+                <section id="games">
+                    <h2>Explore Xbox Games</h2>
+                    <ul id="game-btns">
+                        <li id="halo5-btn">Halo 5: Guardians</li>
+                        <li id="cod-btn">Call of Duty: WWII</li>
+                        <li id="forza7-btn">Forza Motorsport 7</li>
+                        <li id="minecraft-btn">Minecraft</li>
+                    </ul>
+                    <section id="halo5-game" class="game-section">
+                        <h2>Halo 5: Guardians</h2>
+                        <img src="images/halo-5.jpg" alt="Cover art for Halo 5: Guardians.">
+                        <section>
+                            <h3>Halo 5: Guardians</h3>
+                            <p>A mysterious and unstoppable force threatens the galaxy, the Master Chief is missing, and his loyalty questioned. Experience the most dramatic Halo story to date in a 4-player cooperative epic that spans three worlds. Challenge friends and rivals in new multiplayer modes: Warzone, massive 24-player battles, and Arena, pure 4-vs-4 competitive combat.</p>
+                            <p>Choose how to achieve objectives while playing solo with AI teammates or with friends in a 4-player cooperative experience using your Xbox Live 14-day Gold trial.1.</p>
+                            <p>New, massive-scale multiplayer mode that supports 24-player battles with both friendly and enemy AI dropping in. It's nonstop action when you confront Spartans, Covenant, and Forerunners while trying to complete a variety of objectives.</p>
+                        </section>
+                    </section>
+                    <section id="cod-ww2-game" class="game-section">
+                        <h2>Call of Duty: WWII</h2>
+                        <img src="images/cod-ww2.jpg" alt="Cover art for Call of Duty: WWII.">
+                        <section>
+                            <h3>Call of Duty: WWII</h3>
+                            <p>Call of Duty returns to its roots with Call of Duty: WWII—a breathtaking experience that redefines World War II for a new gaming generation. Land in Normandy on D-Day and battle across Europe through iconic locations in history's most monumental war. Experience classic Call of Duty combat, the bonds of camaraderie, and the unforgiving nature of war against a global power throwing the world into tyranny.</p>
+                            <p>Call of Duty: WWII tells the story of the unbreakable brotherhood of common men fighting to preserve freedom in a world on the brink of tyranny. Players enlist in a gritty, intense journey through the battlegrounds of war. The Campaign features bold, lifelike visuals with the kind of blockbuster cinematic authenticity that only Call of Duty can deliver.</p>
+                        </section>
+                    </section>
+                    <section id="forza-7-game" class="game-section">
+                        <h2>Forza Motorsport 7</h2>
+                        <img src="images/forza-7.jpg" alt="Cover art for Forza Motorsport 7.">
+                        <section>
+                            <h3>Forza Motorsport 7</h3>
+                            <p>Experience the thrill of motorsport at the limit with the most comprehensive, beautiful, and authentic racing game ever made. Enjoy gorgeous graphics at 60fps and true 4K resolution in HDR. Collect and race more than 700 cars. Challenge yourself across 30 famous destinations and 200 ribbons, where race conditions can change every lap and every race.</p>
+                            <p>Experience realism at the limits with ForzaTech delivering 60 fps and true 4K resolution in HDR - a visual showcase. The ultimate automotive playset features over 700 ForzaVista cars and 30 world-famous destinations. Everyone can compete featuring the Forza Racing Championship esports league, enhanced spectating modes and Mixer integration.</p>
+                            <p>Games play better on Xbox One X. Forza Motorsport 7 is enhanced to deliver the best in true 4K gaming.</p>
+                        </section>
+                    </section>
+                    <section id="minecraft-game" class="game-section">
+                        <h2>Minecraft</h2>
+                        <img src="images/minecraft.jpg" alt="Cover art for Minecraft.">
+                        <section>
+                            <h3>Minecraft</h3>
+                            <p>Build with your imagination! Minecraft, the best-selling game on Xbox 360, is now available on Xbox Series X and Series S. Create and explore your very own world where the only limit is what you can imagine – just be sure to build a shelter before night comes to keep yourself safe from monsters. Play on your own, or with up to 4 players split screen, or 8 players online.</p>
+                            <p>Minecraft is a game about placing blocks and going on adventures. Play in Creative Mode with unlimited resources or mine deep into the world in Survival Mode, crafting weapons and armor to fend off the dangerous mobs. Import your favorite Xbox 360 worlds to the Xbox Series X and Series S Edition!</p>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="image-h2">
+                    <img src="images/seriesx-green.jpg" alt="Xbox Series X console and controller with a green background.">
+                    <h2>Win A Free Xbox Series X!</h2>
+                </section>
+
+                <section id="number-game">
+                    <h2>Play Now!</h2>
+                    <p>Guess the correct number between 1 and 10 and you will win a free Xbox Series X!</p>
+                    <input type="number" min="1" max="10" value="1" id="number-input">
+                    <button id="guess-btn">Take A Guess!</button>
+                    <p id="game-msg"></p>
+                </section>
+
+                <section class="image-h2">
+                    <img src="images/xbox-controller.jpg" alt="Black Xbox controller with a black background.">
+                    <h2>Contact Us!</h2>
+                </section>
+
+                <section>
+                    <h2>Need Help?</h2>
+                    <p>Fill out the form below and send us a message directly.</p>
+                    <form id="contact-form">
+                        <label for="firstName">First Name:*</label>
+                        <input type="text" name="firstName" id="firstName">
+
+                        <label for="lastName">Last Name:*</label>
+                        <input type="text" name="lastName" id="lastName">
+
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email">
+
+                        <label for="phone">Phone (000-000-0000):</label>
+                        <input type="text" name="phone" id="phone">
+
+                        <fieldset>
+                            <legend>Preferred Method of Contact*</legend>
+
+                            <section id="radio-btns">
+                                <h4>Radio Buttons</h4>
+
+                                <input type="radio" name="prefContact" id="prefEmail" checked>
+                                <label for="prefEmail">Email</label>
+
+                                <input type="radio" name="prefContact" id="prefPhone">
+                                <label for="prefPhone">Phone</label>
+                            </section>
+
+                        </fieldset>
+
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message"></textarea>
+
+                        <input type="submit" value="Submit" id="submit_button">
+                        <section id="formMsgs">
+                            <h4>Form Messages</h4>
+                            <ul>
+                                <li id="firstNameError" class="error">Please enter a valid first name.</li>
+                                <li id="lastNameError" class="error">Please enter a valid last name.</li>
+                                <li id="emailError" class="error">Please enter a valid email address.</li>
+                                <li id="phoneError" class="error">Please enter a valid phone number.</li>
+                                <li id="messageError" class="error">Please write a message explaining your need of our services.</li>
+                                <li id="successMessage"></li>
+                            </ul>
+                        </section>
+                    </form>
+                </section>
+            </main>
+
+            <footer>
+                <section>
+                    <h3>Stay Connected</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+                </section>
+                <p>Copyright &copy; Daniel Bautista 2021. This website is for educational purposes only.</p>
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+<!-- IMAGE SOURCES:
+Halo 5: Guardians Cover Art- https://www.abposters.com/posters/halo-5-guardians-v26900 
+Call of Duty: WWII Cover Art- https://www.amazon.com/Trends-International-Wall-Poster-Call/dp/B0774SGXFY?th=1
+Forza Motorsport 7 Cover Art- https://www.imdb.com/title/tt7445756/
+Minecraft Cover Art- https://en.wikinews.org/wiki/File:Minecraft_game_cover.jpeg
+Xbox Series X (Green Background)- https://unsplash.com/photos/DPOdCl4bGJU
+Xbox Controller- https://www.pexels.com/photo/photo-of-xbox-controller-1365795/
+Xbox Consoles (White Background)- https://news.xbox.com/en-us/2020/09/09/xbox-series-x-and-xbox-series-s-launching-november-10/ -->

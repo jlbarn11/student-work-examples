@@ -1,0 +1,538 @@
+/*      CSS RESET       */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*      CUSTOM STYLES BEGIN     */
+/* All Images and Assets Taken From AJR's Current Website*/
+
+@font-face {
+	font-family: ajr_font;
+	src: url("fonts/TimesAjr-Regular.otf");
+}
+:root{
+    --fonts: ajr_font, sans-serif;
+	--ajr_green: #475549;
+	--ajr_green_light: rgba(71,85,73,.5);
+	--ajr_tan: rgb(228,203,155);
+    --purple: #3A70BF;
+    --pink: #FC657E;
+		--yellow-green: #87d147;
+		--sandy-brown: #f5c84c;
+		--light-blue: #70d6f9;
+    --white: #fff;
+    --light-gray: #eaeaea;
+    --med-gray: #555;
+    --dark-gray: #222;
+	--box-shadow-sm: -3px 3px 6px black;
+	--box-shadow-lg: -6px 6px 10px black;
+    --small-shadow: -5px 5px 10px var(--light-gray);
+    --spread-shadow: -8px 8px 16px var(--med-gray);
+		--filter-shadow: drop-shadow(-0.5rem 0.5rem 1rem var(--med-gray));
+    font-size: 16px;
+    line-height: 1.35;
+    box-sizing: border-box;
+    color: var(--dark-gray);
+}
+
+header{
+	/* background-image: url("images/bg-fixed.jpg"); */
+	/* background: linear-gradient(to top, var(--ajr_green), transparent),url("images/bg-fixed.jpg"); */
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	height:450px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	width:1280px;
+	margin: 0 auto;
+	margin-bottom:-150px;
+}
+
+body{
+	background-color: var(--ajr_green);
+	width: 1280px;
+	margin: 0 auto;
+}
+
+#main{
+	margin-top:-100px;
+	width:1280px;
+	margin: 0 auto;
+}
+
+li{
+	float:right;
+}
+
+#logo{
+	height:150px;
+	width:150px;
+	background-color: transparent;
+	filter: drop-shadow(-10px 10px 20px var(--med-gray));
+}
+
+footer{
+	min-height: 125px;
+	background-color: var(--ajr_green);
+	color:white;
+	text-align: center;
+    margin-top: 2rem;
+	width: 100%;
+}
+
+footer p{
+	font-size: 30px;
+	margin-bottom:10px;
+}
+
+
+.parallax {
+	/* position: relative; */
+	background-image: url("images/bg-fixed.jpg");
+	background-position: bottom;
+	/* min-height: 40vh; */
+	/* Add code here! */
+	/* Ensure good background image formating */
+	/* Begin Parallax effect! */
+	background-size: cover;
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.overlay {
+	/* Use absolute positioning to place overlay on parallax */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	overflow: hidden;
+	line-height: 40vh;
+  }
+
+#productSelector{
+	width: 95%;
+	margin-top: -150px;
+	background-color: var(--ajr_tan);
+	box-shadow: inset 0 0 25px #DEB887;
+	margin: 0 auto;
+	border-radius: 25px;
+	margin-bottom: 25px;
+}
+
+#contactForm{
+	width: 95%;
+	background-color: var(--ajr_tan);
+	box-shadow: inset 0 0 25px #DEB887;
+	margin: 0 auto;
+	border-radius: 25px;
+}
+
+#guessingGame{
+	width: 95%;
+	background-color: var(--ajr_tan);
+	box-shadow: inset 0 0 25px #DEB887;
+	margin: 0 auto;
+	border-radius: 25px;
+	margin-bottom: 25px;
+}
+
+#quote{
+	font-style: italic;
+	margin-top:0px;
+	padding:0px;
+	font-size: 20px;
+}
+
+#results{
+	font-size: 30px;
+	margin: 18px;
+	padding: 1rem;
+
+}
+p{
+    font-family: var(--fonts);
+	font-size:20px;
+}
+
+ul{
+	width: 100%;
+	margin:0;
+}
+
+.albumPicker{
+	width:150px;
+	height:150px;
+	border-radius: 15px;
+}
+
+#albums{
+	/* position: relative;  */
+	/* margin: 0 auto; */
+	/* width:100%; */
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	/* margin-top: 10px; */
+}
+
+#albums img{
+	height: 100%;
+}
+
+#currentSelecton{
+	margin:10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:10px;
+}
+
+#albums img:hover{
+	cursor: pointer;
+}
+
+#currentAlbumSelectionName{
+	font-size: 50px;
+	font-family: ajr_font;
+}
+
+#currentAlbumSelectionImage{
+	height:400px;
+	width:400px;
+	border-radius: 15px;
+	box-shadow: 15px 15px 10px tan;
+}
+
+#darkLightBtn{
+	cursor: pointer;
+}
+
+.darkMode{
+	background-color: var(--ajr_green);
+}
+
+.lightMode{
+	background-color: var(--ajr_green_light);
+	/* opacity: 0.5; */
+}
+
+.dkModeBtn{
+	background-color: var(--ajr_green);
+	color: white;
+}
+
+.ltModeBtn{
+	background-color: var(--ajr_green_light);
+	color: black;
+}
+
+form{
+	/* background-color: pink; */
+	font-family: ajr_font;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0.5rem;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+	display: block;
+	width: 100%;
+	padding: 0.25rem 0.5rem;
+	/* background: none; */
+	background-color: white;
+	/* outline: none; */
+	border: 1px solid lightgray;
+	box-shadow: var(--box-shadow-lg);
+	line-height: 1;
+	height: 2.5rem;
+	font-family: ajr_font;
+	font-size: 20px;
+}
+
+label{
+	display: block;
+	margin: 1rem 0 0 1rem;
+	font-size: 26px;
+}
+
+.required{
+	display: inline-block;
+	color: darkred;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#mySubmit{
+	display: block;
+	padding: 0.75rem;
+	width: 50%;
+	margin: 1rem auto;
+	background-color: var(--ajr_green);
+	outline: none;
+	border: none;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2rem;
+	box-shadow: var(--box-shadow-lg);
+}
+
+#gameDiv{
+	text-align: center;
+}
+
+#gameInstruct{
+	font-size: 30px;
+}
+
+#userInput{
+	margin-top: 25px;
+	width: 100px;
+	text-align: center;
+	padding: 0.25rem 0.5rem;
+	background-color: white;
+	border: 1px solid lightgray;
+	box-shadow: var(--box-shadow-lg);
+	height: 100px;
+	font-family: ajr_font;
+	font-size: 75px;
+	border-radius: 15px;
+}
+
+#gamePlay{
+	display: block;
+	margin: 0 auto;
+	margin-top: 25px;
+	font-size: 40px;
+	border-radius: 15px;
+	padding: 0.75rem;
+	background-color: var(--ajr_green);
+	outline: none;
+	border: none;
+	color: white;
+	font-weight: bold;
+	box-shadow: var(--box-shadow-lg);
+}
+  
+#mySubmit:hover{
+	box-shadow: var(--box-shadow-sm);
+}
+  
+#mySubmit:focus{
+	border: 2px solid var(--ajr_tan);
+}
+
+.guide{
+	display: block;
+	font-size: 1rem;
+	font-size: 20px;
+}
+
+input:focus{
+	box-shadow: var(--box-shadow-sm);
+	border: 2px solid var(--ajr_green);
+  }
+  
+  .hidden{
+	visibility: hidden;
+	height: 1.5rem;
+	margin: 0.5rem 0 0 0;
+  }
+  
+  fieldset{
+	width: 100%;
+	border-color: gray;
+	margin: 1rem auto 0.5rem auto;
+	padding: 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  }
+  
+  legend{
+	font-size: 1.1rem;
+	margin-left: 1rem;
+  }
+
+  label.radio{
+	font-size: 22px;
+	/* color: darkgray; */
+	display: grid;
+	grid-template-columns: min-content auto;
+	grid-gap: 0.5rem;
+	align-items: center;
+	padding: 0.5rem 0 1rem 0;
+	margin: 0 0 0 2rem;
+  }
+  
+  input[type="radio"]{
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  .radio_input{
+	display: flex;
+  }
+  
+  span.radio_control{
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	border: 0.1rem solid var(--ajr_green);
+	transform: translateY(-0.05rem);
+	color: white;
+  }
+  
+  span.radio_label{
+	line-height: 1;
+	height: auto;
+	color: var(--ajr_green);
+  }
+  
+  .radio_input input:checked + .radio_control{
+	background: radial-gradient(white 50%, rgba(255, 0, 0, 0) 51%);
+  }
+  
+  .radio_input input:focus + .radio_control{
+	box-shadow: 0 0 0 0.05rem white, 0 0 0.15rem 0.1rem var(--ajr_green);
+  }
+  
+  input[type="text"].error, input[type="email"].error, #agree.error + span.checkbox_control{
+	border: 2px solid pink;
+  }
+  
+  
+  #termsError, input + span, p ol{
+	color: pink;
+  }
+  
+  #confirm, #msg{
+	width: 100%;
+	max-width: 75ch;
+	margin: 1rem auto;
+	padding: 2rem;
+}
+
+#skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+ 
+#skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+header, footer{
+    padding: 1rem;
+}
+
+h1, h2{
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--fonts);
+}
+
+h1{
+    font-size: 45px;
+    margin: 1rem 0;
+	padding-top: 25px;
+}
+
+ol{
+	width: 1280px;
+	margin-left:-150px;
+}
+
+li{
+	margin: 10px;
+}
+
+nav a{
+    display: block;
+    padding: 1rem;
+	text-align: center;
+    font-family: var(--fonts);
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    box-shadow: var(--spread-shadow);
+    font-size: 1.2rem;
+	background-color: var(--ajr_green);
+}
+
+section a{
+    text-align: center;
+    font-family: var(--fonts);
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 1rem 0;
+    box-shadow: var(--spread-shadow);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}

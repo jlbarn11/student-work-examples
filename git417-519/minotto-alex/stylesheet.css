@@ -1,0 +1,401 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h4 {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute!important;
+  border: 0!important;
+  padding: 0!important;
+  margin: 0!important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.darkMode {
+  background-color: black;
+}
+
+#heroImage {
+  background-image: url("backgroundShapes.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.darkMode #heroImage {
+  background-image: url("darkModeBackgroundShapes.jpeg");
+}
+
+/* --------------HEADER-------------- */
+#lightModeLogo {
+  width: 65%;
+  display: block;
+  margin: auto;
+  margin-top: 10em;
+}
+
+#darkModeLogo {
+  display: none;
+}
+
+.darkMode #lightModeLogo {
+  display: none;
+}
+
+.darkMode #darkModeLogo {
+  width: 65%;
+  display: block;
+  margin: auto;
+  margin-top: 10em;
+}
+
+#text {
+  text-align: center;
+  margin-top: 6em;
+}
+
+.darkMode #text {
+  color: white;
+}
+
+/* --------------NAVIGATION-------------- */
+nav {
+  width: 95%;
+  margin: auto;
+  margin-top: 1.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto auto 10%;
+}
+
+nav li {
+  margin: auto;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+
+.darkMode nav li a {
+  color: white;
+}
+
+nav li a:hover {
+  background-color: rgba(203, 133, 110, 0.5);
+  padding: 0.5em 1em;
+  border-radius: 55px;
+}
+
+.darkMode nav li a:hover {
+  background-color: rgba(203, 133, 110);
+}
+
+nav button {
+  margin-right: 3em;
+  background-color: #ddeeaa;
+  border: none;
+  border-radius: 100px;
+}
+
+.darkMode nav button {
+  margin-right: 3em;
+  background-color: #95b4c6;
+  border: none;
+  border-radius: 100px;
+}
+
+nav button img {
+  width: 2em;
+  margin: auto;
+  padding: 1em;
+}
+
+/* --------------Product Section-------------- */
+#productDisplay {
+  background-color: #EBD174;
+  padding: 3em 0 4em 0;
+  margin-top: 7em;
+}
+
+.darkMode #productDisplay {
+  background-color: #95b4c6;
+}
+
+#productDisplay div {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+#productDisplay div p {
+  margin: auto;
+  text-align: center;
+}
+
+#topReads {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.active{
+  background-color: #CB856E;
+  padding: 1em;
+  border-radius: 55px;
+  font-weight: bold;
+}
+
+.darkMode .active{
+  background-color: #EBD174;
+}
+
+.hideProduct{
+  display: none;
+}
+
+.selectedProduct {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-column-gap: 3em;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  margin-top: 4em;
+}
+
+.selectedProduct img {
+  display: block;
+  width: 18em;
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.selectedProduct p {
+  grid-column: 2/3;
+  margin: 0;
+}
+
+.selectedProduct h3 {
+  font-size: 1.4em;
+  grid-column: 2/3;
+  margin: 0;
+}
+
+/* --------------Shopping Section-------------- */
+#shoppingCart {
+  margin-top: 6em;
+}
+
+.darkMode #shoppingCart {
+  color: white;
+}
+
+#books {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+#shopping {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 1.5em;
+  grid-column-gap: 1em;
+}
+
+#shopping h3 {
+  text-align: center;
+  margin: 1em 0 0.3em 0;
+  font-size: 1em;
+}
+
+#shopping img {
+  display: block;
+  width: 100%;
+}
+
+#shopping p {
+  margin: 0;
+  text-align: center;
+}
+
+#shopping div {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0;
+}
+
+.price, #shopping input, #shopping label {
+  display: inline;
+}
+
+/* -----------Cart------------- */
+#yourBooks {
+  width: 50%;
+  margin: auto;
+  margin-top: 4em;
+  background-color: #ddeeaa;
+  border: 2px solid black;
+  box-shadow: -11px 11px #ddeeaa, -11px 11px 0 2px black, -22px 22px #ddeeaa, -22px 22px 0 2px black;
+  padding: 0em 4em 1em 4em;
+  border-radius: 50px;
+}
+
+#yourCart {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+#yourBooks div {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+#cart ul{
+  list-style-type: none;
+  text-align: center;
+  margin-top: 0;
+}
+
+#cart li{
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+#cartCost{
+  display: inline;
+  margin-left: 2em;
+}
+
+#cartTotal {
+  text-align: center;
+}
+
+#cartTotal p {
+  display: inline;
+}
+
+#cartTotal div {
+  display: block;
+  margin-bottom: 2.2em;
+}
+
+/* --------------FORM-------------- */
+form {
+  width: 32%;
+  margin: auto;
+  background-color: #95b4c6;
+  border: 2px solid black;
+  padding: 2em;
+  border-radius: 30px;
+  box-shadow: -12px 12px #95b4c6, -12px 12px 0 2px black, -24px 24px #95b4c6, -24px 24px 0 2px black;
+  margin-top: 12em;
+}
+
+.darkMode form {
+  background-color: #EBD174;
+  box-shadow: -12px 12px #EBD174, -12px 12px 0 2px black, -24px 24px #EBD174, -24px 24px 0 2px black;
+}
+
+#contactSection {
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+.input, textarea {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 0.5em 0 1em 0;
+  box-sizing: border-box;
+  border: 2px solid #222;
+  border-radius: 50px;
+}
+
+form label {
+  font-size: 1em;
+  padding-top: 1em;
+  margin-left: 1em;
+}
+
+#option1, #option2 {
+  display: inline;
+  margin-right: 2em;
+}
+
+#messageBlock {
+  display: block;
+}
+
+#submit {
+  width: 10em;
+  font-size: 1em;
+  border: none;
+  background-color: #ebd15c;
+  font-weight: bold;
+}
+
+.darkMode #submit {
+  background-color: #CB856E;
+}
+
+/* --------------FOOTER-------------- */
+footer {
+  background-color: #CB856E;
+  padding: 1.5em 0 0.5em 0;
+  margin-top: 9em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 0 1em;
+  font-size: 1em;
+}
+
+footer #footerLayout{
+  width: 90%;
+  margin: auto;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+footer #right {
+  text-align: right;
+}
+
+footer #left {
+  text-align: left;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 3.5em;
+}

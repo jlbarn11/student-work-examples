@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* css reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* end of css reset */
+
+html body {
+    height: 100%;
+}
+
+:root {
+    --peach: #FEBE90;
+  }
+
+  /* classes to toggle from light to dark with img */
+
+#landing-page {
+    background-size: cover;
+    height:100vh;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+     display:none;
+}
+h2 {
+    display: inline;
+}
+#landing-page p {
+    font-size:50px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top:250px;
+    margin-bottom: 250px;
+    color:var(--peach);
+    font-family: 'Shrikhand', cursive;
+}
+
+/* toggle switch for light and dark mode */
+
+.moon {
+    position: absolute;
+    top:60px;
+    left:1050px;
+}
+.sun {
+    position: absolute;
+    top:60px;
+    left:1050px;
+}
+
+
+/* toggle this class to hide svg */
+.sun-gone {
+    display: none;
+}
+.moon-gone {
+    display: none;
+}
+
+/* hover effects fot svg */
+.moon:hover path {
+    fill: #FFF06C;
+    transition: .2s;
+}
+.sun:hover path {
+    fill: var(--peach);
+    transition: .2s;
+}
+
+/* change img background */
+  .light-landing-page {
+    background: url(clear-sky.png) no-repeat center center fixed; 
+    transition: background-color 0.20s ease-in-out;
+}
+.dark-landing-page {
+    background: url(night-sky.jpg) no-repeat center center fixed; 
+    transition: background-color 0.20s ease-in-out;
+}
+
+
+
+
+/* section after landing page ~ flex to align items within the divs */
+#intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:100vh;
+}
+
+/* grid layout for second section and aesthtics*/
+/* left div ~ img */
+
+#intro-section > div:first-child > img{
+    position: absolute;
+    /* margin-top:50px; */
+    margin-left: 120px;
+    margin-top: 150px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
+ /* right div ~ center and align text to middle */
+#intro-section > div:last-child{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right:50px;
+    text-align: center;
+}
+
+ #intro-section > div:last-child > h2 {
+    font-family: 'Shrikhand', cursive;
+    font-size:40px;
+    margin-top: 50px;
+}
+  #intro-section > div:last-child > p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size:15px;
+    margin-bottom: 20px;
+}
+
+.buttons > button {
+height:30px;
+width:70px;
+background-color: white;
+border: 1px solid #FEBE90;
+border-radius: 20px;
+font-family: 'Quicksand', sans-serif;
+}
+
+.buttons > button:hover {
+    background-color: var(--peach);
+    transition: .2s;
+}
+
+
+
+/* product display section */
+
+#product-display > h3 {
+   margin: 0 auto;
+   text-align: center;
+   font-family: 'Shrikhand', cursive;
+    font-size:23px;
+    margin-bottom: 20px;
+  }
+
+  /* center the colums */
+  #product-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* grid to make two colums */
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px; 
+    max-width: 800px
+  }
+  
+  
+  .drink-list {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    padding-bottom: 50px;
+  }
+  
+  .drink-list li {
+    margin: 5px;
+    font-size: px;
+    text-align: center;
+    display: inline;
+    
+  }
+
+  .drink-picture {
+    background-image: url("img/lav-coffee.png");
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    /* margin-left:-100px; */
+  }
+
+
+  li > button {
+    background-color: var(--peach);
+    font-family: 'Quicksand', sans-serif;
+    border: 0px;
+    border-radius: 20px;
+    padding:10px;
+  }
+
+  li > button:hover {
+border:1px solid #FEBE90;
+background-color: white;
+  }
+
+  .product-name {
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+  }
+
+  .product-info {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    
+  }
+/* classes for all the imgs */
+
+.tonic-img {
+    background-image: url("img/tonic.png");
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+}
+
+/* make sections side to side */
+#contact-game {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-colums {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px; 
+    max-width: 800px;
+}
+
+.contact-us {
+    font-family: 'Quicksand', sans-serif;
+    width:200px;
+    padding:30px;
+    border-radius:20px;
+    background-color:beige;
+}
+
+#contact-game > h3 {
+    text-align: left;
+    margin-right:250px;
+    margin-bottom: 20px;
+    font-family: 'Shrikhand', cursive;
+    font-size:20px;
+}
+
+
+/* contact us form */
+.play-game > h3 {
+    font-family: 'Shrikhand', cursive;
+    margin-top:100px;
+    
+}
+form {
+   background-color: aliceblue;
+    width: 200px;
+    margin-bottom:50px;
+}
+#game {
+    margin-bottom:10px;
+}
+#game-submit, input {
+    margin-top:10px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+.result {
+    font-family: 'Quicksand', sans-serif;
+    color:#FEBE90;
+    margin-top:10px;
+}
+
+/* js classes to remove or add */
+
+.default {
+    border: none;
+}
+.error {
+    border:1px solid red;
+}
+
+footer {
+    width:100%;
+    height:100px;
+    background-color: var(--peach);
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+footer h4 {
+    position: relative;
+    top:40px;
+}
+
+footer p {
+    position: relative;
+    top:60px;
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITZY Website</title>
+    <link rel="icon" href="pictures/favicon.png" type="image/x-icon">
+    <meta name="author" content="Jeffrey Le">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div id="header">
+            <div id="toggleContainer">
+                <label id="toggleNight">
+                    <input id="daynight" type="checkbox" value="darkmode" onchange="darkMode()">
+                    <div class="slider"></div>
+                </label>
+            </div>
+            <div>
+                <div id="lightLogo" class="home-logo-light">
+                    <img src="pictures/ITZY_black_x300.webp" alt="itzy logo">
+                </div>
+                <div id="darkLogo"class="home-logo-dark">
+                    <img src="pictures/ITZY_white_x300.webp" alt="itzy logo">
+                </div>
+            </div>
+            <nav>
+                <div id="nav-background">
+                    <ul id="nav-style">
+                        <li><a href="#members">Members</a></li>
+                        <li><a href ="#discography">Discography</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- container for picture -->
+        <div id="picture-holder">
+            <div id="picture1">
+                <img src="pictures/itzyactionshot.jpg" alt="Image of all 5 Itzy members posing for a photoshoot for their 'Checkmate' album. Ordered from left to right goes: Ryujin, Chaeryeong, Yeji, Lia, & Yuna.">
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Members Section-->
+        <section id="members">
+            <div class="member-background">
+                <h2>
+                    Members
+                </h2>
+                <!-- Yeji Section-->
+                <section id="yeji" class="displayedMember">
+                    <div class="member-container">
+                        <img src="pictures/yeji.jpg" alt="image of yeji posing with her hands behind her back, wearing a black top and bright colored skirt." width="375" height="562">
+                        <div class="member-description">
+                            Yeji, born on May 26, 2000, is the charismatic leader of ITZY. Known for her powerful stage presence and versatile talents, Yeji has become a standout figure in the K-pop scene. Beyond her skills as a rapper and dancer, she possesses a captivating charm that resonates with fans around the world.
+                        </div>
+                    </div>
+                </section>
+                <!-- Lia Section-->
+                <section id="lia" class="hiddenMember">
+                    <div class="member-container">
+                        <img src="pictures/lia.jpg" alt="image of lia posing in front of a giant balloon, wearing a white Adidas top and black shorts." width="375" height="562">
+                        <div class="member-description">
+                            Lia, born on July 21, 2000, is the lead vocalist of ITZY, recognized for her enchanting voice and graceful demeanor. Her soulful vocals add depth to the group's music, while her elegant presence on stage has earned her a dedicated fanbase. Lia's ability to convey emotion through her singing is a defining aspect of ITZY's sound.
+                        </div>
+                    </div>
+                </section>
+                <!-- Ryujin Section-->
+                <section id="ryujin" class="hiddenMember">
+                    <div class="member-container">
+                        <img src="pictures/ryujin.jpg" alt="image of ryujin posing in front of a broken desk as she is squatting down wearing a yellow tank top and white pants with design." width="375" height="562">
+                        <div class="member-description">
+                            Ryujin, born on April 17, 2001, is ITZY's main rapper and lead dancer. Her powerful rap delivery and dynamic dance moves contribute to the group's dynamic performances. With her confident and cool image, Ryujin has become a trendsetter, inspiring fans with her fashion sense and unapologetic attitude.
+                        </div>
+                    </div>
+                </section>
+                <!-- Chaeryeong Section-->
+                <section id="chaeryeong" class="hiddenMember">
+                    <div class="member-container">
+                        <img src="pictures/chae.jpg" alt="image of chaeryeong posing next to a giant balloon as her body is facing to the right and her head is facing toward the camera." width="375" height="562">
+                    <div class="member-description">
+                        Chaeryeong, born on June 5, 2001, serves as ITZY's main dancer and sub-vocalist. Recognized for her exceptional dance skills and versatility, Chaeryeong brings a dynamic energy to the group's choreography. Her ability to seamlessly switch between powerful and graceful movements adds a unique dimension to ITZY's stage presence.
+                    </div>
+                    </div>
+                </section>
+                <!-- Yuna Section-->
+                <section id="yuna" class="hiddenMember">
+                    <div class="member-container">
+                        <img src="pictures/yuna.jpg" alt="yuna posing in front of the giant balloon while slightly leaning forward and pouting. She is wearing a long black graphic tee with fishnets." width="375" height="562">
+                    <div class="member-description">
+                        Yuna, born on December 9, 2003, is ITZY's youngest member and sub-vocalist. Despite her young age, Yuna has made a significant impact with her sweet vocals and charming personality. Her stage presence, combined with her vibrant energy, completes the synergy within ITZY, making the group a force to be reckoned with in the K-pop industry.
+                    </div>
+                    </div>
+                </section>
+                <ul id="members-list">
+                    <li>
+                        <button id="memberbtn0" class="current-member-btn" onclick="YejiActive()"> 
+                            Yeji
+                        </button>
+                    </li>
+                    <li>
+                        <button id="memberbtn1" class="hidden-member-btn" onclick="LiaActive()">
+                            Lia
+                        </button>
+                    </li>
+                    <li>
+                        <button id="memberbtn2" class="hidden-member-btn" onclick="RyujinActive()">
+                            Ryujin
+                        </button>
+                    </li>
+                    <li>
+                        <button id="memberbtn3" class="hidden-member-btn" onclick="ChaeryeongActive()">
+                            Chaeryeong
+                        </button>
+                    </li>
+                    <li>
+                        <button id="memberbtn4" class="hidden-member-btn" onclick="YunaActive()">
+                            Yuna
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Discography Section-->
+        <section id="discography">
+            <div class="discography-background">
+                <h2>
+                    Discography
+                </h2>
+                <!-- Kill My Doubt-->
+                <section id="killMyDoubt" class="displayedDisc">
+                    <h3>Kill My Doubt</h3>
+                        <div class="discography-container">
+                            <img src="discs/killmydoubt.jpg" alt="'Kill my Doubt' album cover" width="500" height="500">
+                            <ul class="disc-list-style">
+                                <li>1. BET ON ME</li>                           
+                                <li>2. CAKE</li>                        
+                                <li>3. None of My Business</li>                
+                                <li>4. Bratty (나쁜 애)</li>
+                                <li>5. Psychic Lover</li>
+                                <li>6. Kill Shot</li>
+                            </ul>
+                        </div>
+                </section>
+                <!-- Cheshire-->
+                <section id="cheshire" class="hiddenDisc">
+                    <h3>Cheshire</h3>
+                        <div class="discography-container">
+                            <img src="discs/cheshire.jpg" alt="'Cheshire' album cover" width="500" height="500">
+                        <ul class="disc-list-style">
+                            <li>1. Cheshire</li>
+                            <li>2. Snowy</li>
+                            <li>3. Freaky</li>
+                            <li>4. Boys Like You</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Checkmate -->
+                <section id="checkmate" class="hiddenDisc">
+                    <h3>Checkmate</h3>
+                        <div class="discography-container">
+                            <img src="discs/checkmate.jpg" alt="'Checkmate' album cover" width="500" height="500">
+                        <ul class="disc-list-style">
+                            <li>1. SNEAKERS</li>
+                            <li>2. RACER</li>
+                            <li>3. WHAT I WANT</li>
+                            <li>4. Free Fall</li>
+                            <li>5. 365</li>
+                            <li>6. DOMINO</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Crazy In Love -->
+                <section id="crazyInLove" class="hiddenDisc">
+                    <h3>Crazy In Love</h3>
+                        <div class="discography-container">
+                            <img src="discs/crazy.jpg" alt="'Crazy in Love album cover'" width="500" height="500">
+                        <ul class="disc-list-style">
+                            <li>1. LOCO</li>
+                            <li>2. SWIPE</li>
+                            <li>3. Sooo LUCKY</li>
+                            <li>4. #Twenty</li>
+                            <li>5. B[OO]M-BOXX</li>
+                            <li>6. Gas Me Up</li>
+                            <li>7. LOVE is</li>
+                            <li>8. Chillin' Chillin'</li>
+                            <li>9. Mirror</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Guess Who -->
+                <section id="guessWho" class="hiddenDisc">
+                    <h3>Guess Who</h3>
+                        <div class="discography-container">
+                            <img src="discs/guesswho.jpg" alt="'Guess Who' album cover" width="500" height="500">
+                        <ul class="disc-list-style">
+                            <li>1. In the morning</li>
+                            <li>2. Sorry Not Sorry</li>
+                            <li>3. KIDDING ME</li>
+                            <li>4. Wild Wild West</li>
+                            <li>5. SHOOT!</li>
+                            <li>6. TENNIS (0:0)</li>
+                        </ul>
+                    </div>
+                </section>
+                <ul id="disc-btn-list">
+                    <li>
+                        <button id="btn0" class="current-disc-btn" onclick="KillMyDoubtActive()">
+                            Kill My Doubt
+                        </button>
+                    </li>
+                    <li>
+                        <button id="btn1" class="hidden-disc-btn" onclick="CheshireActive()">
+                            Cheshire
+                        </button>
+                    </li>
+                    <li>
+                        <button id="btn2" class="hidden-disc-btn" onclick="CheckmateActive()">
+                            Checkmate
+                        </button>
+                    </li>
+                    <li>
+                        <button id="btn3" class="hidden-disc-btn" onclick="CrazyInLoveActive()">
+                            Crazy In Love
+                        </button>
+                    </li>
+                    <li>
+                        <button id="btn4" class="hidden-disc-btn" onclick="GuessWhoActive()">
+                            Guess Who
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <h2>ITZY Shop</h2>
+        <section id="shop">
+            <div id="shop-background">
+                <section id="yejiSignedAlbum">
+                    <img src="pictures/yejisigned.webp" alt="'Yeji holding 'checkmate' album (signed)" height="350" width="350">
+                    <h3>Checkmate Yeji Version Signed (D2C Standard)</h3>
+                    <p>$36</p>
+                    <button id="addYejiSigned">Add to Cart</button>
+                </section>
+                <section id="ryujinSignedAlbum">
+                    <img src="pictures/ryujinsigned.webp" alt="'Ryujin holding 'checkmate' album (signed)" height="350" width="350">
+                    <h3>Checkmate Ryujin Version Signed (D2C Standard)</h3>
+                    <p>$36</p>
+                    <button id="addRyujinSigned">Add to Cart</button>
+                </section>
+                <section id="chaeSignedAlbum">
+                    <img src="pictures/chaesigned.webp" alt="'Chaeryeong holding 'checkmate' album (signed)" height="350" width="350">
+                    <h3>Checkmate Chaeryeong Version Signed (D2C Standard)</h3>
+                    <p>$36</p>
+                    <button id="addChaeSigned">Add to Cart</button>
+                </section>
+                <section id="liaSignedAlbum">
+                    <img src="pictures/liasigned.webp" alt="'Lia holding 'checkmate' album (signed)" height="350" width="350">
+                    <h3>Checkmate Lia Version Signed (D2C Standard)</h3>
+                    <p>$36</p>
+                    <button id="addLiaSigned">Add to Cart</button>
+                </section>
+                <section id="yunaSignedAlbum">
+                    <img src="pictures/yunasigned.webp" alt="'Yuna holding 'checkmate' album (signed)" height="350" width="350">
+                    <h3>Checkmate Yuna Version Signed (D2C Standard)</h3>
+                    <p>$36</p>
+                    <button id="addYunaSigned">Add to Cart</button>
+                </section>
+                <section id="lighstick">
+                    <img src="pictures/itzylightstick.webp" alt="circular ring with light on one half and the word 'itzy' in the center" height="350" width="350">
+                    <h3>Itzy Official Light Stick</h3>
+                    <p>$55</p>
+                    <button id="addLightstick">Add to Cart</button>
+                </section>
+            </div>
+            <section id="cart">
+                <h3>Cart</h3>
+                    <ul>
+                        <li>Sub-total:</li><br>
+                        <li>Tax:</li><br>
+                        <li>Shipping:</li><br>
+                        <li>Total:</li>
+                    </ul>
+                <button id="checkout">Checkout</button>
+            </section>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Connect with ITZY! Your thoughts matter to us. Whether you have fan letters, questions, or just want to share the love, we're here. Drop us a message, and let's keep the Midzy spirit alive. Your support fuels us, and we can't wait to hear from you!</p>
+            <div class="contactForm">
+                <!-- First Name -->
+                <label for="fName">First Name<span class="required">*</span></label>
+                <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name" >
+                <span id="firstNameError"class="errorMessage">Please enter your first name</span>
+                <!-- Last Name -->
+                <label for="lName">Last Name<span class="required">*</span></label>
+                <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name" >
+                <span id="lastNameError" class="errorMessage">Please enter your last name</span>
+                <!-- Email -->
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="emailInput" autocomplete="email" placeholder="info@itzyofficial.com" >
+                <span id="emailError" class="errorMessage">Please enter your email address</span>
+                <!-- Phone Number -->
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phoneInput" placeholder="+123-456-7890" >
+                <span id="phoneError" class="errorMessage">Please enter your phone number</span>
+                <!-- Preferred Contact -->
+                <fieldset>
+                    <legend>Preferred Method of Contact<span class="required">*</span></legend>
+                    <div>
+                        <input type="radio" id="phoneRadio" name="prefContact" value="phone" checked onclick="radioChange()" />   
+                        <label for="prefPhone">Phone</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="emailRadio" name="prefContact" value="email" onclick="radioChange()"/>
+                        <label for="prefEmail">Email</label>
+                    </div>
+                </fieldset>
+                <!-- Comments -->
+                <label for="comments">Comments<span class="required">*</span></label>
+                <textarea name="comments" rows="6" id="comments"></textarea>
+                <span id="commentsError" class="errorMessage">Please add a comment</span>
+                <!-- Submit Button -->
+                <div class="successSubmit" id="successSubmit"> Thanks, Midzy! Your submission warms our hearts - stay tuned for more ITZY magic! </div>
+                <button class="submit"  id="submitForm" onclick="validateFields()"> Submit </button>
+            </div>
+        </section>
+
+        <section id="game">
+            <h2>Guess Who?</h2>
+            <p>Hey Midzy! We're excited to add a sprinkle of fun to your ITZY journey. Take a shot at guessing the right number, and you could be the lucky winner of some fantastic ITZY merchandise!</p>
+            <p>Just enter a number from 1-10 and if you guess correctly, you win!</p>
+                <div id="gameContainer">
+                    <div class="responseMsg" id="responseMsg" >
+                        <div class="loser" id="loser">Sorry, better luck next time!</div>
+                        <div class="winner" id="winner">Congratulations! You are a winner!</div>
+                        <div class="guess" id="guess"></div> 
+                        <div class="rng" id="rng" ></div>
+                    </div>
+                    <input type="number" id="numGame">
+                    <input type="submit" id="submitGame" value="Guess!" onclick="playGame()">
+                </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>
+            &copy; Jeffrey Le - All rights reserved
+        </p>
+    </footer>
+</body>
+</html>

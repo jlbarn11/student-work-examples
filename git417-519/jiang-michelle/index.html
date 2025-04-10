@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SAN-X SUMIKKO GURASHI</title>
+	<meta charset="utf-8">
+	<!-- GIT417 Final Project, Michelle Jiang -->
+	<meta name="author" content="Michelle Jiang">
+	<meta name="description" content="Homepage of Bakehouse405, a bakery located in Chapel Hill, NC and owned by Kelsey Phillips.">
+	<link rel="stylesheet" href="styles.css">
+	<!-- Favicon taken from John Sorrentino (2019)
+		https://favicon.io/favicon-converter/ -->
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+	<!-- Google Fonts -->
+	<!-- Heading -->
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	<!-- Body text -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<div id="wrapper">
+		<header>
+			<!-- Image area above the nav -->
+			<img src="images/name.png" alt="San-X's Sumikko Gurashi series logo in English, then Japanese, then Japanese catchphrase." id="series-logo">
+			<h1>San-X Sumikko Gurashi Series</h1>
+
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#characters">Characters</a></li>
+					<li><a href="#contact-us">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<!-- Button that will be floating next to the nav, used to toggle dark mode -->
+			<button type="button" id="dark-mode-toggle" title="Toggle light/dark mode"><img src="images/dark-mode.png" alt="A black crescent moon icon for toggling dark mode" id="dark-mode"></button>
+		</header>
+
+		<!-- All Content about company is taken from their official website, http://www.san-x.jp/characters/sumikko.html -->
+		<main>
+			<!-- First section describes character line -->
+			<section id="home">
+				<!-- Because this section has a background image, another div was created
+				in order to position the text within it to the right. -->
+				<div id="home-text">
+					<h2>Sumikko Gurashi</h2>
+					<!-- First line from https://en.wikipedia.org/wiki/Sumikko_Gurashi. Rest of description from official website. -->
+					<p>Sumikko Gurashi is a set of fictional characters who live a quiet and solitary life in the corner. They might be able to settle down when they’re in the corners but they don’t like being in the center of the room. When they’re taken to the center of the room, they always rush back to the corner. We sell plushies, videos, movies, and other merchandise featuring the cuteness and solitary life of "Sumikkogurashi".</p>
+				</div>
+			</section>
+
+			<section id="characters">
+				<!-- Top of section that describes what the section is for -->
+				<h2>Meet Our Main Characters</h2>
+				<p id="dark-mode-p">Click on each character to learn more.</p>
+				<ul>
+					<li>
+						<button type="button" id="shirokuma">
+							<img src="images/shirokuma.png" alt="A cartoon drawing of a cute, chubby white polar bear with dots for eyes and a button nose, but no mouth. It has two round white ears with pink half circles in them.">
+						</button>
+						<h3>Shirokuma</h3>
+					</li>
+
+					<li>
+						<button type="button" id="pengin">
+							<img src="images/pengin.png" alt="A cartoon drawing of a cute, chubby yellow-green penguin with dots for eyes and a round yellow ellipse for a beak.">
+						</button>
+						<h3>Penguin?</h3>
+					</li>
+
+					<li>
+						<button type="button" id="tonkatsu">
+							<img src="images/tonkatsu.png" alt="A cartoon drawing of a cute, chubby brown fluffy character. It has dots for eyes and an elliptical pink nose, but no mouth.">
+						</button>
+						<h3>Tonkatsu</h3>
+					</li>
+
+					<li>
+						<button type="button" id="neko">
+							<img src="images/neko.png" alt="A cartoon drawing of a cute, chubby white and yellow calico cat with dots for eyes, a small black circle on the muzzle as a nose, a round white circle as a muzzle, and two lines as whiskers on both cheeks. The ears are slightly droopy and it has a circular stubby tail.">
+						</button>
+						<h3>Neko</h3>
+					</li>
+
+					<li>
+						<button type="button" id="tokage">
+							<img src="images/tokage.png" alt="A cartoon drawing of a cute, chubby light blue dinosaur with dots for eyes and a duck-shaped line as a mouth. It has four connected half circles on its back hat lead to a tail.">
+						</button>
+						<h3>Tokage</h3>
+					</li>
+				</ul>
+
+				<!-- Empty div for Javascript toggle -->
+				<div id="description">
+					<!-- Each product has its own id here because every content is different -->
+					<div id="shirokuma-expanded">
+						<img src="images/shirokuma-expanded.png" alt="Shirokuma sleeping with a polka dot white and pink blanket with a blank face wrapped around Shirokuma." class="img-expanded">
+						<p class="text-expanded">Shirokuma is a shy bear who migrated south to avoid the cold. Shirokuma feels most calm while drinking hot tea in a corner.</p>
+					</div>
+
+					<div id="pengin-expanded">
+						<img src="images/pengin-expanded.webp" alt="Pengin lying belly down with an emoticon symbolizing tired and 'don't want to do anything'." class="img-expanded">
+						<p class="text-expanded">Am I even a penguin? Penguin has no confidence. In the past, there might have been a plate on Penguin’s head...</p>
+					</div>
+
+					<div id="tonkatsu-expanded">
+						<img src="images/tonkatsu-expanded.png" alt="Tonkatsu lying on a plate, with Tapioca pouring sauce over it." class="img-expanded">
+						<p class="text-expanded">The end of a tonkatsu. Made of 1% meat, 99% fat. Left behind for being too oily...</p>
+					</div>
+
+					<div id="neko-expanded">
+						<img src="images/neko-expanded.png" alt="Shirokuma sleeping with a polka dot white and pink blanket with a blank face wrapped around Shirokuma." class="img-expanded">
+						<p class="text-expanded">Shy and timid, Neko usually hides in the corner. Neko worries about its body shape.</p>
+					</div>
+
+					<div id="tokage-expanded">
+						<img src="images/tokage-expanded.webp" alt="Shirokuma sleeping with a polka dot white and pink blanket with a blank face wrapped around Shirokuma." class="img-expanded">
+						<p class="text-expanded">Is actually the last of the dinosaurs. It pretends to be a lizard to avoid being caught. Slowly warming up to Nisetsumuri.</p>
+					</div>
+
+				</div>
+
+				<!-- Creating this div so the links will be centered -->
+				<div class="center">
+					<a href="http://www.san-x.jp/characters/sumikko.html" class="external-links" target="_blank">View More Characters</a>
+					<a href="http://www.san-x.co.jp/blog/goods/category/sumikko.html" class="external-links" target="_blank">Shop Merchandise</a>
+				</div>
+			</section>
+
+			<section id="contact-us">
+				<h2>Have questions or suggestions? Let us know!</h2>
+				<p id="required">&ast; required</p>
+				<form>
+					<label for="fname">&ast; First Name</label>
+					<input type="text" name="fname" id="fname" required="required">
+
+					<label for="lname">&ast; Last Name</label>
+					<input type="text" name="lname" id="lname" required="required">
+
+					<label>&ast; Preferred Contact Method</label>
+					<input type="radio" id="email" name="contact-method" value="email" checked>
+					<!-- Had to add a class of preference to get the radio buttons inline -->
+					<label for="email" class="preference">E-mail</label>
+					<input type="radio" id="phone" name="contact-method" value="phone">
+					<label for="phone" class="preference">Phone</label>
+
+					<!-- Had to add a class of clear because the radio buttons would screw
+					up the e-mail address line. -->
+					<label for="email" class="clear">E-mail Address</label>
+					<input type="text" name="email" id="email-input">
+
+					<label for="phone">Phone Number</label>
+					<input type="text" name="phone" id="phone-input">
+
+					<label for="comments">&ast; Comments</label>
+					<textarea name="comments" id="comments" rows="5" cols="80" required="required"></textarea>
+
+					<button name="submit" id="submit" type="submit">Send Message</button>
+				</form>
+
+				<img src="images/contact-us.png" alt="Logo of San-X company. Blue cursive san with a four leaf clover representing the X." class="graphic">
+			</section>
+		</main>
+
+		<footer>
+			<img src="images/sanx-logo.png" alt="Sumikko Gurashi characters huddled together, holding pink flowers in their hands.">
+			<p role="contentinfo">&copy; SAN-X CO., LTD. Chida Bldg. 2-4 Tacho, Kanda, Chiyoda-ku, Tokyo 101-0046 Japan. (81) 3-3256-7621. This site was created for educational purposes only. I do not own any of the text or images on this page, just the code.</p>
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

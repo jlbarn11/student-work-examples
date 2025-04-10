@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyrin Assawachawakul">
+    <title>Leibal | Minimal Design Furnitures</title>
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- STYLESHEETS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- SCRIPTS  -->
+    <script src="script.js" async></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="hidden">Main Navigation</h2>
+            <svg class="logo" width="81" height="24" viewBox="0 0 81 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="24" x2="0.999999" y2="2"  stroke-width="2"/>
+                <line y1="1" x2="81" y2="1" stroke-width="2"/>
+            </svg>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <img src="images/bench.png" alt="All black Leibal bench with food tray">
+            <h1>LEIBAL</h1>
+            <p class="sub-title">Leibal curates a selection of objects focused on quality, minimalism, and functionality. Our mission is to provide a unique set of products that fascinate and inspire the user.</p>
+            <a href="#products">Shop Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery" id="gallery">
+            <div class="gallery-nav">
+                <h2>Product Gallery</h2>
+                <ul class="tabs">
+                    <li class="active" data-tab-target="#product1">Armchair 30</li>
+                    <li data-tab-target="#product2">BM61 Chair</li>
+                    <li data-tab-target="#product3">Carabottino Mirror</li>
+                    <li data-tab-target="#product4">Clerici Lounge Chair</li>
+                </ul>
+            </div>
+
+            <section class="gallery-content">
+                <div class="gallery-product active-product" id="product1" data-product>
+                    <img src="images/armchair-30.png" alt="Armchair 30, wooden armchair with an open backrest">
+                    <div>
+                        <div class="gallery-title">
+                            <h3>Armchair 30</h3>
+                            <span class="price">$265</span>
+                        </div>
+                        <p>This armchair with an open backrest comes from TON’s traditional line of products. Typical are: its timeless shape and versatile usage. The seat can be made of plywood, it can be upholstered or covered with cane.</p>
+                    </div>
+                </div>
+                <div class="gallery-product" id="product2" data-product>
+                    <img src="images/bm61-chair.png" alt="BM61 Chair, wooden pared-down shaped chair">
+                    <div>
+                        <div class="gallery-title">
+                            <h3>BM61 Chair</h3>
+                            <span class="price">$3,379</span>
+                        </div>
+                        <p>Two versions in two different natural materials attest to Børge Mogensen’s talent for pared-down shapes elegantly engineered for comfort. Dispensing with anything extraneous in favor of clean lines in a pure, iconic design that defies any temporary trend.</p>
+                    </div>
+                </div>  
+                <div class="gallery-product" id="product3" data-product>
+                    <img src="images/mirror.png" alt="Carabottino Mirror, long verticle mirror with wooden cover">
+                    <div>
+                        <div class="gallery-title">
+                            <h3>Carabottino Mirror</h3>
+                            <span class="price">$4,789</span>
+                        </div>
+                        <p>The famous travel report by Marco Polo, entitled Il Milione, tells the story of Venice's meeting with the East, whose cultural influences had the highest expression in architecture, applied arts and manufacturing.</p>
+                    </div>
+                </div>  
+                <div class="gallery-product" id="product4" data-product>
+                    <img src="images/lounge-chair.png" alt="Clerici Lounge Chair, minimal wooden lounge armchair">
+                    <div>
+                        <div class="gallery-title">
+                            <h3>Clerici Lounge Chair</h3>
+                            <span class="price">$1,499</span>
+                        </div>
+                        <p>Clerici, designed by Konstantin Grcic, radiates devout serenity. The main concept and the fascination of Clerici lie in the grand simplicity of the design. </p>
+                    </div>
+                </div>  
+            </section>
+        </section>
+
+        <section class="product-section" id="products">
+            <div class="product-wrapper">
+                <h2>Featured Products</h2>
+                <div class="products">
+                    <!-- show products here -->
+                </div>  
+            </div>
+
+             <section class="cart">
+                <h3>Your Cart</h3>
+
+                
+                <div class="cart-details">
+                    <div class="line"></div>
+
+                    <div class="cart-items">
+                        <span>Your cart is empty</span>
+                    </div>
+                    
+                    <div class="line"></div>
+
+                    <div class="price-detail">
+                        <span>Subtotal:</span>
+                        <span class="sub-total">$0</span>
+                    </div>
+                    <div class="price-detail">
+                        <span>Tax Rate:</span>
+                        <span class="tax-rate">8.5%</span>
+                    </div>
+                    <div class="price-detail">
+                        <span>Shipping:</span>
+                        <span class="shipping">Flat $50</span>
+                    </div>
+                    <div class="price-detail">
+                        <span>Cart Total:</span>
+                        <span class="cart-total">$0</span>
+                    </div>
+
+                    <div class="line"></div>
+                </div>
+                <button class="check-out">Check Out</button>
+             </section>
+        </section>
+
+        <section class="about">
+            <div>
+                <h2 class="heading-l">1890</h2>
+                <span>The year we started building unique set of products</span>
+            </div>
+            <p>Our selection of products are designed and imported from all over the world. Whether from Denmark or Japan, some of these items have never received exposure in the United States.</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <div>
+                <h2>How can we help you?</h2>
+                <p>Your satisfaction with your furniture is very important to us. If you have any questions about the furniture you have on order or the furniture in your home, we are here to help.</p>
+            </div>
+            <form id="contactForm">
+                <h3>Send us a message</h3>
+                <label for="fName">First Name<span class="required">*</span></label>
+                <input type="text" name="fName" id="fName" class="default">
+                <span class="error-msg"></span>
+
+                <label for="lName">Last Name<span class="required">*</span></label>
+                <input type="text" name="lName" id="lName" class="default" >
+                <span class="error-msg"></span>
+
+                <label for="phoneNum">Phone Number</label>
+                <input type="text" name="phoneNum" id="phoneNum" class="default">
+                <span class="error-msg"></span>
+            
+                <label for="emailAd">Email Address<span class="required">*</span></label>
+                <input type="email" name="emailAd" id="emailAd" class="default">
+                <span class="error-msg"></span>
+        
+                <fieldset>
+                    <legend>Preferred Method of Contact<span class="required">*</span></legend>
+                    <label for="phone" class="radio">
+                        <span class="radio-input">
+                            <input type="radio" name="method" id="phone" >
+                            <span class="radio-control"></span>
+                        </span>
+                        <span class="radio-label">Phone</span>
+                    </label>
+                    <label for="email" class="radio">
+                        <span class="radio-input">
+                            <input type="radio" name="method" id="email" checked>
+                            <span class="radio-control"></span>
+                        </span>
+                        <span class="radio-label">Email</span>
+                    </label>
+                </fieldset>
+
+                <label for="message">Your Message<span class="required">*</span></label>
+                <textarea rows="4" cols="80" name="message" id="message" form="contactForm"></textarea>
+                <span class="error-msg"></span>
+
+                <input class="submit" type="submit" id="mySubmit">
+                <p id="confirm"></p>
+              </form>
+              
+        </section>
+        
+        <div id="toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bulb-icon" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+        </div>
+    </main>
+
+    <footer>
+        <small>Copyright ©2022 Kyrin<br>
+            This site is for educational purposes only.</small>
+    </footer>
+
+</body>
+</html>

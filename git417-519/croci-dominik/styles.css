@@ -1,0 +1,155 @@
+/* all assets borrowed from https://www.amd.com/en/processors/ryzen */
+/* universal selectors*/
+* {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+section div {
+  margin: 0 auto;
+}
+div p {
+  line-height: 2;
+  max-width: 50ch;
+}
+/* these stay consistent despite dark or light mode */
+#hero p,
+#faq div .card h3,
+#faq div .card p {
+  color: white;
+}
+.dm-lm {
+  filter: brightness(100);
+}
+/* light mode styles */
+.light {
+  background: rgb(255, 255, 255) !important;
+  color: black !important;
+}
+.light nav div ul li,
+.light section div p,
+.light section div h3,
+.light section div small,
+.light section div div ul li,
+.light form label,
+.light legend,
+.light #modal p,
+.light #modal strong {
+  color: black;
+}
+.light input,
+.light textarea,
+.light fieldset {
+  border: 2px solid black;
+}
+.light #modal {
+  background-color: rgb(255, 255, 255);
+}
+.light #modalCloseBtn {
+  color: white !important;
+}
+/* dark mode styles */
+.dark {
+  background: #000000;
+  color: white;
+}
+/* product section */
+.active {
+  box-shadow: rgba(149, 157, 165, 0.53) 0px 8px 16px;
+  transform: scale(1.2);
+}
+#icons img:hover {
+  transition: 0.2s;
+  filter: brightness(0.5);
+}
+li {
+  font-family: 'ff-basic-gothic-pro', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+#specs ul li {
+  max-width: 30ch;
+}
+/* faq section */
+.answer {
+  height: fit-content;
+  margin-bottom: 24px;
+}
+.card:hover {
+  transform: translateY(-2%);
+}
+/* form styles */
+form div .errorsP {
+  max-width: 1000ch;
+}
+.error {
+  border: 4px solid red;
+}
+
+/* modal styles */
+#faq p,
+#modal p {
+  max-width: none;
+}
+#modal {
+  background: #1e1e1e;
+  box-shadow: rgba(149, 157, 165, 0.303) 0px 8px 24px;
+}
+/* footer styles */
+footer li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer ul li:nth-of-type(1):hover {
+  text-decoration: none;
+}
+/* MEDIA QUERIES */
+@media (max-width: 866px) {
+  #ryzen7000 div {
+    flex-direction: column;
+  }
+  #ryzen7000 img {
+    width: 80%;
+  }
+  .hero img {
+    height: 350px;
+  }
+}
+@media (max-width: 742px) {
+  #info div {
+    flex-direction: column;
+  }
+  #info div p {
+    width: 100%;
+  }
+  #info div iframe {
+    height: 400px;
+  }
+}
+@media (max-width: 608px) {
+  #faq div {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media (max-width: 516px) {
+  .hero img {
+    height: 350px;
+  }
+}
+@media (max-width: 516px) {
+  .hero img {
+    height: 375px;
+  }
+}
+@media (max-width: 388px) {
+  #cpuInfo {
+    grid-column-end: 3;
+  }
+  #specs {
+    grid-column-start: 1;
+    width: 100%;
+  }
+  #info div iframe {
+    height: 200px;
+  }
+}

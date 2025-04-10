@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonathan Alicea">
+    <title>Gio's Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z" stroke-width="0" fill="currentColor" />
+                </svg>
+        </button>
+        <img src="images/giospizza_logo.png" alt="gio's pizza logo" width="300" id="logo">
+        <h1 class="hidden">Gio's Pizza</h1>
+        <nav>
+            <ul>
+                <li><a href="#deals">Daily Deals</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#rewards">Gio Rewards</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="banner">
+        <img src="images/Deal_pizza.jpg" alt="A large pizza topped with peppers and tomatoes">
+    </div>
+    <main>
+        <section id="deals">
+            <h2>DAILY DEALS</h2>
+
+                <img src="images/pizza_banner.jpg" alt="Two people each grabbing a slice of pizza on a cutting board surrounded by a bottle of coke and 3 small cups of sauces" width="300">
+            <div>
+                <h3>PIZZAIOLO SPECIAL</h3>
+
+                <p>Get a <span>16in Pizza</span> with a choice of <span>2 Toppings</span>, a side of <span>Garlic Knots</span> with <span>Marinara Dipping Sauce</span>, and a <span>1 Liter Soda.</span>
+                <small>No Substitutions for Side. Other Beverages Available for 1 Liter Soda (See Menu for Options)</small></p>
+
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        
+
+        <section id="menu">
+            <h2>MENU</h2>
+
+            <div>
+                <section class="menu_item">
+                    <img src="images/pizza_menu.jpg" alt="a small cheese pizza on a pizza pan topped with fresh basil" width="300">
+                    <h3>Gio’s Original Pizza</h3>
+                    <p>
+                        Our Hand Tossed, topped with our famous marinara sauce and freshly shredded Mozzarella cheese. Individual slices and whole pies available!
+                        <span>$14.00</span>
+                    </p>             
+        
+                    <label for="item1" id="item_label1" class="menu_choice">
+                        <input type="checkbox" name="item1" id="item1">
+                        <span>Add To Cart</span>
+                    </label>
+                </section>
+        
+                <section class="menu_item">
+                    <img src="images/garlic_knots_menu.jpg" alt="a platter of freshly baked garlic knots" width="300">
+                    <h3>Garlic Knots with Signature Sauce</h3>
+        
+                    <p>
+                        Freshly Baked bread knots brushed with our famous Garlic Parmesan Butter. Served with marinara sauce.
+                        <span>$7.00</span>
+                    </p>
+                          
+                    <label for="item2" id="item_label2" class="menu_choice">
+                        <input type="checkbox" name="item2" id="item2">
+                        <span>Add To Cart</span>
+                    </label>
+                </section>
+        
+                <section class="menu_item">
+                    <img src="images/caesar_salad_menu.jpg" alt="A plate of caesar salad covered in creamy salad dressing and croutons" width="300">
+                    <h3>Hand-Crafted Caesar Salad</h3>
+        
+                    <p>
+                        Hand crafted croutons and fresh Romaine lettuce tossed in our peppery, creamy, Caesar salad dressing.
+                        <span>$6.00</span>
+                    </p>
+
+                    <label for="item3" id="item_label3" class="menu_choice">
+                        <input type="checkbox" name="item3" id="item3">
+                        <span>Add To Cart</span>
+                    </label>
+                </section>
+        
+        
+                <section class="menu_item">
+                    <img src="images/chicken_wings_menu.jpg" alt="A platter of fried chicken wings on top of a bed of lettuce surrounded by a cup of ranch dressing" width="300">
+                    <h3>Italian Fried Chicken Wings</h3>
+        
+                    <p>
+                        Hand-breaded chicken wings seasoned with Italian herbs and spices. Served with our creamy Alfredo Sauce.
+                        <span>$9.00</span>
+                    </p>
+           
+                    <label for="item4" id="item_label4" class="menu_choice">
+                        <input type="checkbox" name="item4" id="item4">
+                        <span>Add To Cart</span>
+                    </label>
+                </section>
+        
+                <section class="menu_item">
+                    <img src="images/cheese_sticks_menu.jpg" alt="a person grabbing a platter of Mozzarella sticks" width="300">
+                    <h3>Fried Mozzarella Sticks</h3>
+        
+                    <p>
+                        Mozzarella cheese sticks breaded with Italian herbs and spices and fried to golden perfection.
+                        <span>$7.00</span>
+                    </p>
+ 
+                    <label for="item5" id="item_label5" class="menu_choice">
+                        <input type="checkbox" name="item5" id="item5">
+                        <span>Add To Cart</span>
+                    </label>
+                </section>
+        
+                <section class="menu_item">
+                    <img src="images/soda_menu.jpg" alt="A lineup of Coca-Cola branded sodas including: Sprite, Coca-Cola, and Diet Coke" width="300">
+                    <h3>Coca-Cola Branded Soft Drink</h3>
+        
+                    <p>
+                        Pair your entree with a refreshing Coca-Cola beverage. Comes in individual and party sized options.
+                        <span>$5.00</span>
+                    </p>
+        
+                    
+                    <label for="item6" id="item_label6" class="menu_choice">
+                        <input type="checkbox" name="item6" id="item6">
+                        <span>Add To Cart</span>
+                    </label>
+                </section>
+            </div>
+            <section id="checkout">
+                <h3>Your Cart</h3>
+                <ul>
+                    <li id="cartMessage">Your Cart is Empty</li>
+                    <li id="pizzaMessage" class="hidden">Gio's Signature Pizza $14.00</li>
+                    <li id="knotMessage" class="hidden">Garlic Knots $7.00</li>
+                    <li id="saladMessage" class="hidden">Caesar Salad $6.00</li>
+                    <li id="wingMessage" class="hidden">Fried Chicken Wings $9.00</li>
+                    <li id="stickMessage" class="hidden">Fried Mozzarella Sticks $7.00</li>
+                    <li id="sodaMessage" class="hidden">1 Litre Soda $5.00</li>
+                </ul>
+                <section id="cart">
+                    <h4 class="hidden">Cart Totals</h4>
+                    <span>Sub-Total:</span>
+                    <span id="subtotal"></span>
+                    <span>Tax Rate:</span>
+                    <span>7.8%</span>
+                    <span>Cart Total:</span>
+                    <span id="total"></span>
+                </section>
+                <button id="order">Order</button>
+            </section>
+            <section id="cartTotal" class="hidden">
+                <div>
+                    <button id="closeMessage">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M18 6l-12 12" />
+                            <path d="M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <h2>Thanks for your Order!</h2>
+                    <p>Your Order should be Ready in 15-20 minutes!</p>
+                    <ul id="cartSummary">
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <section id="rewards">
+            <h2>GIO REWARDS</h2>
+
+            <img src="images/pizza_cheese_pull.jpg" alt="a slice of pizza being pulled from the whole pie" width="300">
+
+            <section>
+                <h3>Become a Gio Rewards member today!</h3>
+        
+                <p id="formInfo">Earn points every time you order online or In-store and get exclusive deals and free entries!</p>
+        
+                <form>
+                    <div>
+                        <label for="fName">First Name<span>*</span></label>
+                        <input type="text" id="fName" class="fName"><p class="hidden">Enter a Valid First Name</p>
+        
+                    <div>
+                        <label for="lName">Last Name<span>*</span></label>
+                        <input type="text" id="lName" class="lName"><p class="hidden">Enter a Valid Last Name</p>
+                    </div>
+        
+                    <div>
+                        <label for="phone" id="phoneLabel">Phone Number<span>*</span></label>
+                        <input type="tel" id="phone" class="phone"><p class="hidden">Enter a Valid Phone Number</p>
+                    </div>
+        
+                    <div>
+                        <label for="email" id="emailLabel">Email<span></span></label>
+                        <input type="email" id="email" class="email"><p class="hidden">Enter a Valid Email Address</p>
+                    </div>
+        
+                    <fieldset>
+                        <legend>Preferred Contact Method<span>*</span></legend>
+        
+                        <div>
+                            <input type="radio" id="prefphone" name="contact" value="prefphone" checked >
+                            <label for="prefphone">Phone</label>
+                        </div>
+        
+                        <div>
+                            <input type="radio" id="prefemail" name="contact" value="prefemail">
+                            <label for="prefemail">Email</label>
+                        </div>
+                    </fieldset>
+
+                    <label id="comment">Comments</label>
+                    <textarea name="comment" id="commment" cols="46" rows="5"></textarea>
+        
+                    <input type="submit" name="submit" id="submit">
+                </form>
+            </section>
+        </section>
+        <section id="formMessage" class="hidden">
+            <div>
+                <button id="closeBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M18 6l-12 12" />
+                        <path d="M6 6l12 12" />
+                      </svg>
+                </button>
+                <h2>Welcome To the Family, <span></span>!</h2>
+                <p>Thanks for becoming a Gio's reward member! Check your email or messages to confirm your membership!</p>
+                <ul id="messageList">
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>FOLLOW US ON SOCIAL MEDIA!</h2>
+
+        <a href="https://www.facebook.com/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg>
+        </a>
+
+        <a href="https://twitter.com/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+            </svg>
+        </a>
+
+        <a href="https://www.instagram.com/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M16.5 7.5l0 .01" />
+            </svg>
+        </a>
+        <p><small>Copyright ©2024 Jonathan Alicea<br>This site is for educational purposes only</small></p>
+    </footer>
+</body>
+</html>

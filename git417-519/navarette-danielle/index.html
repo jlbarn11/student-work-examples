@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Danielle Navarrette">
+    <meta name="description" content="Glow Recipe website project">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Red+Hat+Display:wght@400;600&display=swap" rel="stylesheet">
+    <title>Glow Recipe</title>
+    <link rel="icon" href="images/icon.png">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="header-bar">
+            <h1>Glow Recipe</h1>
+            <div class="darkmode-container">
+                <button class="darkmode-toggle"> Dark mode</button>
+                <button class="lightmode">Light Mode</button>
+            </div>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="#welcome">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <div id="banner-text">
+                <h2>The Best of Glow</h2>
+                <p>We're your go-to brand for efficacious skincare innovations that deliver clinical results & sensorial self-care moments. We make fruit forward, clean formulas for glowing skin. We believe we glow even brighter together.</p>
+                <button>SHOP THE GLOW</button>
+            </div>
+            <div class="image-container">
+                <img src="images/products_main.webp" alt="Glow Recipe skincare product line-up surrounded by fruit with pink background.">
+            </div>
+            
+        </section>
+
+        <section id="shop">
+            <h2>Shop Bestsellers</h2>
+            <div id="shop-items">
+                <div id="product-grid">
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="images/watermelon_toner.webp" alt="Glow Recipe watermelon glow pink juice moisturizer bottle on infinity pink background with clouds.">
+                        </div>
+                        <h3>Watermelon Glow Pink Juice Moisturizer</h3>
+                        <p>A lightweight gel moisturizer that hydrates and soothes. Antioxidants guard against free radicals and repair cells.</p>
+                        <button class="price-btn">
+                            <span class="price">$39</span>
+                            <span class="text">Add to Bag</span>
+                        </button>
+                    </div>
+
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="images/avocado_cleanser.webp" alt="Glow Recipe avocado ceramide moisture barrier cleanser container with green background on top of avocados.">
+                        </div>
+                        <h3>Avocado Ceramide Moisture Barrier Cleanser</h3>
+                        <p>This milky lotion-to-foam cleanser contains ceramide boosters & postbiotics.</p>
+                        <button class="price-btn">
+                            <span class="price">$28</span>
+                            <span class="text">Add to Bag</span>
+                        </button>
+                    </div>
+
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="images/blueberry_bounce.webp" alt="Glow Recipe blueberry bounce gentle cleanser plastic container with purple background surrounded by blueberries.">
+                        </div>
+                        <h3>Blueberry Bounce Gentle Cleanser</h3>
+                        <p>A 3-in-1 bouncy makeup eraser, cleanser, and deep clarifying mask.</p>
+                        <button class="price-btn">
+                            <span class="price">$34</span>
+                            <span class="text">Add to Bag</span>
+                        </button>
+                    </div>
+
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="images/dew_drops.webp" alt="Glow Recipe watermelon glow niacinamide dew drops container on top of watermelon slices with pink background.">
+                        </div>
+                        <h3>Watermelon Glow Niacinamide Dew Drops</h3>
+                        <p>Reveal a dewy glow instantly and over time with this niacinamide-infused highlighting serum.</p>
+                        <button class="price-btn">
+                            <span class="price">$35</span>
+                            <span class="text">Add to Bag</span>
+                        </button>
+                    </div>
+
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="images/guava_eyecream.webp" alt="Glow Recipe guava vitamin c bright eye-gel cream bottle with guava fruit and pink ombre background.">
+                        </div>
+                        <h3>Guava Vitamin C Bright-Eye Gel Cream</h3>
+                        <p>Visibly brighten dark circles and rejuvenate tired, puffy eyes with this potent, yet gentle eye cream.</p>
+                        <button class="price-btn">
+                            <span class="price">$38</span>
+                            <span class="text">Add to Bag</span>
+                        </button>
+                    </div>
+
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="images/watermelon_mask.webp" alt="Glow Recipe watermelon glow AHA night treatment jar on an infinity pink background.">
+                        </div>
+                        <h3>Watermelon Glow AHA Night Treatment</h3>
+                        <p>A powerful, overnight resurfacing treatment that exfoliates, hydrates, and brightens.</p>
+                        <button class="price-btn">
+                            <span class="price">$40</span>
+                            <span class="text">Add to Bag</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="product-cart">
+                    <h3>Your Shopping Bag</h3>
+                    <ul id="cart-list">
+                    </ul>
+                    <button id="remove">Remove</button>
+                    <ul>
+                        <li id="subtotal">Sub-total: <span>$0</span></li>
+                        <li>Tax: <span>7.6%</span></li>
+                        <li>Shipping: <span>$6</span></li>
+                    </ul>
+                    <p id="cart-checkout">Total <span>$0</span></p>
+                    <button id="checkout-button">Checkout</button>
+                </div>
+            </div>
+         </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div id="contactitems">
+                <form id="form" action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                
+                    <label for="firstName">First Name<span>*</span></label>
+                    <input type="text" name="firstName" id="firstName">
+                    <span class="error hidden">This field is required.</span> 
+
+                    <label for="lastName">Last Name<span>*</span></label>
+                    <input type="text" name="lastName" id="lastName">
+                    <span class="error hidden">This field is required.</span> 
+
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" name="email" id="email">
+                    <span class="error hidden">Please enter a valid email.</span> 
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                    <span class="error hidden">Please enter a valid phone number</span>
+ 
+                    <fieldset>
+                        <legend>Contact Method<span>*</span></legend>
+                        <input type="radio" name="contact" value="email" id="prefemail">
+                        <label for="prefemail">Email</label>
+                        <input type="radio" name="contact" value="phone" id="prefphone" checked>
+                        <label for="prefphone">Phone</label>
+                    </fieldset>
+
+                    <label for="myComments">Comments</label>
+                    <textarea name="myComments" id="myComments"></textarea>
+
+                    <button type="submit" id="submit">Submit</button>
+                    <span id="formError" class="error hidden">Double check your form</span>
+                </form>
+                <div id="contact-media">
+                    <div id="contact-social">
+                        <img src="images/contact_form.webp" alt="Girl with dark hair and pink hair clips holding Glow Recipe product over eye and guava fruit over other eye smiling.">
+                        <div id="social-media-logo">
+                                <img src="images/social_media_logos/1.png" alt="Facebook logo">
+                                <img src="images/social_media_logos/2.png" alt="Instagram logo">
+                                <img src="images/social_media_logos/3.png" alt="Youtube logo">
+                                <img src="images/social_media_logos/4.png" alt="TikTok logo">
+                        </div>
+                    </div>
+                    <p>Fruit Forward. Clinically Effective. Glowing Skin.</p>
+                    <img src="images/cruelty-free.png" alt="Official cruelty-free international leaping bunny logo"> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Danielle Navarrette. For education purposes only.</p>
+    </footer>
+</body>
+</html>

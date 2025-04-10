@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Alex Minotto">
+    <meta name="description" content="Pages to Pages Bookstore website where users can browse and purchase second hand books ranging from collectible copies to current titles. Users can also discover new books by looking through and reading short summaries of famous and popular books that are hand picked by us and are constantly being updated and changed. If there are any questions or comments, they can be left in the 'Contact Us' form. This webpage can be viewed in light or dark mode depending on viewer visibility.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script src="scripts.js" defer></script>
+    <title>Pages to Pages Bookstore</title>
+  </head>
+
+  <body>
+    <header id="topPage">
+      <nav>
+        <ul>
+          <li><a href="#topReads">Top Reads</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#contactSection">Contact Us</a></li>
+          <li><button onclick="lightDark()"><img src="mode-03.png" alt="Button that toggles from light mode to dark mode for viewer accessibility and easy readability. The button shows an icon of a sun that is half white and half black."></button></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h1>Pages to Pages Bookstore</h1>
+        <img src="logo-01.png" id="lightModeLogo" alt="Logo of Pages to Pages Boostore, which is two books stacked on top of one another and text that says 'Pages to Pages Bookstore'.">
+        <img src="logo-02.png" id="darkModeLogo" alt="Logo of Pages to Pages Boostore, which is two books stacked on top of one another and text that says 'Pages to Pages Bookstore'.">
+      </div>
+
+      <p id="text">Welcome to Pages to Pages Bookstore.<br>
+        We are a secondhand bookstore stocking a large selection of collectible copies plus current titles.<br>
+        Browse through our collection and pick up a good read.</p>
+    </header>
+
+    <main>
+<!--            Product Section                  -->
+      <article id="productDisplay">
+        <h2 id="topReads">Top Reads</h2>
+
+        <div>
+          <p id="pick1" class="active">fahrenheit 451</p>
+          <p id="pick2">lord of the flies</p>
+          <p id="pick3">in cold blood</p>
+          <p id="pick4">frederick douglass</p>
+        </div>
+
+        <section id="book1" class="selectedProduct">
+          <img src="books/451.jpg" alt="The 60th Anniversary Edition book cover of Fahrenheit 451 written by Ray Bradbury. The cover of the book is red with a black and white graphic illustration of a matchstick box that looks like a book in the center.">
+          <h3>Fahrenheit 451</h3>
+          <p>Ray Bradbury</p>
+          <p>Guy Montag is a fireman. His job is to destroy the most illegal of commodities, the printed book, along with the houses in which they are hidden. Montag never questions the destruction and ruin his actions produce, returning each day to his bland life and wife, Mildred, who spends all day with her television “family.” But when he meets an eccentric young neighbor, Clarisse, who introduces him to a past where people didn’t live in fear and to a present where one sees the world through the ideas in books instead of the mindless chatter of television, Montag begins to question everything he has ever known.</p>
+        </section>
+
+        <section id="book2" class="hideProduct">
+          <img src="books/LordoftheFlies.jpg" alt="The Penguin Classics Deluxe Edition book cover of Lord of the Flies written by William Golding, foreward by Lois Lowry, and introdruction by Stephen King. The cover of the book is a blue side profile illustation of a boy angrily screaming, and red splater around his mouth.">
+          <h3>Lord of the Flies</h3>
+          <p>William Golding</p>
+          <p>At the dawn of the next world war, a plane crashes on an uncharted island, stranding a group of schoolboys. At first, with no adult supervision, their freedom is something to celebrate. But as order collapses, as strange howls echo in the night, as terror begins its reign, the hope of adventure seems as far removed from reality as the hope of being rescued.</p>
+        </section>
+
+        <section id="book3" class="hideProduct">
+          <img src="books/InColdBlood.jpg" alt="The book cover of In Cold Blood written by Truman Capote is an old picture taken in Holcomb, Kansas of the sky and trees.">
+          <h3>In Cold Blood</h3>
+          <p>Truman Capote</p>
+          <p>In Cold Blood is a non-fiction novel that details the event on November 15, 1959. In the small town of Holcomb, Kansas, four members of the Clutter family were savagely murdered by blasts from a shotgun held a few inches from their faces. There was no apparent motive for the crime, and there were almost no clues. Truman Capote reconstructs the murder and the investigation that led to the capture, trial, and execution of the killers, he generates both mesmerizing suspense and astonishing empathy.</p>
+        </section>
+
+        <section id="book4" class="hideProduct">
+          <img src="books/FredD.jpg" alt="The autobiography book cover of I Know Why the Caged Bird Sings written by Maya Angelou and foreword by Oprah Winfrey. The cover of the book is a graphic illustration of a black bird flying with a yellow and orange sunset in the background.">
+          <h3>Narrative of the Life of Frederick Douglass</h3>
+          <p>Frederick Douglass</p>
+          <p>Narrative of the Life of Frederick Douglass is an 1845 memoir and treatise on abolition written by famous orator, brilliant writer, and former slave Frederick Douglass during his time in Lynn, Massachusetts. In this amazing first-hand narrative, he vividly recounts his early years, which were filled with physical abuse, deprivation, and tragedy; his dramatic escapes to the North, recapture, and eventual freedom; his work for the Anti-Slavery Society and influential role in speaking for other African-Americans; his abolitionist campaigns, and crusade for full civil rights for former slaves.</p>
+        </section>
+      </article>
+
+<!--            Shopping Section                  -->
+      <div id="heroImage">
+        <article id="shoppingCart">
+          <h2 id="books">Books</h2>
+          <div id="shopping">
+
+            <section id="b1">
+              <img src="books/451.jpg" alt="The 60th Anniversary Edition book cover of Fahrenheit 451 written by Ray Bradbury. The cover of the book is red with a black and white graphic illustration of a matchstick box that looks like a book in the center.">
+              <h3>Fahrenheit 451</h3>
+              <p>Ray Bradbury</p>
+              <div>
+                <p class="price">$6.10</p>
+                <input type="checkbox" name="box1" id="box1">
+                <label for="box1" id="label1">Quick Add</label>
+              </div>
+            </section>
+
+            <section id="b2">
+              <img src="books/LordoftheFlies.jpg" alt="The Penguin Classics Deluxe Edition book cover of Lord of the Flies written by William Golding, foreword by Lois Lowry, and introdruction by Stephen King. The cover of the book is a blue side profile illustration of a boy angrily screaming, and red splatter around his mouth.">
+              <h3>Lord of the Flies</h3>
+              <p>William Golding</p>
+              <div>
+                <p class="price">$10.13</p>
+                <input type="checkbox" name="box2" id="box2">
+                <label for="box2" id="label2">Quick Add</label>
+              </div>
+            </section>
+
+            <section id="b3">
+              <img src="books/AnimalFarm.jpg" alt="The Penguin Classics book cover of Animal Farm written by George Orwell. The cover of the book is red with a pink pig. Written over the pig is a quote from the book 'All animals are equal, but some animals are more equal than others'.">
+              <h3>Animal Farm</h3>
+              <p>George Orwell</p>
+              <div>
+                <p class="price">$6.54</p>
+                <input type="checkbox" name="box3" id="box3">
+                <label for="box3" id="label3">Quick Add</label>
+              </div>
+            </section>
+
+            <section id="b4">
+              <img src="books/WesternFront.jpg" alt="The book cover of the World War I masterpiece, All Quiet on the Western Front novel, written by Erich Maria Remarque. The cover of the book has an image of an old worn in war helmet.">
+              <h3>All Quiet on the Western Front</h3>
+              <p>Erich Maria Remarque</p>
+              <div>
+                <p class="price">$9.39</p>
+                <input type="checkbox" name="box4" id="box4">
+                <label for="box4" id="label4">Quick Add</label>
+              </div>
+            </section>
+
+            <section id="b5">
+              <img src="books/CagedBirdSings.jpg" alt="The autobiography book cover of I Know Why the Caged Bird Sings written by Maya Angelou and foreword by Oprah Winfrey. The cover of the book is a graphic illustration of a black bird flying with a yellow and orange sunset in the background.">
+              <h3>I Know Why the Caged Bird Sings</h3>
+              <p>Maya Angelou</p>
+              <div>
+                <p class="price">$11.99</p>
+                <input type="checkbox" name="box5" id="box5">
+                <label for="box5" id="label5">Quick Add</label>
+              </div>
+            </section>
+
+            <section id="b6">
+              <img src="books/InColdBlood.jpg" alt="The book cover of In Cold Blood written by Truman Capote is an old picture taken in Holcomb, Kansas of the sky and trees.">
+              <h3>In Cold Blood</h3>
+              <p>Truman Capote</p>
+              <div>
+                <p class="price">$10.29</p>
+                <input type="checkbox" name="box6" id="box6">
+                <label for="box6" id="label6">Quick Add</label>
+              </div>
+            </section>
+
+            <section id="b7">
+              <img src="books/FredD.jpg" alt="The autobiography book cover of I Know Why the Caged Bird Sings written by Maya Angelou and foreword by Oprah Winfrey. The cover of the book is a graphic illustration of a black bird flying with a yellow and orange sunset in the background.">
+              <h3>Frederick Douglass</h3>
+              <p>Frederick Douglass</p>
+              <div>
+                <p class="price">$7.59</p>
+                <input type="checkbox" name="box7" id="box7">
+                <label for="box7" id="label7">Quick Add</label>
+              </div>
+            </section>
+
+            <section id="b8">
+              <img src="books/night.jpg" alt="The autobiography book cover of Night written by nobel peace prize winner, Elie Wiesel.">
+              <h3>Night</h3>
+              <p>Elie Wiesel</p>
+              <div>
+                <p class="price">$8.78</p>
+                <input type="checkbox" name="box8" id="box8">
+                <label for="box8" id="label8">Quick Add</label>
+              </div>
+            </section>
+          </div>
+        </article>
+
+  <!--            Cart                  -->
+        <article id="yourBooks">
+          <h3 id="yourCart">Your Cart</h3>
+          <div>
+            <section id="cart">
+              <h4>Display 'Quick Add' books in cart</h4>
+              <ul id="items"></ul>
+            </section>
+
+            <section id="cartTotal">
+              <h4>Display the price total of the order</h4>
+              <div>
+                <p>subtotal: </p>
+                <p id="subTotal">$0.00</p>
+              </div>
+
+              <div>
+                <p>tax: </p>
+                <p>8.5%</p>
+              </div>
+
+              <div>
+                <p>shipping: </p>
+                <p>$7.00</p>
+              </div>
+
+              <div>
+                <p>total: </p>
+                <p id="total"></p>
+              </div>
+            </section>
+          </div>
+        </article>
+
+<!--            Form                  -->
+        <form>
+          <h2 id="contactSection">Contact Us</h2>
+
+          <label for="name">full name</label>
+          <input type="text" name="name" id="name" required="required" class="input">
+
+          <label for="myEmail">email</label>
+          <input type="email" name="myEmail" id="myEmail" required="required" class="input">
+
+          <label for="myPhone">phone number</label>
+          <input type="tel" name="myPhone" id="myPhone" required="required" class="input">
+
+          <div id="option1">
+            <label class="contact-label" for="email">email</label>
+            <input type="radio" class="contact-input" id="email" name="contact">
+          </div>
+
+          <div id="option2">
+            <label class="contact-label" for="phone">phone</label>
+            <input type="radio" class="contact-input" id="phone" name="contact">
+          </div>
+
+          <label for="myMessage" id="messageBlock">comments</label>
+          <textarea name="myMessage" id="myMessage" required="required"></textarea>
+
+          <input type="submit" name="mySubmit" value="submit" id="submit" class="input">
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <section id="footerLayout">
+        <h4>Contact Information and page anchors</h4>
+        <div id="left">
+          <a href="tel:(207)-033-3881">+44 (0)20 7033 3881</a>
+          <a href="mailto:info@bookstore.com">pagestopages@bookstore.com</a>
+        </div>
+
+        <div id="right">
+          <a href="#topReads">top reads</a>
+          <a href="#books">books</a>
+          <a href="#contactSection">contact us</a>
+          <a href="#topPage">top ^</a>
+        </div>
+      </section>
+
+      <p>this is for educational purposes only</p>
+    </footer>
+  </body>
+</html>

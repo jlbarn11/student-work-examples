@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Ari Faye-->
+        <meta charset="utf-8">
+        <title>Faye Final</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="wrapper">
+        <nav>
+            <h1>ManeTech</h1>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </nav>
+        <main>
+            <section class="clear">
+                <section id=welcome>
+                    <h2>Welcome to ManeTech!</h2>
+                    <p>We are the leaders in luxury prosthetic technology. Our cutting edge products can show you the world through new eyes, put the net at your fingertips, or give you the designer body you’ve always dreamed of. </p>
+                    <ul>
+                        <h3>Features:</h3>
+                        <li>Proprietary firewalls that are virtually hackproof &ast;
+                        </li>
+                        <li>Fully customizable.</li>
+                        <li>Lifetime warranty.</li>
+                        <li>24 hour customer service.</li>
+                    </ul>
+                </section>
+                <img src="images/embeddedcom2.gif" width="600px" class="clear">
+            </section>
+            
+            <img src="images/fullbody.jpg" id="productImage" class="floatleft">
+            <section id="products">
+                <h2>Check Out Our Most Popular Products:</h2>
+                <h3>Full Body Prosthetics: A whole new you.</h3>
+                <ul>
+                    <li>You control the android through VR, no surgery required!</li>
+                    <li>Endless customization options so you can truly make the body of your dreams.</li>
+                    <li>Enjoy features from our other products, like our cybereyes, without having to mod your body.</li>
+                    <li>No AI personality, so you are always you.</li>
+                </ul>
+                <button type ="button" id="eyes">Cybereyes</button>
+                <button type ="button" id="com">Embedded Coms</button>
+                <button type ="button" id="full">Full Body Prosthetics</button>
+            </section>
+           
+            <form novalidate="novalidate" class="clear">
+                <h2>Schedule a Consultation Today</h2>
+                <label for="name">
+                    Name:
+                </label>
+                <input type="text" id="name" name="Name" required="required">
+                <label for="email">
+                    Email:
+                </label>
+                <input type="text" id="email" name="email">
+                <label for="phone">
+                    Phone Number:
+                </label>
+                <input type="number" id="phone" name="phone">
+                <fieldset id="preferred">
+                    <legend>Preferred Mode of Contact:</legend>
+                    <input type="radio" name="preferred" id="emailpref" value="mailpref" />
+                    <label for="thin">Email</label>
+                    <input type="radio" name="preferred" id="phonepref" value="phonepref" />
+                    <label for="thick">Phone</label>
+                 </fieldset>
+                 <br>
+                 <br>
+                 <label for="comments">
+                    Comments:
+                </label>
+                <input type="text" id="comments" name="comments">
+                <input type ="submit" id="submit"></input>
+            </form>
+        </main>
+        <footer>
+            <small>&ast;ManeTech’s ‘virtually hackproof’ firewalls prevent approximately 80% hacking attempts as of 2177. ManeTech is not responsible for hacked products. Please protect yourself from hackers by deactivating your wireless features when not in use and practicing proper safety protocols when accessing a public AR channel. <br>
+            This site is for education purposes only.
+            </small>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

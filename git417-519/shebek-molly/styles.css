@@ -1,0 +1,620 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end reset */
+
+/* root variable */
+
+:root {
+    --body-fonts: 'indie_flowerregular', sans-serif;
+    --head-fonts: 'moonlightregular', 'serif';
+    /* general colors */
+    --black: #000;
+    --white: #fff;
+    --off-white: #F9F9F9;
+    /* light theme colors */
+    --lilac: #C7B3F2;
+    --purple: #C0A3FE;
+    --dark-purple: #696CB9;
+    --baby-blue: #D1ECFF;
+    --baby-pink: #FFD7F4;
+    /* dark theme colors */
+    --dark-blue: #22567B;
+    --dark-magenta: #982E7A;
+    --dark-grey: #2B2C36;
+}
+
+/* end variable declaration */
+
+/* full page styles */
+
+body {
+    background-image: url(imgs/pink-space.jpg);
+    background-size: cover;
+}
+
+#wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* end full page styles */
+
+/* ----- SKIP LINK STYLES ----- */
+/* skip link styles from: https://webaim.org/techniques/css/invisiblecontent/ */
+#skip, .sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+/* end skip styles */
+
+/* header styles */
+
+header {
+    width: 100%;
+    background-color: var(--off-white);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--purple);
+}
+
+h1 {
+    font-size: 75px;
+    font-family: var(--head-fonts);
+    padding: 10px;
+    margin: 15px;
+    margin-bottom: 0;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+h1 a {
+    color: var(--black);
+    text-decoration: none;
+    transition: 2s;
+}
+
+h1 a:hover {
+    color: var(--dark-purple);
+    animation-name: colorshift; /* calls color changing animation on hover */
+    animation-duration: 10s; /* lasts 10seconds */
+    animation-iteration-count: infinite; /* lasts 10seconds */
+    animation-direction: alternate; 
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+}
+
+/*animation for h1 hover */
+
+@keyframes colorshift {
+    0% {color: var(--dark-purple);}
+    50% {color: var(--dark-magenta);}
+    100% {color: var(--dark-purple);}
+}
+
+nav {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+nav li a {
+    font-family: var(--body-fonts);
+    color: var(--black);
+    font-size: 30px;
+    padding: 15px;
+    margin: 5px 15px;
+    transition: 0.5s;
+}
+
+nav li a:hover {
+    color: var(--dark-purple);
+}
+
+nav li {
+    display: inline;
+}
+
+#colorMode {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    width: 80%;
+    height: 60px;
+    justify-self: right;
+    margin: 15px;
+    font-family: var(--body-fonts);
+    background-color: var(--dark-purple);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#colorMode:hover {
+    background-color: var(--dark-grey);
+    cursor: pointer;
+}
+
+/* end header styles */
+
+/* text styles */
+
+h2 {
+    font-size: 60px;
+    font-family: var(--head-fonts);
+    padding: 10px;
+    margin: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 45px;
+    font-family: var(--head-fonts);
+    padding: 10px;
+    margin: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 30px;
+    font-family: var(--head-fonts);
+    padding: 10px;
+    margin: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 20px;
+    font-family: var(--body-fonts);
+    padding: 5px 10px;
+    margin: 5px 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* end text styles */
+
+/* about / intro styles */
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about h2 {
+    grid-column: 1;
+    grid-row: 1;
+    align-self:baseline;
+}
+
+#about p:first-of-type {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#about h3 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self:baseline;
+}
+
+
+#about p:last-of-type {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* end about styles */
+
+/* meet the characters styles */
+
+#cast {
+    background-image: linear-gradient(var(--baby-blue), var(--white));
+    border-top: 2px solid var(--purple);
+    border-bottom: 2px solid var(--purple);
+    margin-top: 10px;
+    height: 830px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bio {
+    display: none;
+    grid-template-columns: 1fr 1.5fr;
+    animation: fadeEffect 1s; /* Fading effect lasts 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+.bio img {
+    grid-row: 1 / 4;
+    grid-column: 1;
+    width: 90%;
+    justify-self: center;
+}
+
+.bio h3 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.bio p:first-of-type {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.bio p:last-of-type {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.bio p {
+    font-size: 24px;
+}
+
+.buttons {
+    display: flex;
+    justify-self: baseline;
+    justify-content: space-evenly;
+}
+
+.buttons button {
+    width: 90px;
+    font-size: 30px;
+    font-family: var(--head-fonts);
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.buttons button:hover {
+    color: var(--dark-purple);
+    cursor: pointer;
+}
+
+.buttons button .active {
+    color: var(--dark-magenta);
+}
+/* end meet the character styles */
+
+/* shop styles */
+
+#shop {
+display: grid;
+grid-template-columns: 2fr 1fr;
+}
+
+#shop h2 {
+    grid-column: 1 / 3;
+}
+
+#items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#items h3 {
+    grid-column: 1 / 3;
+}
+
+.product {
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.product img {
+    width: 85%;
+    display: block;
+    margin: 15px auto;
+}
+
+.product p:last-of-type {
+    font-family: var(--head-fonts);
+    font-size: 25px;
+}
+
+.product button, #checkout {
+    width: 200px;
+    height: 60px;
+    margin: 25px;
+    font-family: var(--body-fonts);
+    background-color: var(--lilac);
+    color: var(--black);
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.product button:hover {
+    background-color: var(--purple);
+    cursor: pointer;
+}
+
+#cart {
+    width: 70%;
+    justify-self: center;
+}
+
+#checkout {
+    background-color: var(--purple);
+}
+
+#checkout:hover {
+    background-color: var(--dark-purple);
+    color: white;
+    cursor: pointer;
+}
+
+#in-cart {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--black);
+}
+
+#total {
+    font-size: 30px;
+}
+
+/* end shop styles */
+
+/* contact form styles */
+
+#contact {
+    background-image: linear-gradient(var(--baby-blue), var(--baby-pink));
+    border-top: 2px solid var(--purple);
+    border-bottom: 2px solid var(--purple);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+form, #userInfo {
+    background-color: white;
+    border-radius: 15px;
+    justify-self: center;
+    width: 80%;
+}
+
+#contact h2 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+#contact p {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+form {
+    grid-column: 1;
+    grid-row: 3;
+    display: block;
+    
+}
+
+#userInfo {
+    grid-column: 2;
+    grid-row: 3;
+    padding-bottom: 15px;
+}
+
+label, legend {
+    font-size: 25px;
+    font-family: var(--body-fonts);
+    display: block;
+    margin: 15px 15px 0 15px;
+}
+
+input, textarea {
+    font-size: 20px;
+    font-family: var(--body-fonts);
+    display: block;
+    height: 50px;
+    width: 90%;
+    max-width: 480px;
+    margin: 0 auto 5px auto;
+    border: none;
+    border-bottom: 2px solid var(--dark-purple);
+    transition: 0.5s;
+}
+
+input:active, textarea:active, input:focus, textarea:focus{
+    border: none;
+    border-bottom: 5px solid var(--dark-purple);
+    outline: none;
+}
+
+input:hover, textarea:hover {
+    border-bottom: 3px solid var(--dark-purple);
+}
+
+textarea {
+    height: 150px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+legend {
+    margin-bottom: 20px;
+}
+
+#prefEmail {
+    grid-column: 1;
+    grid-row: 2;
+    width: 50px;
+    height: 50px;
+}
+
+label[for=prefEmail]{
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#prefPhone {
+    grid-column: 1;
+    grid-row: 3;
+    width: 50px;
+    height: 50px;
+}
+
+label[for=prefPhone]{
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#contact input[type=submit]{
+    background-color: var(--lilac);
+    border: none;
+    border-radius: 5px;
+    font-size: 35px;
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+#contact input[type="submit"]:hover {
+    background-color: var(--dark-purple);
+    color: var(--white);
+}
+
+form span, form div {
+    font-size: 17px;
+    font-family: var(--body-fonts);
+    padding: 5px 10px;
+    margin: 5px auto 40px auto;
+    line-height: 1.5;
+    width: 80px;
+    text-decoration: underline;
+}
+
+/* end contact form styles */
+
+/* footer styles */
+
+footer {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* end footer styles */
+
+/* dark mode styles */
+
+main.dark_mode {
+    background-color: var(--dark-grey);
+    color: white;
+}
+
+p.dark_mode, h1 a.dark_mode, h2.dark_mode, h3.dark_mode, h4.dark_mode, label.dark_mode {
+    color: white;
+}
+
+input[type="text"].dark_mode, input[type='email'].dark_mode, input[type='tel'].dark_mode, textarea.dark_mode {
+    background-color: var(--dark-grey);
+    color: white;
+}
+
+#cast.dark_mode {
+    background-image: linear-gradient(var(--dark-blue), var(--dark-grey));
+}
+
+#contact.dark_mode {
+    background-image: linear-gradient(var(--dark-blue), var(--dark-magenta));
+}
+
+form.dark_mode, #userInfo.dark_mode {
+    background-color: var(--dark-grey);
+}
+
+footer.dark_mode, header.dark_mode {
+    background-color: var(--black);
+    color: white;
+}
+
+nav li a.dark_mode, button.dark_mode {
+    color: var(--white);
+}
+
+input.dark_mode.error, textarea.dark_mode.error {
+    background-color: var(--dark-magenta);
+}
+
+footer a.dark_mode {
+    color: white;
+}

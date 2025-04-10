@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Wright">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/tvm0jtg.css">
+    <link rel="icon" type="image/x-icon" href="Assets/logo.ico">
+    <script src="dji.js" async></script>
+    <title>DJI</title>
+</head>
+<body>
+    <a href="#about" id="skip">Skip to Main Content</a>
+    <header class="darkMain">
+        <div>
+            <h1 class="hidden">DJI</h1>
+            <a href="#"><img src="Assets/darkLogo.png" alt="dji logo" id="logo"></a>
+            <nav>
+                <h2 class="hidden">Menu</h2>
+                <ul>
+                    <li><a href="#about" class="darkText">About</a></li>
+                    <li><a href="#shopHead" class="darkText">Shop</a></li>
+                    <li><a href="#contactHead" class="darkText">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" id="noA">
+                <svg id="noNight" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="noNights darkText w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                </svg> 
+            </a>
+            
+        </div>
+    </header>
+    
+    <main>
+        <div class="darkHead">
+            <img src="Assets/fpv.jpeg" id="hero" alt="drone facing left with black background">
+        </div>
+
+        <div class="darkMain">
+            <section id="about">
+                <h2 class="hidden">About</h2>
+                <section id="abt1">
+                    <h3 class="hidden">Mountains</h3>
+                    <figure>
+                        <img src="Assets/stockDark.jpeg" alt="horizon with rock formations" class="aboutPhoto" id="abtImg1">
+                        <figcaption class="darkText">Photo by <a href="https://youtu.be/D3jyV5eYODI?si=cMikM033pvKReDYG" target="_blank" class="darkText">Gabe Shakour</a> on YouTube</figcaption>
+                    </figure>
+                    <p class="darkText">Discover the pinnacle of unmanned aerial technology with DJI, the global leader in innovative drone solutions.
+                    From the iconic Phantom and Mavic series to the versatile Osmo line of handheld gimbals, our products redefine possibilities in aerial imaging and videography.</p>
+                </section>
+                <section id="abt2">
+                    <h3 class="hidden">Horizon</h3>
+                    <p class="darkText">Whether you're a professional filmmaker capturing stunning vistas or a recreational enthusiast exploring the skies, DJI empowers you to elevate your creativity to new heights.
+                        Join us on our journey to shape the future of imaging technology and unlock endless possibilities in the world of aerial exploration.</p>
+                    <figure>
+                        <img src="Assets/stockDark2.jpeg" alt="horizon with clouds and mountains" class="aboutPhoto" id="abtImg2">
+                        <figcaption class="darkText">Photo by <a href="https://youtu.be/UejhHyAr_WQ?si=d8iysz38WpyWAp5f" target="_blank" class="darkText">Dennis Schmelz</a> on YouTube</figcaption>
+                    </figure>
+                </section>
+            </section>
+        </div>
+
+        <div class="darkMain">
+            <h2 class="darkHead darkText" id="shopHead">Shop</h2>
+            <div id="shop">
+                <section>
+                    <h3 class="darkText">Camera Drones</h3>
+                    <div id="drones">
+                        <h4 class="hidden">Drones</h4>
+                        <section class="darkHead">
+                            <h4 class="darkText">DJI FPV</h4>
+                            <img src="Assets/fpv.png" alt="black drone with triple propellers">
+                            <div class="shopItems">
+                                <p class="darkText"><span class="green">$</span>999</p>
+                                <button type="submit" class="cartBtns darkButton" id="fpv">Add To Cart</button>
+                            </div>
+                        </section>
+                        <section class="darkHead">
+                            <h4 class="darkText">DJI Mini 3</h4>
+                            <img src="Assets/mini3_.png" alt="white drone facing left with two black sensors">
+                            <div class="shopItems">
+                                <p class="darkText"><span class="green">$</span>469</p>
+                                <button type="submit" class="cartBtns darkButton" id="mini3">Add To Cart</button>
+                            </div>
+                        </section>
+                        <section class="darkHead">
+                            <h4 class="darkText">DJI Mavic 3 Pro</h4>
+                            <img src="Assets/mavic3_.png" alt="large grey drone">
+                            <div class="shopItems">
+                                <p class="darkText"><span class="green">$</span>2,199</p>
+                                <button type="submit" class="cartBtns darkButton" id="mavic3">Add To Cart</button>
+                            </div>
+                        </section>
+                        <section class="darkHead">
+                            <h4 class="darkText">DJI Mini 2</h4>
+                            <img src="Assets/mini2.png" alt="small white drone with rectangular camera">
+                            <div class="shopItems">
+                                <p class="darkText"><span class="green">$</span>399</p>
+                                <button type="submit" class="cartBtns darkButton" id="mini2">Add To Cart</button>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="darkText">Action Cameras</h3>
+                    <section id="cams">
+                        <h4 class="hidden">Cams</h4>
+                        <section class="darkHead">
+                            <h4 class="darkText">DJI Osmo Action 4</h4>
+                            <img src="Assets/osmo4_.png" alt="camera with small lcd screen and circular lens">
+                            <div class="shopItems">
+                                <p class="darkText"><span class="green">$</span>299</p>
+                                <button type="submit" class="cartBtns darkButton" id="osmo4">Add To Cart</button>
+                            </div>
+                        </section>
+                        <section class="darkHead">
+                            <h4 class="darkText">DJI Osmo Pocket 3</h4>
+                            <img src="Assets/osmoPocket.png" alt="stick camera with vertical screen and gimbal">
+                            <div class="shopItems">
+                                <p class="darkText"><span class="green">$</span>519</p>
+                                <button type="submit" class="cartBtns darkButton" id="osmoPocket">Add To Cart</button>
+                            </div>
+                        </section>
+                        <section class="darkHead">
+                            <h4 class="darkText">DJI Osmo Action 3</h4>
+                            <img src="Assets/osmo3.png" alt="sise view of camera with small screen and circular lens">
+                            <div class="shopItems">
+                                <p class="darkText"><span class="green">$</span>199</p>
+                                <button type="submit" class="cartBtns darkButton" id="osmo3">Add To Cart</button>
+                            </div>
+                        </section>
+                        <section class="darkHead">
+                            <h4 class="darkText">DJI Osmo Pocket 2</h4>
+                            <img src="Assets/osmo2.png" alt="stick camera slanted diagonally">
+                            <div class="shopItems">
+                                <p class="darkText"><span class="green">$</span>279</p>
+                                <button type="submit" class="cartBtns darkButton" id="osmo2">Add To Cart</button>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+
+                <section id="cart" class="darkText">
+                    <h3 class="hidden">Cart</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="cartSVG" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="shopHide w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <section class="darkBorder">
+                        <h4 class="hidden">Cart Contents</h4>
+                        <ul id="cartItems">
+                            <li id="hide">Cart Empty</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Sub-Total</h4>
+                        <p id="subTotal">$ 0.00</p>
+                    </section>
+                    <section id="taxRate" class="shopHide">
+                        <h4>Tax Rate</h4>
+                        <p>7.8% Tax</p>
+                    </section>
+                    <section id="shipping" class="shopHide">
+                        <h4>Shipping</h4>
+                        <p>Flat $15</p>
+                    </section>
+                    <section class="shopHide">
+                        <h4>Cart Total</h4>
+                        <p id="cartTotal">$ 0.00</p>
+                    </section>
+                    <button type="submit" id="checkOut" class="darkButton">Check Out</button>
+                </section>
+            </div>
+        </div>
+        
+        <div id="shopOverlay"></div>
+        <section id="shopModal">
+            <div id="shopModalHead">
+                <h3>Thank You!</h3>
+                <svg id="shopModalBtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
+            </div>
+            <p id="shopModalInfo"></p>
+        </section>
+        
+        <div class="darkMain">
+            <section>
+                <h2 class="darkText darkHead" id="contactHead">Contact Us</h2>
+                <div id="contact">
+                    <section id="contactForm">
+                        <h3 class="darkText">Have Feedback?</h3>
+                        <form>
+                            <label for="myFirst" class="darkText">First Name<span class="required">*</span></label>
+                            <input type="text" name="myFirst" id="myFirst" autocomplete="given-name" required>
+                            <div id="fNameFormErrors" class="errorTxt hide"></div>
+                            <label for="myLast" class="darkText">Last Name<span class="required">*</span></label>
+                            <input type="text" name="myLast" id="myLast" autocomplete="family-name" required>
+                            <div id="lNameFormErrors" class="errorTxt hide"></div>
+                            <label for="myPhone" class="darkText" id="phone">Phone<span class="required">*</span></label>
+                            <input type="tel" name="myPhone" id="myPhone" autocomplete="tel" required>
+                            <div id="phoneFormErrors" class="errorTxt hide"></div>
+                            <label for="myEmail" class="darkText" id="email">Email</label>
+                            <input type="email" name="myEmail" id="myEmail" autocomplete="email">
+                            <div id="emailFormErrors" class="errorTxt hide"></div>
+                            <fieldset class="darkText">
+                                <legend>Preferred Contact Method<span class="required">*</span></legend>
+                                <input type="radio" name="contactPref" id="prefPhone" checked>
+                                <label for="prefPhone">Phone</label>
+                                <input type="radio" name="contactPref" id="prefEmail">
+                                <label for="prefEmail">Email</label>
+                            </fieldset>
+                            <label for="myMessage" class="darkText">Message<span class="required">*</span></label>
+                            <textarea name="myMessage" id="myMessage" required></textarea>
+                            <div id="messageFormErrors" class="errorTxt hide"></div>
+                            <button type="submit" name="mySubmit" id="mySubmit" class="darkButton">Submit</button>
+                        </form>
+                    </section>
+
+                    <section id="socials">
+                        <h2 class="hidden">Socials</h2>
+                        <figure>
+                            <img src="Assets/stockDark3.webp" alt="drone shot of trees and water" id="contactImg">
+                            <figcaption class="darkText">Photo By <a href="https://www.johandroneadventures.com/" class="darkText" target="_blank">Johan</a></figcaption>
+                        </figure>
+                        <section>
+                            <h3 class="darkText">Connect With Us!</h3>
+                            <div id="socialSVG">
+                                <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
+                                  </svg></a>
+                                <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                                    <path d="M10 9l5 3l-5 3z" />
+                                </svg></a>
+                                <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                </svg></a>
+                                <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                    <path d="M16.5 7.5l0 .01" />
+                                </svg></a>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <div id="formOverlay"></div>
+        <section id="formModal">
+            <div id="formModalHead">
+                <h3>Thank You!</h3>
+                <svg id="formModalBtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
+            </div>
+            <p id="formModalInfo"></p>
+        </section>
+    </main>
+    <footer>
+        <div id="footerDiv" class="darkText darkHead">
+            <p><small>Copyright &copy;2024 Alex Wright</small></p>
+        </div>
+    </footer>
+</body>
+</html>

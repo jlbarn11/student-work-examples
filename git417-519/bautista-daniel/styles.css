@@ -1,0 +1,330 @@
+/*------------------------------GLOBAL STYLES------------------------------*/
+* {
+	line-height: 1.5;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper {
+	width: 1280px;
+	margin: 30px auto 0 auto;
+}
+
+p {
+	font-size: 22px;
+	color: black;
+}
+
+
+/*------------------------------HEADER & NAV------------------------------*/
+#xbox-logo {
+	color: #107C10;
+	font-size: 140px;
+}
+
+#xbox-logo:hover {
+	color: #9BF00B;
+}
+
+#dark-mode-btn {
+	position: absolute;
+	top: 2%;
+	right: 5%;
+	border-radius: 50px;
+	border: 5px solid white;
+	color: white;
+	font-size: 30px;
+	background-color: black;
+	cursor: pointer;
+}
+
+#dark-mode-btn:hover {
+	border: 5px solid black;
+	color: black;
+	background-color: white;
+}
+
+nav {
+	font-size: 25px;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0 auto;
+	padding-top: 1em;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav li {
+	display: block;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav li a {
+	color: black;
+}
+
+nav a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*------------------------------MAIN------------------------------*/
+body {
+	background-color: white;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+	font-size: 50px;
+}
+
+img {
+	width: 1280px;
+}
+
+h2 {
+	font-size: 30px;
+	color: black;
+}
+
+.image-h2 {
+	position: relative;
+	text-align: center;
+}
+
+.image-h2 h2 {
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*--------------------GAMES SECTION--------------------*/
+#game-btns {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#game-btns li {
+	display: block;
+	width: max-content;
+	padding: 10px 20px;
+	margin: 20px 20px;
+	font-size: 22px;
+	border-radius: 50px;
+	cursor: pointer;
+	background-color: #107C10;
+	color: white;
+}
+
+#game-btns li:hover {
+	background-color: #9BF00B;
+	color: black;
+	font-weight: bold;
+}
+
+.game-section {
+    padding: 20px 40px 40px;
+    max-width: 1280px;
+    display: flex;
+    margin: 0 auto;
+	color: black;
+}
+
+.game-section h2 {
+	display: none;
+}
+
+.game-section img {
+    margin: 20px 30px 0 0;
+    width: 350px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.game-section h3, p {
+    flex: 1 1 auto;
+}
+
+.game-section h3 {
+    font-size: 25px;
+}
+/*--------------------NUMBER GAME--------------------*/
+#number-game input {
+	display: block;
+	border: solid;
+	border-width: 5px;
+	text-align: center;
+	padding: 30px 40px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 40px;
+	width: 50px;
+}
+
+#guess-btn {
+	display: block;
+	width: max-content;
+	font-size: 20px;
+	border-radius: 50px;
+	border: none;
+	padding: 10px 20px;
+	margin: 0 auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: #107C10;
+	color: white;
+	cursor: pointer;
+}
+
+#guess-btn:hover {
+	background-color: #9BF00B;
+	color: black;
+	font-weight: bold;
+}
+
+#game-msg {
+	color: #FF2400;
+	font-weight: bold;
+	text-align: center;
+	font-size: 40px;
+}
+/*--------------------FORM--------------------*/
+form {
+	margin: 0 auto;
+	width: 800px;
+	color: black;
+}
+
+form input, form textarea {
+	display: block;
+	width: 100%;
+	border-color: black;
+	border-width: 2px;
+	border-radius: 50px;
+	font-size: 25px;
+	padding: 10px 15px;
+	margin-bottom: 1em;
+}
+
+form label {
+	font-size: 22px;
+	color: black;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+
+input[type="radio"] {
+	width: 1em;
+	height: 1em;
+}
+
+#radio-btns {
+	display: grid;
+	grid-template-columns: min-content auto;
+	grid-gap: 10px;
+}
+
+#radio-btns h4 {
+	display: none;
+}
+
+#submit_button {
+	width: max-content;
+	font-size: 25px;
+	border-radius: 50px;
+	border: none;
+	padding: 10px 20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: #107C10;
+	color: white;
+}
+
+#submit_button:hover {
+	background-color: #9BF00B;
+	color: black;
+	font-weight: bold;
+}
+
+#formMsgs h4 {
+	display: none;
+}
+
+#formMsgs ul li {
+	display: none;
+	list-style-type: none;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.error {
+	color: #FF2400;
+}
+
+#successMessage {
+	color: #0096FF;
+}
+
+/*------------------------------FOOTER------------------------------*/
+footer {
+	text-align: center;
+	padding: 0.25em;
+	background-color: #505050;
+}
+
+footer ul {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 75px;
+	list-style-type: none;
+}
+
+footer h3 {
+	color: white;
+}
+
+footer a {
+	color: #9BF00B;
+}
+
+footer a:hover {
+	color: white;
+}
+
+footer p {
+	font-style: italic;
+	font-size: 15px;
+	color: white;
+}
+
+
+/*------------------------------DARK MODE STYLES------------------------------*/
+.dark-body {
+	background-color: #2C2C2C;
+}
+
+.dark-text {
+	color: white;
+}
+
+.dark-inputs {
+	border-color: white;
+	background-color: #2C2C2C;
+}

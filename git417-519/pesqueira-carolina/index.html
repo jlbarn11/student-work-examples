@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cielo Coffeeshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="landing-page" class="light-landing-page">
+        <h1>cielo coffee</h1>
+        <p class="title-heading">savor the taste of heaven with cielo coffee</p>
+
+        <!-- moon toggle for light and dark mode svg -->
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="moon" viewBox="0 0 16 16" >
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="sun sun-gone" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+          </svg>
+    </header>
+
+    <section id="intro-section">
+        <div>
+            <img src="https://images.unsplash.com/photo-1574914629385-46448b767aec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGF0dGV8ZW58MHx8MHx8&w=1000&q=80" alt="" width="300" height="400">
+        </div>
+
+        <div>
+            <h2>Our coffee is one of a kind.</h2>
+            <p>coffee beans harvested from Ethiopia and Mexico.</p>
+            <div class ="buttons">
+                <button class="dark-btn">Shop</button>
+                <button class="dark-btn">About</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="product-display">
+        <h3>take a look at our seasonal selections!</h3>
+        <ul class="drink-list">
+          <li><button class="lav-latte">Latte</button></li>
+          <li><button class="tonic">Espresso Tonic</button></li>
+          <li><button class="matcha">Matcha</button></li>
+          <li><button class="tea">Tea</button></li>
+          <li><button class="espresso">Espresso</button></li>
+        </ul>
+      
+        <div class="product-grid">
+          <div class="drink-picture"></div>
+          <div>
+            <h4 class="product-name">Lavender Latte</h4>
+            <p class="product-info">lavender, espresso, oatmilk, dash of vanilla</p>
+          </div>
+        </div>
+      </section>
+
+       
+
+    <section id ="contact-game">
+        <h3>ask away!</h3>
+<div class="form-colums">
+        <form class="contact-us">
+            <label for="full-name">Full Name *</label>
+            <input type="text" id="full-name" name="full-name" class="default">
+        <br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="default">
+        <br>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="default">
+        
+            <label for="comments">Comments *</label>
+            <textarea id="comments" name="comments" required></textarea>
+        
+            <fieldset>
+            <legend>Contact Preference *</legend>
+            <input type="radio" id="phone-pref" name="contact-pref" value="phone" required checked>
+            <label for="phone-pref">Phone</label>
+        
+            <input type="radio" id="email-pref" name="contact-pref" value="email" required>
+            <label for="email-pref">Email</label>
+            </fieldset>
+        
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        
+      <div class="play-game">
+        <h3> Play to win a free drink! </h3>
+
+        <form class="user-game">
+        <label for="game"></label>
+        <input type="text" id="game">
+        <input type="submit" value="Submit" id="game-submit">
+        <p class="result"></p>
+    
+        </form>
+      </div>
+</div>
+    </section>
+
+
+<footer>
+    <h4>cielo coffee</h4>
+    <p>*for educational purposes only*</p>
+</footer>
+
+<script src="script.js"  defer ></script>
+</body>
+</html>

@@ -1,0 +1,590 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Styles for site start here*/
+
+:root{
+    font-size: 16px;
+    --white: #fff;
+    --red: #D14C4C;
+    --dk-red: #AB1F1F;
+    --dkr-red: #770A0A;
+    --lt-gray: #E4E4E4;
+    --black: #000;
+}
+
+body{
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer{
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+.hidden{
+    position: absolute;
+    visibility: hidden;
+    left: -1000px;
+}
+
+/*header*/
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+header #logo{
+    grid-column: 1/2;
+    width: 350px;
+}
+
+header button{
+    margin: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    border: none;
+    padding: 1rem;
+    background-color: var(--dk-red);
+    color: var(--white);
+}
+
+
+header button:hover{
+    background-color: var(--dkr-red);
+}
+
+#banner img{
+    width: 100%;
+    margin:  -3rem 0 2rem 0;
+}
+
+nav{
+    position: relative;
+    top: 10rem;
+    grid-column: 2/-1;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+nav li{
+    text-align: center;
+    list-style-type: none;
+    background-color: var(--dk-red);
+    border-radius: 0.75rem;
+    padding: 1.25rem .5rem;
+    width: 15rem;
+}
+
+nav li:hover{
+    background-color: var(--dkr-red);
+}
+
+nav a{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bolder;
+	text-decoration: none;
+	color: var(--white);   
+}
+
+/*Deals*/
+
+#deals{
+    background-color: var(--red);
+    display:  grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 1.5rem;
+}
+#deals h2{
+    grid-column: 1/-1;
+    font-size: 48px;
+    color: var(--white);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#deals img{
+    grid-column: 1/2;
+    width: 650px;
+    box-shadow: -0.5rem 1rem 1.25rem var(--dk-red);
+}
+#deals div{
+    grid-column: 2/-1;
+    padding: 2rem 5rem;
+    background-color: var(--red);
+}
+#deals p{
+    margin: 2rem 0 2rem 0;
+    color: var(--white);
+    text-align: right;
+    font-size: 28px;
+}
+#deals small{
+    font-weight: lighter;
+    display: block;
+    margin: 8rem 0 2rem 0;
+    color: var(--white);
+    text-align: right;
+    font-size: 14px;
+}
+#deals h3{
+    color: var(--white);
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+    font-size: 40px;
+}
+#deals span{
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+#deals button {
+    position: relative;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--dk-red);
+    padding: 1rem 3.5rem;
+    border-radius: 0.75rem;
+    left: 180px;
+    border: none;
+}
+
+#deals button:hover {
+    background-color: var(--dkr-red);
+}
+
+/*Menu*/
+
+#menu h2{
+    grid-column: 1/-1;
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 5rem 0 1rem;
+}
+
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+#menu div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu_item img{
+    width: 300px;
+}
+.menu_item{
+    margin: .5rem;
+}
+
+.menu_item h3{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1.5rem;
+}
+
+.menu_item p span{
+    display: block;
+    position: relative;
+    top: 45px;
+    font-size: 24px;
+    text-align: right;
+    font-weight: bold;
+    margin: 1.5rem 0;
+}
+
+.menu_item p{
+    font-size: 18px;
+    margin: 1rem;
+}
+.menu_choice{
+    display: block;
+    background-color: var(--dk-red);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    border-radius: .75rem;
+    margin-top: 3rem;
+}
+
+.menu_choice:hover{
+    background-color: var(--dkr-red);
+}
+
+#checkout{
+    background-color: var(--red);
+    height: fit-content;
+    margin: .5rem 0 0 1.5rem;
+}
+#checkout h3{
+    font-size: 36px;
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    margin: 3rem 0 2rem;
+}
+
+#checkout li{
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-left: none;
+    border-right: none;
+    padding: 1.5rem 2rem;
+}
+
+#cart{
+    margin: 1rem;
+}
+
+#cart span{
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    color: var(--white);
+    margin: .5rem 2rem;
+}
+
+
+#checkout button {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--dk-red);
+    padding: 2rem 7.1rem;
+    border: none;
+}
+
+#checkout button:hover {
+    background-color: var(--dkr-red);
+}
+
+/*Form*/
+
+#rewards{
+    background-color: var(--red);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem 0;
+}
+
+#rewards h2{
+    grid-column: 1/-1;
+    font-size: 48px;
+    color: var(--white);
+    font-weight: bolder;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#rewards img{
+    height: 1000px;
+    width: auto;
+    margin: 0 3rem 4rem;
+    box-shadow: -0.5rem 1rem 1.25rem var(--dk-red);
+}
+
+#rewards section{
+    background-color: var(--white);
+    margin: 0 3rem 4rem;
+    box-shadow: -0.5rem 1rem 1.25rem var(--dk-red);
+}
+#rewards section.dk_mode{
+    background-color: var(--black);
+}
+#rewards h3{
+    margin: 1rem;
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#formInfo{
+    margin: 3rem 4rem;
+    font-size: 20px;
+}
+
+#rewards form{
+    margin: 0 4rem;
+}
+form div input{
+    font-size: 18px;
+    display: block;
+    padding: .5rem 9rem .5rem .5rem;
+    background-color: var(--lt-gray);
+    border: none;
+    margin-bottom: 1rem;
+}
+
+form span{
+    color: var(--red);
+    font-weight: bold;
+}
+
+form p{
+    color: var(--red);
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+#rewards textarea{
+    display: block;
+    max-width: 100%;
+    line-height: 1.5;
+    background-color: var(--lt-gray);
+    border: none;
+    padding: .5rem;
+}
+
+#rewards #submit{
+    border: none;
+    display: block;
+    margin: 2rem .5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--dk-red);
+    padding: 1.5rem 8rem;
+    border-radius: .75rem;
+}
+
+#rewards #submit:hover{
+    background-color: var(--dkr-red);
+}
+
+fieldset{
+    display: flex;
+    margin: 2rem 1.5rem 2rem 0;
+    border: 5px solid var(--lt-gray);
+    padding: 1rem 1rem;
+}
+
+fieldset label{
+    font-size: 18px;
+}
+
+form label{
+    font-weight: bold;
+    font-size: 18px;
+}
+form legend{
+    font-weight: bold;
+}
+fieldset div{
+    display: flex;
+    margin: auto 2rem;
+    font-weight: bold;
+    accent-color: var(--red);
+}
+
+
+/*footer styles*/
+
+footer{
+    background-color: var(--red);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+}
+footer h2{
+    font-size: 36px;
+    color: var(--white);
+    font-weight: bolder;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+footer svg{
+    margin: 2rem 5rem;
+}
+
+footer small{
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+/*Pop-Ups*/
+
+#formMessage{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#formMessage div{
+    color: white;
+    position: fixed;
+    top: 25%;
+    left: 34%;
+    background-color: var(--red);
+    padding: 3rem;
+    width: 550px;
+    height: 300px;
+}
+
+#formMessage h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 1.5rem;
+
+}
+#formMessage p{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#formMessage ul{
+    margin: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+}
+#formMessage button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background-color: var(--dk-red);
+    margin: .5rem;
+}
+#formMessage button:hover{
+    background-color: var(--dkr-red);
+}
+
+
+#cartTotal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#cartTotal div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    background-color: var(--red);
+    padding: 3rem;
+    width: 550px;
+    height: auto;
+}
+
+#cartTotal h2{
+    grid-column: 1/-1;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 1.5rem;
+
+}
+#cartTotal p{
+    grid-column: 1/-1;
+    font-size: 16px;
+    font-weight: normal;
+}
+#cartTotal ul{
+    grid-column: 1/-1;
+}
+
+#cartTotal li{
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+}
+#cartTotal button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background-color: var(--dk-red);
+    margin: .5rem;
+}
+#cartTotal button:hover{
+    background-color: var(--dkr-red);
+}
+/*Misc Styles*/
+
+.dk_mode{
+    background-color: var(--black);
+    color: var(--white);
+}

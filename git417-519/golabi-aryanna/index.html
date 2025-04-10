@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Niche - Plants</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico.png">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="hidden">Niche Plants</h1><!--hide in CSS needed for usability-->
+      <nav>
+        <h2 class="hidden">Main navigation</h2><!--hide in CSS needed for usability-->
+        <button id="lightModeButton"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e3e4e0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="12" cy="12" r="4" />
+          <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+        </svg></button><!--KEEP TRACK FOR JAVASCRIPT-->
+        <button id="darkModeButton" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e3e4e0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+        </svg></button><!--KEEP TRACK FOR JAVASCRIPT-->
+        <ul>
+          <li><a href="#"><img src="favicon-logo.png" alt="leaf"></a></li>
+          <li><a href="#featuredProductSection">Plants</a></li>
+          <li><a href="#guessingGameSection">Coupon Game</a></li>
+          <li><a href="#contactSection">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img id="homeHero" src="text-plant-5.png" alt="Plants for beginners and pros."><!--img made in photoshop using unsplash photo-->
+      <!--Start about section-->
+      <div id="aboutSection">
+        <section class="sectionChange">
+          <img src="a.jpg" alt="plant variety."><h2 >Welcome to Niche!</h2><!--unsplash photo-->
+          <p>Niche is a place for people to explore, learn and be inspired by plants. 
+            The motivation was simple, to make choosing the right houseplant easier. Since opening our doors in 2013, 
+            in Boston's South End, we have been focused on bringing plants into people's lives, and giving our customers the proper 
+            information on how to care for them.</p>
+        </section><!--end about-->
+      </div><!--end div    MIGHT DO THIS FOR ALL SECTIONS KINDA LOOKS TACKY-->
+      <!--start products-->
+      <div id="featuredProductSection">
+        <section class="sectionChange spacing">
+          <h2>Shop Plants</h2><!--make sure there is an h tag for each section-->
+          <section id="featProdBtns">
+            <h3 class="hidden">Featured Product Buttons</h3><!--hide in CSS needed for valid HTML-->
+            <button id="cactusSectionButton">Indoor Cacti</button>
+            <button id="succulentSectionButton">Indoor Succulents</button>
+            <button id="flowerSectionButton">Indoor Flowers</button>
+          </section>
+          <!--start product 1-->
+          <section id="cactusSection" class="currentProduct">
+            <h3>Indoor Cacti</h3>
+            <img src="Cacti.jpg" alt="Potted Cacti."><!--unsplash photo-->
+            <p>Cactus (Cacti) will steal your heart with their charming, prickly forms and showy flowers. 
+              They require some caution when handling, but these super low maintenance plants can thrive indoors with bright sun, 
+              little water, and proper drainage. As the stunning products of harsh, arid climates, cacti are both the pinnacle of succulent 
+              perfection for enthusiasts and easy-to-grow starter plants for beginners.<br><br>For price inquiries, please contact us!</p>
+          </section>
+          <!--start product 2-->
+          <section id="succulentSection" class="hidden">
+            <h3>Indoor Succulents</h3>
+            <img src="Succulent.jpg" alt="Potted Succulents."><!--unsplash photo-->
+            <p>These succulents are ideal for use in your home or office. They can tolerate indoor conditions better than other succulents 
+              and will add life to desks, tables, centerpieces, and window sills without extensive maintenance.<br><br>For price inquiries, please contact us!</p>
+          </section>
+          <!--start product 3-->
+          <section id="flowersSection" class="hidden">
+            <h3>Indoor Flowers</h3>
+            <img src="Flowers.jpg" alt="Potted Flowers."><!--unsplash photo-->
+            <p>Not only are our potted flowers and flowering plants perfectly packaged, but they're also ideal gifts for anyone from a colleague
+              to a spouse. They also come with a 14-day freshness guarantee so you really can't go wrong.<br><br>For price inquiries, please contact us!</p>
+          </section>
+        </section><!--end all products-->
+      </div>
+      <!--start coupon guessing game section NEEDS RANDOM NUMBER JAVASCRIPT-->
+      <div id="guessingGameSection">
+        <section class="sectionChange">
+          <h2>Guess to win!</h2>
+          <form id="gameForm"><!--must be a form because its accepting inout from user-->
+            <label for="gameInput"> Enter a number between 1 and 10 for a chance to win a prize!</label><br>
+            <input type="number" id="gameInput" name="gameInput" required><br>
+            <p id="gameError" class="hidden">Please enter a number between 1 and 10.</p>
+            <button id="gameSubmit">Take a Chance!</button>
+            <p id="gameOutput"></p>
+          </form>
+        </section><!--end coupon-->
+      </div>
+      <!--start contact form-->
+      <div id="contactSection">
+        <section class="sectionChange">
+          <h2>Contact Us!</h2> 
+          <img id="fix" src="b.jpg" alt="leafy plant."><!--unsplash photo-->
+          <form id="contactForm">
+            <label for="fullNameInput">Full Name</label><br>
+            <p id="contactFormNameErrorMsg" class="message hidden">Please enter your first and last name here.</p>
+            <input type="text" id="fullNameInput" name="fullNameInput" placeholder="First Last"><br><!--This is index 0-->
+            <label for="phoneInput">Phone Number</label><br>
+            <p id="contactFormPhoneErrorMsg" class="message hidden">Please enter your phone number here.</p>
+            <input type="tel" id="phoneInput" name="phoneInput" placeholder="0123456789"><br><!--This is index 1-->
+            <label for="emailInput">Email Address</label><br>
+            <p id="contactFormEmailErrorMsg" class="message hidden">Please enter your email address here.</p>
+            <input type="email" id="emailInput" name="emailInput" placeholder="Email@domain.com"><br><!--This is index 2-->
+            <!--radio buttons need to be in fieldset-->
+            <fieldset>
+              <legend>Contact preference:</legend><br>
+              <p id="contactFormRadioErrorMsg" class="message hidden">Please choose your preferred method of contact.</p>
+              <input type="radio" name="prefContactInput" id="prefContactIsPhone" value="Phone" required checked>
+              <label for="prefContactIsPhone">Phone</label>
+              <input type="radio" name="prefContactInput" id="prefContactIsEmail" value="Email" required>
+              <label for="prefContactIsEmail">Email</label><br>
+            </fieldset><!--end fieldset-->            
+            <br><label for="commentsInput">Comments</label><br>
+            <p id="contactFormCommentsErrorMsg" class="message hidden">Please enter any comments or questions here.</p>
+            <textarea id="commentsInput" name="commentsInput" rows="5" cols="50" placeholder="Leave us a message here..."></textarea><br><!--This is index 4 LAST ONE-->
+            <button id="contactFormSubmit">Submit</button>
+          </form>
+          <!--display thank you message THIS MIGHT NEED TO BE AN EMPTY PLACE FOR OBJECT MAP    NEEDS HELP!!!-->
+          <section id="formSuccess" class="hidden">
+            <h3>All Done!</h3>
+            <p>Thank you for contacting us! Somone will be in touch with you soon.</p>
+            <p id="formSubmission"></p><!--this should have talked to an object map similar to game section-->
+          </section>
+          
+        </section>
+      </div>
+    </main><!--end main-->
+    <!--start footer-->
+    <footer>
+      <small>Copyright &copy; Niche 2022</small>
+      <section id="socialMedia"><h3 class="hidden">social media</h3></section>
+    </footer><!--end footer-->
+  </body><!--end body-->
+</html>

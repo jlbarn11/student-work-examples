@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GIT 417 Final Project, an AMD Ryzen website."
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/lbt4zdy.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js" defer></script>
+    <title>AMD Ryzen</title>
+  </head>
+
+  <body class="mx-auto dark">
+    <header class="w-full">
+      <nav
+        class="grid grid-rows-2 sm:flex p-6 w-full place-items-center sm:items-center sm:justify-between text-center max-w-[1280px] mx-auto"
+      >
+        <div class="flex">
+          <img src="assets/logo.webp" class="min-w-40 w-40" alt="" />
+          <ul class="flex items-center flex-wrap">
+            <li class="mx-2 text-xl hover:underline decoration-orange-700">
+              <a href="#ryzen7000">Products</a>
+            </li>
+            <li class="mx-2 text-xl hover:underline decoration-orange-700">
+              <a href="#products">FAQ</a>
+            </li>
+            <li class="mx-2 text-xl hover:underline decoration-orange-700">
+              <a href="#faq">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-4">
+          <img
+            src="assets/dark-light.png"
+            alt="dark and light mode switcher"
+            class="w-16 dm-lm cursor-pointer"
+          />
+          <p
+            class="text-xl bg-orange-700 font-bold rounded-full py-4 px-6 cartIcon cursor-pointer relative text-4xl"
+          >
+            Cart
+          </p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="relative block hero">
+        <img
+          src="assets/hero.webp"
+          alt=""
+          class="w-full max-w-[1280px] relative mx-auto"
+        />
+        <section
+          class="absolute top-1 w-full p-6 sm:top-6 max-w-[1280px] mx-auto left-0 right-0"
+        >
+          <div class="bg-black/50 w-fit ml-0 p-2" id="hero">
+            <h2 class="text-3xl mb-4 sm:text-4xl">Engineered for Excellence</h2>
+            <p class="text-md max-w-2xl sm:text-xl w-full">
+              Conquer the most resource-intensive tasks with the substantial
+              performance enhancement provided by AMD Ryzen 7000X3D Series
+              processors.
+            </p>
+          </div>
+          <div class="flex gap-4 mx-0 mt-4 items-center">
+            <a
+              href="#products"
+              class="bg-orange-700 rounded w-48 h-12 text-xl flex items-center justify-center hover:bg-orange-600"
+              >Buy Now</a
+            >
+            <a
+              href="#faq"
+              class="bg-black rounded w-48 h-12 text-xl flex items-center justify-center hover:bg-gray-900"
+              >More Info</a
+            >
+          </div>
+        </section>
+      </div>
+      <section id="ryzen7000" class="grid grid-cols-2 items-center">
+        <div class="bg-[#484745] w-full col-span-2">
+          <h2
+            class="p-6 text-2xl col-start-1 col-end-3 font-bold w-full block max-w-[1280px] mx-auto"
+          >
+            WHERE INNOVATION MEETS EXCEPTIONAL PERFORMANCE
+          </h2>
+        </div>
+        <div
+          class="flex col-start-1 col-end-3 py-6 items-center max-w-[1280px] mx-auto w-full justify-between"
+        >
+          <img src="assets/r7000.avif" alt="" />
+          <p class="text-xl p-6">
+            All rise for the undeniable king of gaming. Three new AMD Ryzen 7000
+            Series processors with AMD 3D V-Cache™ technology for a massive
+            gaming performance boost. With the introduction of the new Ryzen 9
+            7950X3D and Ryzen 9 7900X3D, AMD combines its top-end processors
+            with up to 144MB of on-chip memory. This means that enthusiasts can
+            harness the power of the ultimate gaming and creator performance in
+            one chip. No workload is off limits with the AMD Ryzen 7000 series
+            and 3D V-Cache™ technology.
+          </p>
+        </div>
+      </section>
+      <section id="info" class="grid grid-cols-2 items-center">
+        <div class="bg-[#484745] w-full col-span-2">
+          <h2
+            class="p-6 text-2xl col-start-1 col-end-3 font-bold w-full block max-w-[1280px] mx-auto"
+          >
+            UNLEASHING THE POWER OF TOMORROW'S TECHNOLOGY
+          </h2>
+        </div>
+        <div
+          class="flex col-start-1 col-end-3 py-6 gap-4 mx-auto items-center max-w-[1280px] justify-between w-full"
+        >
+          <p class="text-xl col-start-1 col-end-2 items-center p-6">
+            When your PC has the world’s most advanced desktop processor for
+            gamers, you can focus on what really matters: being victorious on
+            the digital battlefield. Whether you’re playing the latest titles or
+            revisiting a classic, the AMD Ryzen™ 7000 Series processors are a
+            gaming powerhouse with high-performance “Zen 4” cores. With up to 16
+            cores, 32 threads, boost clocks of up to 5.7GHz2 and up to 144MB of
+            on-chip memory, AMD Ryzen 7000 Series processors deliver game
+            changing performance.
+          </p>
+          <iframe
+            title="AMD YouTube Video"
+            srcdoc="
+        <style>
+            body, .full {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                object-fit: cover;
+            }
+        </style>
+        <a
+            href='https://www.youtube.com/embed/AnTezcHNwP0?autoplay=1'
+            class='full'
+        >
+            <img
+                src='https://vumbnail.com/AnTezcHNwP0.jpg'
+                class='full'
+            />
+            <svg
+                version='1.1'
+                viewBox='0 0 68 48'
+                width='68px'
+                style='position: relative;'
+            >
+                <path d='M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z' fill='#f00'></path>
+                <path d='M 45,24 27,14 27,34' fill='#fff'></path>
+            </svg>
+        </a>
+    "
+            style="max-width: 640px; width: 100%; aspect-ratio: 16/9"
+          ></iframe>
+        </div>
+      </section>
+      <section
+        id="products"
+        class="grid grid-cols-2 items-center relative pb-16 text-xl"
+      >
+        <div class="bg-[#484745] w-full col-span-2">
+          <h2
+            class="p-6 text-2xl col-start-1 col-end-3 font-bold w-full block max-w-[1280px] mx-auto"
+          >
+            PRODUCTS
+          </h2>
+        </div>
+        <div
+          class="grid col-start-1 col-end-3 p-6 pb-24 mx-auto max-w-[1280px] relative gap-6"
+        >
+          <img
+            src="assets/r5.webp"
+            alt=""
+            class="col-start-1 col-end-3 mx-auto w-60"
+            id="img"
+          />
+          <div id="cpuInfo" class="col-start-1 col-end-2 mt-6">
+            <h3 class="text-4xl" id="title">AMD RYZEN™ 5 7600X3D Processor</h3>
+            <small id="sku"> SKU: 100-100000593WOF </small>
+            <p class="text-l" id="oldPrice">Was: $299.00</p>
+            <p
+              class="text-2xl font-bold underline decoration-orange-700"
+              id="newPrice"
+            >
+              Now: $249.00
+            </p>
+          </div>
+          <div id="specs" class="col-start-2 col-end-3 mt-6">
+            <ul>
+              <li id="cores"># of CPU Cores: 6</li>
+              <li id="threads"># of Threads: 12</li>
+              <li id="maxBoostClock">Max Boost Clock: Up to 5.3GHz</li>
+              <li id="baseClock">Base Clock: 4.7GHz</li>
+              <li id="thermal">Thermal Solution: Not Included</li>
+              <li id="tdp">Default TDP / TDP: 105W</li>
+              <li id="graphics">Graphics Model: AMD Radeon™ Graphics</li>
+            </ul>
+          </div>
+          <div
+            class="flex mx-auto items-center justify-center gap-12 w-full col-start-1 col-end-3 mt-6 p-6 w-full"
+            id="icons"
+          >
+            <img
+              src="assets/r5small.webp"
+              alt=""
+              class="w-24 cursor-pointer active"
+            />
+            <img src="assets/r7small.webp" alt="" class="w-24 cursor-pointer" />
+            <img src="assets/r9small.webp" alt="" class="w-24 cursor-pointer" />
+          </div>
+          <button
+            class="bg-orange-700 hover:bg-orange-600 rounded w-48 h-12 text-xl flex items-center justify-center absolute bottom-6 right-6"
+          >
+            Add to cart
+          </button>
+        </div>
+      </section>
+      <section id="faq" class="grid grid-cols-2 items-center">
+        <div class="bg-[#484745] w-full col-span-2">
+          <h2
+            class="p-6 text-2xl col-start-1 col-end-3 font-bold w-full block max-w-[1280px] mx-auto"
+          >
+            FAQ
+          </h2>
+        </div>
+        <div
+          class="grid p-6 grid-cols-2 col-start-1 col-end-3 gap-6 max-w-[1280px] mx-auto"
+        >
+          <div class="card relative w-full h-full min-h-max">
+            <h3 class="p-6 text-xl h-fit cursor-pointer bg-gray-800 pr-12">
+              What is a Ryzen CPU, and how is it different from other processors
+              in the market?
+            </h3>
+
+            <p class="answer p-6 bg-[#4c4e52] hidden h-fit">
+              Ryzen CPUs are high-performance processors developed by AMD. They
+              stand out due to their multi-core architecture, allowing for
+              efficient multitasking and improved performance in tasks that
+              require parallel processing, such as video editing and 3D
+              rendering.
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 absolute top-0 right-0 m-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div class="card relative w-full h-full min-h-max">
+            <h3 class="p-6 text-xl h-fit cursor-pointer bg-gray-800 pr-12">
+              What is AMD 3D V-Cache technology, and how does it enhance CPU
+              performance?
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 absolute top-0 right-0 m-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </h3>
+
+            <p class="answer p-6 bg-[#4c4e52] hidden h-fit">
+              AMD 3D V-Cache technology increases the CPU's cache size,
+              improving data access speeds and enhancing overall performance.
+              This technology significantly boosts gaming and multitasking
+              capabilities, making it ideal for users who demand high
+              performance in both single-threaded and multi-threaded
+              applications.
+            </p>
+          </div>
+          <div class="card relative w-full h-full min-h-max">
+            <h3 class="p-6 text-xl h-fit cursor-pointer bg-gray-800 pr-12">
+              Can I overclock my Ryzen CPU, and what precautions should I take
+              if I choose to do so?
+            </h3>
+            <p class="answer p-6 bg-[#4c4e52] hidden">
+              Yes, many Ryzen CPUs are unlocked and can be overclocked to
+              achieve higher performance. However, overclocking should be done
+              cautiously. Users should ensure they have proper cooling
+              solutions, stable power supply, and understand the limits of their
+              CPU to avoid overheating or damaging the processor.
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 absolute top-0 right-0 m-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div class="card relative w-full h-full min-h-max">
+            <h3 class="p-6 text-xl h-fit cursor-pointer bg-gray-800 pr-12">
+              How does AMD handle compatibility with operating systems for Ryzen
+              processors?
+            </h3>
+
+            <p
+              class="answer p-6 bg-[#4c4e52] hidden transition-opacity duration-700 ease-out"
+            >
+              AMD actively works with operating system developers and maintains
+              up-to-date drivers to ensure seamless compatibility with various
+              operating systems, including Windows, Linux, and macOS. Regular
+              driver updates are released to optimize performance and address
+              potential issues.
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 absolute top-0 right-0 m-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div class="card relative w-full h-full min-h-max">
+            <h3 class="p-6 text-xl h-fit bg-gray-800 cursor-pointer pr-12">
+              What kind of warranty and support options are available for Ryzen
+              CPUs?
+            </h3>
+
+            <p class="answer p-6 bg-[#4c4e52] hidden">
+              AMD provides a standard warranty for its Ryzen processors,
+              typically covering them for a specific period, often three years,
+              from the date of purchase. Additionally, AMD offers customer
+              support through their official website, providing resources, FAQs,
+              and community forums to assist users with technical questions and
+              troubleshooting.
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 absolute top-0 right-0 m-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div class="card relative w-full h-full min-h-max">
+            <h3 class="p-6 text-xl h-fit cursor-pointer bg-gray-800 pr-12">
+              Is Ryzen compatible with my existing motherboard, or do I need to
+              upgrade my system?
+            </h3>
+
+            <p class="answer p-6 bg-[#4c4e52] hidden">
+              Compatibility depends on the specific Ryzen generation and your
+              motherboard's chipset. Newer Ryzen CPUs may require a motherboard
+              with a compatible socket and BIOS update. It's essential to check
+              AMD's official website or your motherboard manufacturer's site for
+              compatibility information before making a purchase.
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 absolute top-0 right-0 m-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section id="form" class="grid grid-cols-2 items-center">
+        <div class="bg-[#484745] w-full col-span-2">
+          <h2
+            class="p-6 text-2xl col-start-1 col-end-3 font-bold w-full block max-w-[1280px] mx-auto"
+          >
+            JOIN THE RYZEN FAMILY
+          </h2>
+        </div>
+        <div
+          class="flex col-start-1 col-end-3 p-6 items-center max-w-[1280px] mx-auto w-full"
+        >
+          <form
+            class="grid grid-cols-1 sm:grid-cols-2 w-full text-black gap-6 text-black"
+          >
+            <div class="flex flex-col w-full text-black">
+              <label for="fullName" class="text-xl">Full Name:</label>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                required
+                class="mb-4 rounded p-2"
+              />
+              <label for="email" class="text-xl">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="mb-4 rounded p-2"
+              />
+              <label for="phone" class="text-xl">Phone Number:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="mb-4 rounded p-2"
+              />
+              <fieldset class="border-white border-2 p-4">
+                <legend class="text-xl">Preferred Contact Method</legend>
+                <div class="flex gap-8 w-fit ml-0">
+                  <div>
+                    <label for="prefPhone">Phone</label>
+                    <input
+                      type="radio"
+                      name="prefContact"
+                      id="prefPhone"
+                      required
+                      checked
+                    />
+                  </div>
+                  <div>
+                    <label for="prefEmail">Email</label>
+                    <input
+                      type="radio"
+                      name="prefContact"
+                      id="prefEmail"
+                      required
+                    />
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="flex flex-col w-full text-black">
+              <label for="comments" class="text-xl m">Comments:</label>
+              <textarea
+                required
+                name="comments"
+                id="comments"
+                class="mb-4 w-full h-full min-h-[200px] rounded p-2"
+              ></textarea>
+              <p class="errorsP mb-4 max-w-none"></p>
+              <button
+                class="text-white bg-black p-3 ml-auto rounded w-full text-xl bg-orange-700 hover:bg-orange-600 font-bold"
+                id="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <div class="relative z-50 shadow-2xl shadow-white">
+        <div
+          id="modal"
+          class="rounded fixed top-32 left-0 right-0 mx-auto w-full h-min max-h-[500px] max-w-2xl overflow-y-scroll hidden"
+        >
+          <p
+            class="absolute top-0 right-0 p-4 cursor-pointer"
+            id="modalCloseBtn"
+          >
+            X
+          </p>
+          <h2
+            class="block bg-[#484745] py-6 text-2xl col-start-1 col-end-3 pl-12 font-bold"
+          >
+            CHECK OUT
+          </h2>
+          <ul class="p-6 flex flex-col gap-6"></ul>
+          <p class="subtotalP px-6 py-2 text-right"></p>
+          <p class="taxP px-6 py-2 text-right"></p>
+          <p class="shippingP px-6 py-2 text-right"></p>
+          <p class="totalP px-6 py-2 text-right"></p>
+          <div class="flex">
+            <button
+              class="bg-orange-700 w-full h-12 text-xl flex items-center justify-center pay"
+            >
+              Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modalBG fixed top-0 w-full h-full bg-black/75 z-40 hidden"
+      ></div>
+    </main>
+
+    <footer class="bg-[#484745]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 bg-[#484745] mx-auto w-10/12 p-6 max-w-[1280px]"
+      >
+        <ul class="flex flex-col gap-6 justify-center py-4 px-2">
+          <li class="text-2xl">Company</li>
+          <li class="text-gray-300">About AMD</li>
+          <li class="text-gray-300">Management Team</li>
+          <li class="text-gray-300">Corporate Responsibility</li>
+          <li class="text-gray-300">Careers</li>
+          <li class="text-gray-300">Contact Us</li>
+        </ul>
+        <ul class="flex flex-col gap-6 py-4 px-2">
+          <li class="text-2xl">News & Events</li>
+          <li class="text-gray-300">Newsroom</li>
+          <li class="text-gray-300">Events</li>
+          <li class="text-gray-300">Blogs</li>
+          <li class="text-gray-300">Media Library</li>
+        </ul>
+        <ul class="flex flex-col gap-6 py-4 px-2">
+          <li class="text-2xl">Community</li>
+          <li class="text-gray-300">Support</li>
+          <li class="text-gray-300">Developer</li>
+          <li class="text-gray-300">Red Team</li>
+        </ul>
+        <ul class="flex flex-col gap-6 py-4 px-2">
+          <li class="text-2xl">Partners</li>
+          <li class="text-gray-300">Developer Central</li>
+          <li class="text-gray-300">AMD Partner Hub</li>
+          <li class="text-gray-300">Partner Resource Library</li>
+          <li class="text-gray-300">Authorized Distributors</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

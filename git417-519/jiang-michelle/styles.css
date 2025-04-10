@@ -1,0 +1,394 @@
+/*GIT417 Final Project*/
+/*Michelle Jiang*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*CSS Reset, credentials above*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*End of CSS Reset*/
+
+
+
+/*Sumikko Gurashi color palette:
+Light orange: #FFFFCC;
+Dark orange: #FFCC99;
+Brown text: #7A5B47;
+*/
+
+* {
+	font-family: 'Roboto', 'Verdana', sans-serif;
+}
+
+header {
+	text-align: center;
+	margin-top: 1em;
+}
+
+h1, h2, h3, nav li {
+	font-family: 'Nanum Pen Script', cursive;
+	color: #7A5B47;
+}
+
+h1 {
+	/*Hide display of H1 text, as the image will already display series name*/
+	display: none;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+nav {
+	background-color: #FFCC99;
+	padding: 1em;
+}
+
+nav ul {
+	/*Remove bullet points*/
+	list-style-type: none;
+}
+
+nav li {
+	/*Change nav tabs into one line*/
+	display: inline;
+	font-size: 1.8em;
+	margin: 0 1.5em;
+}
+
+nav a {
+	color: #7A5B47;
+}
+
+nav a:hover {
+	/*But position the hover after so the style will be prioritized over
+	the visited style*/
+	/*Also, this will only apply to the nav's hovers*/
+	text-decoration: underline;
+}
+
+form {
+	width: 68vw;
+}
+
+label {
+	float: left;
+	width: 15vw;
+}
+
+input, textarea {
+	display: inline-block;
+	padding: 0.2em;
+	/*Add some space for error messages*/
+	margin: 2.5em 0;
+	border: 1px solid #FFCC99;
+	/*Removing the margin that label has so the text is inline*/
+	margin-top: -2em;
+	width: 50vw;
+}
+
+a {
+	/*Let's remove the link styles so they don't look like links*/
+	text-decoration: none;
+}
+
+a:visited {
+	/*And remove the visited color so we keep the brown*/
+	color: #7A5B47;
+}
+
+footer {
+	background-color: #FFCC99;
+	padding: 1em;
+	/*Re-adding font family because the footer goes to Times New Roman...not sure why*/
+	font-family: 'Roboto', 'Verdana', sans-serif;
+	height: 4em;
+}
+
+footer img {
+	width: 5em;
+	float: left;
+	margin-right: 2em;
+}
+
+footer p {
+	margin-top: 1em;
+}
+
+button {
+	/*Why isn't this a thing?*/
+	cursor: pointer;
+}
+
+#wrapper {
+	margin: 0 auto;
+	max-width: 1366px;
+}
+
+/*Labels with this class will clear all floats*/
+.clear {
+	clear: both;
+}
+
+
+
+/*Header CSS*/
+/*Comments within sections will be tabbed over*/
+#series-logo {
+	/*Adjusting size and adding margin between logo and nav*/
+	width: 25%;
+	margin-bottom: 0.7em;
+}
+
+#dark-mode-toggle {
+	/*Let's position this button so it's on the top of the page and
+	has a circular button background*/
+	/*Positioning*/
+	position: absolute;
+	left: 6em;
+	top: 3em;
+	/*Button creation*/
+	background-color: white;
+	border-radius: 50%;
+	border: 1px solid #7A5B47;
+	padding: 0.2em;
+}
+
+#dark-mode-toggle:hover {
+	background-color: #FFFFCC;
+}
+
+#dark-mode {
+	width: 2.5em;
+}
+/*End Header CSS*/
+
+
+
+/*First section CSS, describes company/character line*/
+/*Comments within sections will be tabbed over*/
+#home {
+	/*Adding a background photo that will help visualize the company's products*/
+	background-image: url("images/home-background.jpg");
+	background-size: cover;
+	background-position: 0% 64%;
+	/*Adjusting the height of the container so that it will properly fit the viewport*/
+	height: 38em;
+}
+
+#home-text {
+	width: 23em;
+	position: relative;
+	top: 2.5em;
+	left: 37em;
+	font-family: 'Nanum Pen Script', cursive;
+	color: #7A5B47;
+	font-size: 1.4em;
+}
+
+#home h2 {
+	font-size: 3.5em;
+	margin-bottom: 0.15em;
+}
+/*End first section CSS*/
+
+
+
+#characters, #contact-us {
+	/*Adding a special CSS here because these two sections need padding, but the first
+	section doesn't*/
+	padding: 2em 5em;
+}
+
+
+
+/*Second section CSS, describes company characters/products*/
+/*Comments within sections will be tabbed over*/
+	/*The character line should be spaced out evenly, so a flexbox would be the best choice.*/
+#characters ul {
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 2em;
+}
+
+#characters ul li button {
+	/*Remove the default button look*/
+	border: none;
+	background-color: transparent;
+}
+
+#characters ul li h3 {
+	/*Center the text so that the names are directly under the images, rather than the side.*/
+	text-align: center;
+}
+
+/*Anything with the class center will be centered on the page*/
+.center {
+	display: block;
+	text-align: center;
+	margin: 2em 0;
+}
+
+#characters a {
+	/*Thicc, juicy, clickable buttons*/
+	margin: 3em;
+	padding: 0.5em 2em;
+	background-color: #FFFFCC;
+	border: 1px solid #7A5B47;
+}
+
+#characters a:hover {
+	/*Button hovers will change the entire color to provide more visual response*/
+	background-color: #7A5B47;
+	color: white;
+}
+
+/*Javascript Toggle elements*/
+
+#description {
+	background-color: #FFFFCC;
+}
+
+/*All of these IDs were created so they would list their respective elements*/
+#shirokuma-expanded, #pengin-expanded, #tonkatsu-expanded, #neko-expanded, #tokage-expanded {
+	display: none;
+}
+
+/*Description image CSS*/
+.img-expanded {
+	float: left;
+	height: 9em;
+	width: auto;
+	margin-right: 3em;
+	padding: 1em;
+}
+
+.text-expanded {
+	margin: 2em 0;
+	padding-top: 5em;
+	height: 6em;
+}
+
+/*End second section CSS*/
+
+
+
+/*Third section CSS, contact form*/
+/*Comments within sections will be tabbed over*/
+#contact-us {
+	background-color: #FFFFCC;
+	/*Add position relative so image and submit button can be absolute*/
+	position: relative;
+}
+
+#required {
+	/*Separate text from header*/
+	margin-top: 2em;
+	/*2 feet social distancing from form*/
+	margin-bottom: 0.3em;
+	color: red;
+}
+
+#email, #phone {
+	/*Added this because the radio buttons would not line up*/
+	display: inline-block;
+	/*Adjust width because global element has 50vw*/
+	width: 2.9em;
+}
+
+.preference {
+	/*Remove float left*/
+	float: none;
+	/*Add a bit of space between the options*/
+	margin-right: 2em;
+}
+
+#comments {
+	margin-top: 0;
+}
+
+	/*Positioning this element to be on the right of the form*/
+#submit {
+	position: absolute;
+	bottom: 2.1em;
+	right: 1em;
+	padding: 1.5em 0.8em;
+	background-color: #7A5B47;
+	color: white;
+	border: none;
+	font-family: 'Nanum Pen Script', cursive;
+	font-size: 2em;
+}
+
+#submit:hover {
+	/*Contact Us button hover is approximately the opposite of the hover from Characters*/
+	background-color: white;
+	border: 1px solid #7A5B47;
+	color: #7A5B47;
+}
+
+.graphic {
+	/*Positioning the image to be right above the button*/
+	position: absolute;
+	bottom: 13em;
+	right: 2em;
+	width: 15%;
+}
+/*End third section CSS*/
+
+
+
+/*Footer CSS*/
+/*Comments within sections will be tabbed over*/
+/*End Footer CSS*/
