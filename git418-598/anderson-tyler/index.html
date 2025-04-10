@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Gym</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a46dad1a9f.js" crossorigin="anonymous"></script>
+
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <!-- Slick Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom JS file -->
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <header class="header">
+            <nav class="navbar">
+                <img src="img/AjaxFitness-1(2).png" alt="" class="header-logo">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#trainers">Trainers</a>
+                    </li>
+                    <li>
+                        <a href="#classes">Classes</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+                    <li>
+                        <span class="welcome-back"></span>
+                    </li>
+                </ul>
+
+                <button class="signup-btn">Sign Up</button>
+            </nav>
+            <section class="hero">
+                <h1 class="hero-heading">Get fit and healthy.</h1>
+                <p class="hero-text">Sign up for a free 7-day trial.</p>
+                <button class="signup-btn">Sign Up</button>
+
+            </section>
+        </header>
+    </div>
+    <main>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/womanjumping.png" alt="">
+            </div>
+            <div class="about-text">
+                <h2>Why choose <span>Ajax</span>?</h2>
+                <div class="about-item-list">
+                    <div class="about-item">
+                        <span>
+                            <ion-icon name="barbell-outline"></ion-icon>
+                        </span>
+                        <div>
+                            <h3>Training Center</h3>
+                            <p>From bodybuilding to powerlifting and everything in between, Ajax Fitness has the
+                                equipment
+                                to
+                                help you reach your goals. With dumbells up to 150lbs, 7 squat racks, 5 deadlift
+                                platforms,
+                                2
+                                competition benches, and a variety of plate loaded and pin loaded machines, we have
+                                everything
+                                you need.</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <span>
+                            <ion-icon name="accessibility-outline"></ion-icon>
+                        </span>
+                        <div>
+                            <h3>Guidance</h3>
+                            <p>Whether you are just starting out, or have been training for awhile, you'll have a great
+                                community supporting you every step of the way. Our team of Personal Trainers and
+                                Nutritionists are available to answer any questions you may have.</p>
+                        </div>
+
+                    </div>
+                    <div class="about-item">
+                        <span>
+                            <ion-icon name="globe-outline"></ion-icon>
+                        </span>
+                        <div>
+                            <h3>Access Anywhere</h3>
+                            <p>We are with you wherever you travel! Download our app to get access to videos and
+                                training plans wherever your journey takes you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="classes" id="classes">
+            <h2 class="classes-header">Featured Classes</h2>
+            <div class="class single-item">
+                <div class="items">
+                    <div class="item">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1552286450-4a669f880062?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                                alt="">
+                        </div>
+                        <div class="item-text">
+                            <h3 class="class-header">Yoga</h3>
+                            <p class="class-text">This class incorporates yoga postures, gentle movement sequences,
+                                breath work,
+                                supported
+                                silent meditation, and guided relaxation to support increased awareness and
+                                mindfulness
+                                of the breath and body, and quieting of the nervous system.</p>
+                            <button class="class-btn">Class Schedule</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1652364690376-db27a1965bc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                                alt="">
+                        </div>
+                        <div class="item-text">
+                            <h3 class="class-header">Weightlifting</h3>
+                            <p class="class-text">This class is designed to give clients the opportunity to learn weight
+                                training concepts and techniques used for obtaining optimal physical fitness. Clients
+                                will benefit from comprehensive weight training and cardiorespiratory endurance
+                                activities.</p>
+                            <button class="class-btn">Class Schedule</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1600026453256-9fe8ca59d5d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                                alt="">
+                        </div>
+                        <div class="item-text">
+                            <h3 class="class-header">Boxing</h3>
+                            <p class="class-text">This class incorporates 60-minute sessions where we will cover
+                                intermediate boxing technique and strategy, as well as the conditioning and strength
+                                training necessary to excel in the ring. You will encounter complex drills and
+                                combinations.
+                            </p>
+                            <button class="class-btn">Class Schedule</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-icons">
+                <ion-icon name="chevron-back-outline" class="arrow_prev"></ion-icon>
+                <ion-icon name="chevron-forward-outline" class="arrow_next"></ion-icon>
+            </div>
+        </section>
+
+        <div class="class-modal hide">
+            <ion-icon name="close-circle-outline" class="close-class-modal"></ion-icon>
+            <h2 class="class-modal-heading">Class Schedule</h2>
+            <div class="class-container">
+                <div class="class-content">
+                    <h3 class="class-heading">Boxing</h3>
+                    <p class="boxing-instructor"></p>
+                    <p class="boxing-times"></p>
+                </div>
+                <div class="class-content">
+                    <h3 class="class-heading">Weight Lifting</h3>
+                    <p class="weightlifting-instructor"></p>
+                    <p class="weightlifting-times"></p>
+                </div>
+                <div class="class-content">
+                    <h3 class="class-heading">Yoga</h3>
+                    <p class="yoga-instructor"></p>
+                    <p class="yoga-times"></p>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="trainers" id="trainers">
+            <h2 class="trainers-header">Meet our trainers!</h2>
+            <div class="tabs-container">
+                <div id="tabs">
+                    <ul class="trainer-tab-list">
+                        <li>
+                            <a href="#tabs-1">Dylon Anderson</a>
+                        </li>
+                        <li>
+                            <a href="#tabs-2">Jessica Vrieze</a>
+                        </li>
+                        <li>
+                            <a href="#tabs-3">Dominic Thompson</a>
+                        </li>
+                    </ul>
+                    <div id="tabs-1" class="trainer-tab">
+                        <img src="https://images.unsplash.com/photo-1534614971-6be99a7a3ffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                            class="trainer-img" alt="guy smiling">
+                        <div class="trainer-text">
+                            <h3>Dylon Anderson</h3>
+                            <p>
+                                Dylon Anderson is a personal trainer and a body transformation coach. He has been in the
+                                fitness industry since 2017 and has worked with hundreds of clients both in person and
+                                online, helping them achieve their health and fitness goals, delivering outstanding
+                                results.
+                                Dylon specializes in body transformations and by working with variety of different
+                                clients he has developed a proven and tested formula for a successful body
+                                transformation.</p>
+                        </div>
+                    </div>
+                    <div id="tabs-2" class="trainer-tab">
+                        <img src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80"
+                            class="trainer-img" alt="guy smiling">
+                        <div class="trainer-text">
+                            <h3>Jessica Vrieze</h3>
+                            <p>Jessica Vrieze is personal trainer and yoga instructor. She has been in the industry
+                                since 2019 and has taught yoga classes to hundreds of clients, both in person and
+                                online. Jessica specializes in flexibility and and strength and has developed a training
+                                plan for anyone whos wants to learn yoga. </p>
+                        </div>
+                    </div>
+                    <div id="tabs-3" class="trainer-tab">
+                        <img src="https://images.unsplash.com/photo-1553457055-88e354f1257c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGd1eSUyMHNtaWxpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="trainer-img" alt="guy smiling">
+                        <div class="trainer-text">
+                            <h3>Dominic Thompson</h3>
+                            <p>Dominic Thompson has been in the fitness industry since 2020 and has taught boxing
+                                classes to hundreds of clients, both in person and online. He specializes in strength
+                                and conditioning, as well as boxing techniques. Dominic has developed a training plan
+                                for anyone who wants to focus on strength and conditioning. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="testimonials-container">
+            <section class="testimonials" id="testimonials">
+                <svg class="left-quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M96 224C84.72 224 74.05 226.3 64 229.9V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32S145.7 96 128 96C57.42 96 0 153.4 0 224v96c0 53.02 42.98 96 96 96s96-42.98 96-96S149 224 96 224zM352 224c-11.28 0-21.95 2.305-32 5.879V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32s-14.33-32-32-32c-70.58 0-128 57.42-128 128v96c0 53.02 42.98 96 96 96s96-42.98 96-96S405 224 352 224z" />
+                </svg>
+                <svg class="right-quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M96 96C42.98 96 0 138.1 0 192s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192C192 138.1 149 96 96 96zM448 192c0-53.02-42.98-96-96-96s-96 42.98-96 96s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192z" />
+                </svg>
+                <h2 class="testimonials-header">What do our clients say?</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1520451644838-906a72aa7c86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=850&q=80"
+                            alt="">
+                        <p class="card-text">Jessica really helped me get comfortable in the
+                            gym. She was so welcoming and
+                            nice! I look forward to the gym everyday!</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                            alt="">
+                        <p class="card-text">This gym has all the equipment and amenities I need! The staff is always
+                            friendly and the facilites are clean!</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                            alt="">
+                        <p class="card-text">I was super nervous about starting to exercise, but Dominic was with me
+                            every step of the way showing me what to do. I've gained so much progress!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="weather">
+            <div>
+                <h2 class="weather-header">Headed to the Gym?</h2>
+            </div>
+            <div>
+                <p class="weather-text">Check the weather before you go! Some outdoor classes may be cancelled depending
+                    on weather
+                    conditions.
+                </p>
+                <button class="check-weather-btn">Check Weather</button>
+            </div>
+        </section>
+
+
+
+        <aside class="weather-modal hide">
+            <ion-icon name="close-circle-outline" class="close-weather-modal"></ion-icon>
+            <!-- API will fill in info -->
+            <h3></h3>
+            <img src="" alt="">
+            <div>
+                <p class="current-temp"></p>
+                <p class="temp-high"></p>
+                <p class="temp-low"></p>
+                <p class="weather-conditions"></p>
+                <p class="wind-speed"></p>
+            </div>
+        </aside>
+
+        <aside class="modal hide ">
+            <ion-icon name="close-circle-outline" class="close-modal"></ion-icon>
+            <img src="img/AjaxFitness-1(2).png" alt="">
+            <h2>Start your 7-day trial!</h2>
+            <form class="signup-form" action="POST">
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone Number">
+                <button class="signup-btn modal-signup-btn">Submit</button>
+            </form>
+            <div class="hide confirmation-msg">
+                <h3>Great Work!</h3>
+                <ion-icon name="thumbs-up-outline" class="thumb"></ion-icon>
+                <p>You just took the first step to a healthier you!</p>
+                <p>We'll reach out shortly with how to redeem your trial!</p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="img/AjaxFitness-1(2).png" alt=""></a></li>
+
+                <li class="back-to-top"><a class="footer-link" href="#">Back to Top</a></li>
+                <li><a class="footer-link" href="#about">About Us</a></li>
+                <li><a class="footer-link" href="#classes">Featured Classes</a></li>
+                <li><a class="footer-link" href="#trainers">Trainers</a></li>
+                <li><a class="footer-link" href="#testimonials">Client Testimonials</a></li>
+
+            </ul>
+        </nav>
+        <p class="footer-text">THIS SITE FOR EDUCATIONAL PURPOSES ONLY</p>
+    </footer>
+    
+
+</body>
+
+</html>
