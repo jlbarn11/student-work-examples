@@ -1,0 +1,415 @@
+@import "./reset";
+
+// ----- COLOR VARIABLES -----
+$darkblue: #1F2551;
+$lightblue: #EDEEF5;
+$white: #FFFFFF;
+$orange: #A04E0C;
+
+// ----- GLOBAL -----
+* {
+    font-family: 'maiola', 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $orange;
+    color: $white;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.button {
+    width: max-content;
+    color: $white;
+    text-align: center;
+    height: max-content;
+    text-decoration: none;
+    background-color: $darkblue;
+    padding: 12px;
+    transition: all .3s;
+    &:hover {
+        background-color: $orange;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: end;
+    img {
+        padding-right: 10px;
+        height: 18px;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+// ----- HEADER & NAVIGATION -----
+header {
+    width: 100%;
+    #utilities-bar {
+        display: grid;
+        padding: 15px 5vh;
+        grid-template-columns: 20% 60% 20%;
+        color: $white;
+        background-color: $darkblue;
+        align-items: center;
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+        #currency-select {
+            .ui-icon-triangle-1-s {
+                background-position: -65px -12px;
+            }
+            .ui-button {
+                width: max-content;
+                margin-left: 5px;
+                padding: 0px;
+                background: none;
+                border: none;
+                color: $white;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 5vh;
+        #logo {
+            width: 400px;
+        }
+        ul {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            li {
+                display: block;
+                width: max-content;
+                padding: 12px;
+                transition: all .3s;
+                border-bottom: 1px dotted $white;
+                &:hover {
+                    background-color: $lightblue;
+                    border-bottom: 1px dotted $darkblue;
+                }
+                a {
+                    text-decoration: none;
+                    color: $darkblue;
+                    transition: all .3s;
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+        }
+        .dropdown::after {
+            content: '▼';
+            font-size: 8px;
+            margin-left: 8px;
+        }
+    }
+}
+
+// ----- HERO SECTION -----
+#hero {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    height: 70vh;
+    color: $white;
+    padding: 45vh 5vh 5vh;
+    h1 {
+        font-style: italic;
+        font-weight: 400;
+        width: max-content;
+        font-size: 50px;
+        padding-bottom: 15px;
+    }
+    p {
+        width: 70%;
+        font-size: 26px;
+    }
+}
+
+// ----- INSTRUMENT CATEGORIES -----
+#home-instruments {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    column-gap: 15px;
+    margin: 75px 5vh;
+    section {
+        img {
+            width: 100%;
+        }
+        a {
+            text-align: center;
+            text-decoration: none;
+            color: $darkblue;
+            padding-top: 20px;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 30px;
+            display: block;
+            margin: 0 auto;
+            transition: all .3s;
+            border-bottom: 1px dotted $white;
+            &:hover {
+                color: $orange;
+                border-bottom: 1px dotted $orange;
+            }
+        }
+    }
+}
+
+// ----- SCHOOL INSTRUMENT RENTALS CTA -----
+#home-rentals {
+    background-color: $darkblue;
+    color: $white;
+    padding: 25px 5vh;
+    p {
+        text-align: center;
+        font-size: 30px;
+        a {
+            color: $white;
+            text-decoration: none;
+            border-bottom: 1px dotted $darkblue;
+            transition: all .3s;
+            &:hover {
+                color: $orange;
+                border-bottom: 1px dotted $orange;
+            }
+        }
+    }
+}
+
+// ----- FEATURED INSTRUMENTS SLIDER -----
+#featured-instruments {
+    background-color: $lightblue;
+    color: $darkblue;
+    text-align: center;
+    padding: 25px 5vh;
+    #instruments {
+        text-align: left;
+        margin-top: 25px;
+        .featured-tile {
+            margin: 10px;
+            img {
+                width: 100%;
+                border: 5px solid $white;
+                margin: 0;
+            }
+            h3 {
+                margin: 10px 0;
+            }
+            h3 a {
+                color: $darkblue;
+                text-decoration: none;
+                font-style: italic;
+                font-size: 30px;
+                line-height: 24px;
+                border-bottom: 1px dotted $lightblue;
+                transition: all .3s;
+                &:hover {
+                    color: $orange;
+                    border-bottom: 1px dotted $orange;
+                }
+            }
+            h4 {
+                font-style: italic;
+                margin: 0;
+            }
+        }
+    }
+}
+
+// ----- SERVICES GRID -----
+#home-services {
+    text-align: center;
+    padding: 35px 5vh 60px;
+    color: $darkblue;
+    #service-grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        .service {
+            display: grid;
+            grid-template-columns: 100%;
+            justify-items: center;
+            padding: 30px 0 10px;
+            margin-top: 20px;
+            border-bottom: 1px dotted $white;
+            transition: all .3s;
+            cursor: pointer;
+            &:hover {
+                border-bottom: 1px dotted $darkblue;
+            }
+            a {
+                text-align: center;
+                text-decoration: none;
+                color: $darkblue;
+                padding-top: 10px;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 30px;
+                display: block;
+                margin: 0 auto;
+                &:hover {
+                    color: $orange;
+                }
+            }
+            img {
+                width: 28px;
+            }
+        }
+    }
+}
+
+// ----- CONTACT US CTA -----
+#home-contact {
+    background-color: $lightblue;
+    color: $darkblue;
+    text-align: center;
+    padding: 25px 5vh 50px;
+    h2 {
+        margin-bottom: 35px;
+    }
+}
+
+// ----- FOOTER -----
+footer {
+    display: grid;
+    padding: 25px;
+    background-color: $darkblue;
+    color: $white;
+    grid-template-columns: 50% 50%;
+    a {
+        color: $white;
+        text-decoration: none;
+        transition: all .3s;
+        &:hover {
+            color: $orange;
+        }
+    }
+    small {
+        text-align: right;
+    }
+}
+
+// ----- SLICK SLIDESHOW ARROWS -----
+// source: https: https://github.com/kenwheeler/slick/blob/master/slick/slick.css
+// Instead of importing a whole CSS file I just took what I needed from the plugin's stylesheet.
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -370%);
+    -ms-transform: translate(0, -370%);
+    transform: translate(0, -370%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+    opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+
+    opacity: .25;
+    color: $darkblue;
+    transition: all .3s;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+[dir='rtl'] .slick-prev {
+    right: -25px;
+    left: auto;
+}
+
+.slick-prev:before {
+    content: '❮';
+}
+
+[dir='rtl'] .slick-prev:before {
+    content: '❯';
+}
+
+.slick-next {
+    right: -25px;
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
+.slick-next:before {
+    content: '❯';
+}
+
+[dir='rtl'] .slick-next:before {
+    content: '❮';
+}

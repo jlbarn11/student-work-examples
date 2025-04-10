@@ -1,0 +1,561 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* global styles */
+:root{
+    --white:#fff;
+    --lt-purple: #bcb9df;
+    --green: #7fc577;
+    --dk-green: #507c5c;
+    --indigo: #8463fc;
+	--hot-pink:#DE0B63;
+    --black: #2e2e2e;
+    --gray: #555;
+	--switch:#e6e6e688;
+	font-family: "Dosis", sans-serif;
+	font-size: 16px;
+    --image-size: 400px;
+}
+html{
+	background-image: linear-gradient(var(--indigo), var(--lt-purple), var(--lt-purple));
+}
+body{
+	background-image: url("images/green-dust-and-scratches.png");
+	color: var(--black);
+	line-height: 1.35;
+	box-sizing: border-box;
+}
+a{
+	text-decoration:none;
+	font-weight: bold;
+}
+h1 img{
+	width: 60px;
+	padding:5px;
+	border-radius: 20px;
+	border:solid var(--white) 2px;
+	display: flex;
+	float:left;
+	margin-left:50px;
+}
+h1 a{
+	font-family: "Kalam", cursive; 
+	color: var(--white);
+	margin:0;
+}
+nav{
+	display:grid;
+}
+nav ul {
+	display: grid;
+	grid-template-columns:repeat(3, 1fr);
+	list-style: none;
+	padding-top:30px;
+}
+nav a, nav h2 {
+    border: var(--white) solid 2px;
+	padding:10px;
+    border-radius: 20px 50px / 50px 20px;
+	color:var(--indigo);
+	background-color: var(--white);
+}
+nav a:hover, nav h2:hover {
+	color:var(--white);
+	background-color: var(--indigo);
+	transition:1s;
+}
+#prodNav a[href="products.html"], #eventNav a[href="events.html"], #contactNav a[href="contact.html"]{
+	color:var(--white);
+	background-color: var(--indigo);
+}
+/* purple to green mode styles */
+#theme-switcher{
+	background-color: var(--switch);
+	border-radius: 50px;
+	display:flex;
+	align-items: center;
+	height: 50px;
+	padding:.5rem;
+	margin:7px;
+	cursor:pointer;
+}
+/* for the green theme */
+#theme-switcher svg g path.green{
+	fill:var(--lt-purple);
+}
+html.green{
+	background-image: linear-gradient(var(--dk-green), var(--green), var(--green));
+}
+body.green {
+	background-image: url("images/green-dust-and-scratches.png");
+}
+header.green{
+	background-color: var(--dk-green);
+}
+nav a.green, #products a.green{
+	color:var(--dk-green);
+	background-color: var(--white);
+}
+nav a:hover.green, nav h2:hover.green, #products a:hover.green{
+	color:var(--white);
+	background-color: var(--dk-green);
+	transition:1s;
+}
+#prodNav a[href="products.html"].green, #eventNav a[href="events.html"].green, #contactNav a[href="contact.html"].green{
+	color:var(--white);
+	background-color: var(--dk-green);
+}
+#products.green{
+	background-color: var(--indigo);
+	color:var(--white);
+}
+#products button.green{
+	border: var(--white) solid 2px;
+}
+#products h2.green, #products h3.green{
+	color:var(--white);
+}
+#earringsP.green, #braceletsP.green, #necklacesP.green{
+	background-color: rgba(80, 124, 92, 0.5);
+}
+#boba.green, #travel.green, #wine.green, #neck.green, #brace.green{
+	background-color: var(--green);
+}
+#future.green, #past.green{
+	background-color: var(--indigo);
+}
+div.accordion div.green{
+	background-color: var(--green);
+	color:var(--black);
+}
+div.accordion h3.green{
+	background-color: var(--lt-purple);
+}
+form.green{
+	color: var(--indigo);
+}
+#contact input[type=submit].green{
+	background-color: var(--indigo);
+}
+
+/* Hidden content for screen reader users - code from: https://webaim.org/techniques/css/invisiblecontent/*/
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+/* general styles */
+header, main, footer{
+	width: 100%;
+	margin: 0 auto;
+	font-family: "Dosis", sans-serif;
+}
+/* header & headings :D */
+header{
+	display: grid;
+	grid-template-columns: 1fr 1fr 80px;
+	padding-top: 10px;
+	background-color: var(--indigo);
+	color:var(--white);
+	position:sticky;
+	top:0;
+	z-index: 2;
+}
+h1, h2, h3{
+	text-align: center;
+	font-weight: bold;
+	color: var(--white);
+}
+h1{
+	font-size: 2.5rem;
+	margin: 1rem;
+}
+
+h2{
+	font-size: 2rem;
+	margin: 5px;
+}
+
+h3{
+	font-size: 1.45rem;
+	margin: 0.5rem;
+}
+/* styles for the sections */
+img{
+	display: block;
+	margin: 0 auto;
+    width: var(--image-size);
+    border-radius: 25% 75% / 50%;
+}
+p{
+	max-width: 65ch;
+	font-size: 25px;
+	padding: 1rem 0;
+	margin: 0 auto;
+}
+#about{
+    padding: 30px;
+    margin-top: 150px;
+    color: var(--white);
+}
+#about h2{
+	font-size: 50px;
+	margin-right:150px;
+}
+#about p{
+    margin-right: 100px;
+}
+#about img{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    float:left;
+	left:-40px;
+    top:-258px;
+    border-radius: 0% 0% 70%;
+} 
+#products{
+	background-color: var(--green);
+	color:var(--black);
+	text-align: center;
+	padding: 10px;
+	max-width: 1000px;
+    border-radius: 5% / 50%;
+	margin: 50px auto;
+}
+#products p{
+	max-height: 180px;
+}
+section#products .currentItem{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	min-width: 880px;
+	align-items: center;
+}
+#products h2, #products h3{
+	color:var(--black);
+}
+#products h2{
+	width: fit-content;
+	margin: 10px auto;
+}
+.hiddenItem{
+	display: none;
+}
+
+#switcherButtons{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+	width: fit-content;
+	margin: 1rem auto;
+}
+
+#products img{
+	grid-row: 1/-1;
+	height: 400px;
+    object-fit: cover;
+}
+#products h3{
+	grid-column: 2/-1;
+	margin-top: 60px;
+	margin-right:30px;
+	font-size: 25px;
+}
+#products p{
+	margin:10px;
+	margin-right: 40px;
+}
+#products a{
+	background-color: var(--white);
+	color:var(--indigo);
+	width: fit-content;
+	height: fit-content;
+	margin-left:190px;
+	padding:5px;
+    border-radius: 30px 30px / 60px 60px;
+}
+#products a:hover, aside a:hover{
+    background-color: var(--indigo);
+    color: var(--white);
+	transition:1s;
+}
+#products button.selected{
+	background-color: var(--white);
+	color:var(--indigo);
+}
+button{
+    background-color: var(--indigo);
+    color: var(--white);
+    border-radius: 30px 30px / 60px 60px;
+    border: none;
+    padding: 15px;
+	font-weight: bold;
+	font-size:16px;
+	margin: 0 50px;
+}
+button:hover{
+    background-color: var(--white);
+    color: var(--indigo);
+	transition:1s;
+}
+
+aside{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 60px;
+	margin: 100px auto;
+}
+aside section{
+	background: rgba(255, 255, 255, 0.5);
+	margin: 15px;
+	height:470px;
+	padding-bottom: 20px;
+    border-radius: 50px 50px / 30px 60px;
+	text-align: center;
+}
+aside h2{
+	color: var(--black);
+}
+aside p{
+	margin: 10px;
+	padding: 15px 5px;
+	text-align: center;
+}
+aside section a{
+	background-color: var(--white);
+	color:var(--indigo);
+	padding:10px;
+	margin-top: 20px;
+    border-radius: 20px 50px / 50px 20px;
+	display: flexbox;
+}
+aside img{
+	border-radius: 0;
+	padding: 20px;
+	width:150px;
+}
+footer{
+	padding: 1rem 0;
+	text-align: center;
+	background-color: var(--dk-green);
+	color:var(--white);
+	height:80px;
+	transition: transform .5s; 
+}
+footer a{
+	color:var(--white);
+	padding: 2rem;
+}
+footer svg:hover{
+	transform: scale(1.2);
+}
+
+
+/* PRODUCT PAGE */
+#prod h2{
+	margin: 50px;
+	font-size: 3rem;
+	font-family: "Kalam", cursive;
+}
+#prod h3{
+	font-size: 2.5rem;
+}
+h4{
+	font-size: 2rem;
+}
+.carousel {
+	height: 400px;
+	width: 500px;
+	perspective: 500px;
+	display: grid;
+	grid-template-columns: 20px 20px 20px;
+	margin:0 auto;
+}
+
+.carousel .carousel-item {
+	cursor: grab;
+	width: 350px;
+}
+
+.carousel .carousel-item:active {
+	cursor:grab;
+}
+
+.carousel .carousel-item img {
+	height: 400px;
+    object-fit: cover;
+	width: 100%;
+}
+
+#earringsP, #braceletsP, #necklacesP{
+	background-color: rgba(114, 76, 249, 0.5);
+	border-radius: 25px;
+	max-width:1200px;
+	margin:50px auto;
+	padding: 10px;
+}
+#boba, #travel, #wine{
+	min-width: 800px;
+	background-color: var(--lt-purple);
+    border-radius: 5% / 50%;
+	margin: 20px;
+	padding:10px;
+}
+#boba h4, #travel h4, #wine h4{
+	margin:20px;
+	text-align: center;
+}
+#boba p, #travel p, #wine p, #neck p, #brace p{
+	margin:0 auto;
+	text-align: center;
+	font-size: 1.5rem;
+}
+#brace, #neck{
+	min-width: 800px;
+	background-color: var(--lt-purple);
+    border-radius: 5% / 50%;
+	margin: 20px;
+	padding:10px;
+}
+
+/* EVENTS PAGE WOOOOO */
+#future, #past{
+	background-color: var(--dk-green);
+	margin: 30px auto;
+	max-width: 1000px;
+	padding: 20px;
+	border-radius: 70px 30px / 30px 60px;
+}
+div.accordion div{
+	background-color: var(--lt-purple);
+	color:var(--white);
+	display: flex;
+	font-family: "Dosis", sans-serif;
+	font-size: 25px;
+	margin:0 auto;
+}
+div.accordion div div{
+	margin-top: 100px;
+}
+div.accordion h3{
+	background-color: var(--green);
+	font-family: "Dosis", sans-serif;
+}
+#future img, #past img{
+	border-radius: 0%;
+	height: 400px;
+	width: auto;
+}
+
+/* CONTACT PAGE */
+#contact h2{
+	margin-top:90px;
+	font-family: "Kalam", cursive;
+	font-size: 3rem;
+}
+form{
+	display: block;
+	width: 300px;
+	text-align: center;
+	padding: 2rem;
+	margin: 100px auto;
+	color: var(--dk-green);
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 50px 50px / 30px 60px;
+	font-size: 1.1em;
+}
+input, label{
+	display: flex;
+	font-size: 1em;
+	margin: 15px auto;
+}
+.required{
+	display: inline-block;
+	color: var(--hot-pink);
+	font-size: 1.1em;
+	font-weight: bold;
+}
+#contact input{
+	padding: 0.25em 0.5em;
+	border: none;
+	border-radius: 5px;
+	height: 1.5em;
+	width: 95%;
+}
+#contact input[type=submit]{
+	padding: 0.75em;
+	width: 70%;
+	height: auto;
+	margin: auto;
+	margin-top: 10px;
+	color:var(--white);
+	background-color: var(--dk-green);
+	border-radius: 15px;
+	border: none;
+}
+textarea{
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	height: 5em;
+	margin-bottom: 1em;
+}
+#confirm{
+	border: 2px solid var(--dk-green);
+	border-radius: 50px 50px / 30px 60px;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	width: 400px;
+	margin: 1rem auto;
+}

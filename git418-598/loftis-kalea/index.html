@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"> <!-- Font Awesome Link-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<!-- Slick (slideshow) CSS-->
+    <link rel="stylesheet" href="styles.css"> <!-- My CSS-->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> <!--jquery-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script> <!--jquery ui-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!--Slick (slideshow) JS-->
+    <script src="main.js" defer></script> <!--MY JS-->
+</head>
+<body id="body">
+    <header>
+      <h1 class="hide">User Section</h1>
+        <img src="https://plus.unsplash.com/premium_photo-1673143970265-84da658930d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhZGllbnR8ZW58MHx8MHx8fDA%3D" alt="Orange and red flower gradient">
+      <div>
+        <p>Hi Kalea!</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+    </header> 
+    <nav id="sideNav">
+      <h2 class="hide">Nav Bar</h2>
+      <div id="logoContainer">
+        <img src="images/LogoSection.png" alt="Melody Logo">
+      </div>
+      <div id="searchContainer">
+        <form id="searchForm">
+          <input type="text" placeholder="Search..." id="search">
+        </form>
+      </div>
+      <div id="home">
+        <h3 class="active"><i class="fa-solid fa-house"></i>Home</h3>
+        <a>Browse</a>
+        <a>Discover</a>
+      </div>
+      <div class="accordion">
+        <h3><i class="fa-solid fa-music"></i>Library</h3>
+        <div id="library">
+          <a>Your Library</a>
+          <a>All Music</a>
+          <a>Favorites</a>
+          <a>Songs</a>
+        </div>
+      </div>
+      <div class="accordion">
+        <h3><i class="fa-solid fa-compact-disc"></i>Playlists</h3>
+        <div id="playlists">
+          <a>Night Vibez</a>
+          <a>Sleepy Time</a>
+          <a>Kalea Rocks</a>
+          <a>Lovey Dovey</a>
+          <a>View More</a>
+        </div>
+      </div>
+      <div id="switchContainer">
+        <label class="switch">
+          <input type="checkbox" id="check">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </nav>
+    <main id="main">
+        <section id="slideshow">
+            <div>
+              <div class="slideshowContent" id="slide1">
+                <h2 class="trending">Trending Now</h2>
+                <p class="slideShowBold">Energy</p>
+                <p class="slideArtists">John Doe</p>
+                <button class="slideBtn ghostBtn">Discover More</button>
+                <div class="playAndLike">
+                  <a class="slidePlay"><i class="fa-solid fa-circle-play fa-2xl"></i></a>
+                  <a class="slideHeart"><i class="fa-regular fa-heart fa-2xl"></i></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slideshowContent" id="slide2">
+                <h2 class="trending">Trending Now</h2>
+                <p class="slideShowBold">Shallow</p>
+                <p>Jet Black</p>
+                <button class="slideBtn ghostBtn">Discover More</button>
+                <div class="playAndLike">
+                  <a class="slidePlay"><i class="fa-solid fa-circle-play fa-2xl"></i></a>
+                  <a class="slideHeart"><i class="fa-regular fa-heart fa-2xl"></i></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slideshowContent" id="slide3">
+                <h2 class="trending">Trending Now</h2>
+                <p class="slideShowBold">Bubblegum</p>
+                <p>Paper Kites</p>
+                <button class="slideBtn ghostBtn">Discover More</button>
+                <div class="playAndLike">
+                  <a class="slidePlay"><i class="fa-solid fa-circle-play fa-2xl"></i></a>
+                  <a class="slideHeart"><i class="fa-regular fa-heart fa-2xl"></i></a>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="genres">
+          <div class="h2andLink">
+            <h2>Popular Genres</h2>
+            <a href="#">View More</a>
+          </div>
+          <div id="genreBtns">
+            <button id="btn1">Hip Hop</button>
+            <button id="btn2">Country</button>
+            <button id="btn3">Pop</button>
+            <button id="btn4">Rock</button>
+            <button id="btn5">R&B</button>
+          </div>
+        </section>
+        <section id="albums">
+          <div class="h2andLink">
+            <h2>Popular Albums</h2>
+            <a href="#">View More</a>
+          </div>
+          <div id="albumContentWrapper">
+          </div>
+        </section>
+        <section id="artists">
+          <div class="h2andLink">
+            <h2>Popular Artists</h2>
+            <a href="#">View More</a>
+          </div>
+          <div id="artistContentWrapper">
+          </div>
+        </section>
+        <section id="aiDj">
+          <div id="aiDjWrapper">
+            <h2>Check out our AI DJ "Dj melody"</h2>
+            <p>Personalized playlists curated just for you.</p>
+            <button class="ghostBtn">Try "Dj melody" Now</button>
+          </div>
+        </section>
+        <section id="musicPlayer">
+          <div id="songAndArtist">
+            <img src="https://images.unsplash.com/photo-1618397746666-63405ce5d015?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGdyYWRpZW50fGVufDB8fDB8fHww" alt="Blue and purple gradient">
+            <div id="songInfo">
+              <h3>Cocopuffs</h3>
+              <p>Rihanna</p>
+            </div>
+
+          </div>
+          <div id="timeAndBar">
+            <p>0:00</p>
+            <div id="slider"></div>
+          </div>
+          <div id="controlls">
+            <i class="fa-solid fa-backward"></i>
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-forward"></i>
+          </div>
+          <div id="volumeAndShuffle">
+            <i class="fa-solid fa-volume-high"></i>
+            <i class="fa-solid fa-shuffle"></i>
+          </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p><a href="#">About Us</a> - <a href="#">Jobs</a> - <a href="#">Developers</a> - <a href="#">Help</a> - <a href="#">Legal</a> - <a href="#">Privacy</a> - <a href="#">Cookie Policy</a> - <a href="#">Cookie Manager</a></p>
+        <div id="logoAndLanguage">
+          <img src="images/LogoSection.png" alt="Melody Logo">
+          <p><span id="lang">Language:</span><a href="#">English(US)</a></p>
+        </div>
+        <p><span>&copy;</span>Kalea Loftis | Made with Frustration and Fascination</p>
+    </footer>
+</body>
+</html>

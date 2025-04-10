@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------ END OF CSS REST -------------------- */
+
+:root {
+    --black: #121212;
+    --darkGray: #282828;
+    --lightGray: #8B8B8B;
+    --white: #FFFFFF;
+    --colorPop: #beff35;
+    --pText: 'Inter', sans-serif;
+    --headerText: 'Oswald', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: black;
+}
+
+body {
+    margin: 0 auto; /*centering body*/
+    background-color: var(--black);
+    max-width: 1280px;
+    color: var(--white);
+    font-family: var(--pText);
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--colorPop);
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+li{
+  font-size: 1.25rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+a:hover{
+    color: var(--colorPop);
+}
+
+
+/* HEADER */
+header{
+    position: absolute;
+    background-color: rgba(18, 18, 18, 0);
+    margin-left: 110rem;
+    margin-bottom: 2rem;;
+    align-items: center;
+    z-index: 1;
+    padding-top: 2.4rem;
+    display: flex;
+    gap: 1.6rem;
+}
+
+header img {
+    border-radius: 50%;
+    width: 3.0rem;
+    height: 3.0rem;
+}
+
+header div{
+    display:flex;
+    gap: .8rem;
+}
+
+
+header p:hover, header i:hover{
+    color: var(--colorPop);
+    cursor: pointer;
+}
+
+
+
+
+
+/************** Side Bar Menu ***************/
+#sideNav{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 21.8rem;
+    position: fixed;
+    z-index: 1;
+    left: auto;
+    background-color: var(--darkGray);
+    overflow-x: hidden;
+}
+
+
+#sideNav i {
+    margin-right: 5px;
+}
+
+
+/* LOGO */
+#logoContainer{
+    display: flex;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-bottom: 3.2em;
+    margin-top: 2.4rem;
+}
+
+
+/* SEARCH BAR */
+#searchContainer{
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-bottom: 1.6rem;
+}
+
+#searchForm input{
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.6rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    width: 140px;
+    color: var(--white);
+}
+
+#search:focus{
+    border: 2px solid var(--colorPop);
+}
+
+/* HOME SECTION */
+.active{
+    color: var(--colorPop);
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+}
+
+#home h3 {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding-left: 24px;
+}
+
+#home a{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#home a:hover {
+    background-color: var(--lightGray);
+    cursor: pointer;
+}
+
+/* LIBRARY SECTION */
+#library{
+    display: flex;
+    flex-direction: column;
+}
+#library a {
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 24px;
+}
+
+#library a:hover{
+    background-color: var(--lightGray);
+    cursor: pointer;
+}
+
+/* PLAYLISTS*/
+#playlists{
+    display:flex;
+    flex-direction: column;
+}
+
+#playlists a{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 24px;
+}
+
+#playlists a:hover{
+    background-color: var(--lightGray);
+    cursor: pointer;
+}
+
+/* ACCORDION  Edits */
+.accordion h3{
+    margin-top: 16px; 
+    padding-left: 24px;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+
+}
+
+.accordion h3:hover{
+    border:  solid .1rem var(--white);
+    cursor:pointer;
+}
+
+
+
+/* CSS Help from W3 schools https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+    position: relative;
+    display: inline-block;
+    max-width:60px;
+    max-height: 34px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    margin-top: 4rem;
+    margin-left: 1.6rem;
+    background-color: var(--lightGray);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--darkGray); 
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+
+input:checked + .slider {
+    background-color: var(--colorPop);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--colorPop);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+    height:3.4rem;
+    width: 6rem;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+
+/**************** Main *******************/
+
+#main{
+    margin-left: 218px;
+}
+
+#genres, #albums, #artists {
+    padding-left: 6.3rem;
+    padding-right: 6.4rem;
+    padding-top: 4.0rem;
+    padding-bottom: 4.0rem;
+    background-color: var(--black);
+}
+
+
+/* slideShow Section */
+#slideshow{
+    max-height: 70vh;
+    width: 100%;
+}
+
+.slideshowContent{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    height: 70vh;
+}
+
+.slideshowContent p {
+    margin-left: 15.0rem;
+}
+
+.slideShowBold {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--colorPop);
+}
+
+.trending {
+    margin-left: 15.0rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.slideshowContent button {
+    margin-left: 15.0rem;
+}
+
+.slideBtn{
+    max-width:15.0rem;
+}
+
+.playAndLike{
+    display: flex;
+    gap: 1.6rem;
+    margin-top: 2.4rem;
+    margin-left: 15.0rem;
+}
+
+.playAndLike a:hover{
+    cursor: pointer;
+    color: var(--colorPop);
+}
+
+#slide1{
+    background: linear-gradient(180deg, rgba(18,18,18,0) 33%, rgba(18,18,18,1) 100%), url("https://images.unsplash.com/photo-1571310100246-e0676f359b42?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* Page Link: https://unsplash.com/photos/singing-man-under-red-light-jKtQTsK0aFA */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#slide2{
+    background: linear-gradient(180deg, rgba(18,18,18,0) 33%, rgba(18,18,18,1) 100%), url("https://images.unsplash.com/photo-1499364615650-ec38552f4f34?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* Page Link: https://unsplash.com/photos/music-band-playing-on-stage-sqJ4tLBiurw */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#slide3{
+    background: linear-gradient(180deg, rgba(18,18,18,0) 33%, rgba(18,18,18,1) 100%), url("https://images.unsplash.com/photo-1507808973436-a4ed7b5e87c9?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* Page Link: https://unsplash.com/photos/two-person-wearing-horse-heads-sitting-on-folding-chairs-while-playing-accordions-beside-brown-concrete-building-5Fxuo7x-eyg */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Slick edits */
+
+button.slick-prev.slick-arrow{
+    position: absolute;
+    cursor: pointer;
+    top:50%;
+    left: 2%;
+    width: auto;
+    z-index: 1;
+    opacity: .3;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: var(--white);
+}
+
+.slick-prev.slick-arrow:hover{
+    opacity: .8;
+}
+
+button.slick-next.slick-arrow{
+    position: absolute;
+    cursor: pointer;
+    top:50%;
+    left: 94%;
+    width: auto;
+    z-index: 1;
+    opacity: .3;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: var(--white);
+}
+.slick-next.slick-arrow:hover{
+    opacity: .8;
+}
+
+.slick-dots{
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    display: flex;
+    gap: 30px;
+    justify-self: center;
+}
+
+#slick-slide-control00, #slick-slide-control01, #slick-slide-control02 {
+    border-radius: 100%;
+    border: none;
+    background-color: var(--lightGray);
+    cursor: pointer;
+    opacity: .3;
+    font-size: .8rem;
+    color: rgba(18, 18, 18, 0.0);
+}
+
+#slick-slide-control00:hover, #slick-slide-control01:hover, #slick-slide-control02:hover{
+    opacity: 1;
+}
+
+/**** Genres ****/
+
+#genreBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#genreBtns button{
+    width: 15.4rem;
+    height: 6.0rem;
+    border-radius: 1.0rem;
+    border-style: none;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#genreBtns button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: var(--colorPop);
+}
+
+#genreBtns #btn1{
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.10) 0%, rgba(18, 18, 18, 0.10) 100%), url("https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3JhZGllbnR8ZW58MHx8MHx8fDA%3D");
+    /* Page Link: https://unsplash.com/photos/purple-and-white-heart-illustration-nY14Fs8pxT8 */
+    background-size: cover;
+}
+
+
+#genreBtns #btn2{
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.10) 0%, rgba(18, 18, 18, 0.10) 100%), url("https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGdyYWRpZW50fGVufDB8fDB8fHww");
+    /* Page Link: https://unsplash.com/photos/a-blurry-image-of-a-rainbow-colored-background-C_NJKfnTR5A*/
+    background-size: cover;
+}
+
+#genreBtns #btn3{
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.10) 0%, rgba(18, 18, 18, 0.10) 100%), url("https://plus.unsplash.com/premium_photo-1668104454432-69c53f7196fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdyYWRpZW50fGVufDB8fDB8fHww");
+    /* Page Link: https://unsplash.com/photos/a-close-up-view-of-a-purple-background-qF1a4hIncoM  */
+    background-size: cover;
+}
+
+#genreBtns #btn4{
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.10) 0%, rgba(18, 18, 18, 0.10) 100%), url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGdyYWRpZW50fGVufDB8fDB8fHww");
+    /* Page Link: https://unsplash.com/photos/a-blurry-image-of-a-blue-and-pink-background-XgeZu2jBaVI  */
+    background-size: cover;
+}
+
+
+#genreBtns #btn5{
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.10) 0%, rgba(18, 18, 18, 0.10) 100%), url("https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGdyYWRpZW50fGVufDB8fDB8fHww");
+    /* Page Link:  */
+    background-size: cover;
+}
+
+/* ALBUMS */
+#albumContentWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.albumCard{
+    display: flex;
+    max-width: 14.0rem;
+    flex-direction: column;
+    gap:.8rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    color: var(--white);
+}
+
+.albumCard:hover{
+    background-color:rgba(190, 255, 53, 0.20);
+    cursor: pointer;
+}
+
+.albumCard h3{
+    line-height: 150%;
+}
+
+
+.albumCard img{
+    width: 14.0rem;
+    height: 14.0rem;
+    border-radius: 1rem;
+}
+
+
+
+/* Artists */
+
+#artistContentWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.artistCard{
+    display: flex;
+    flex-direction:column;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    gap: 1.6rem;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.artistCard:hover{
+    background-color:rgba(190, 255, 53, 0.20);
+    cursor: pointer;
+}
+
+.artistCard img{
+    width: 14.7rem;
+    height: 14.7rem;
+    border-radius: 14.7rem;
+}
+
+/* AI DJ */
+
+#aiDj {
+    background-color: rgba(190, 255, 53, 0.50);
+    padding: 4.0rem 6.3rem;
+}
+
+#aiDjWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: flex-start;
+    padding: 4.5rem 4.5rem;
+    border-radius: 1.0rem;
+    border-radius: 14px;
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.50) 0%, rgba(18, 18, 18, 0.50) 100%), url(images/headphones.jpg) lightgray 0px -166px / 100% 287.097% no-repeat;
+}
+
+/* MUSIC PLAYER */
+#musicPlayer{
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkGray);
+    width:106.2rem;
+    height: 8rem;
+}
+
+#songAndArtist{
+    margin-left: 2.4rem;
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+#songAndArtist img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+#songInfo{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem
+}
+
+#timeAndBar{
+    display: flex;
+    gap: 8rem;
+}
+
+#slider{
+    width: 50rem;
+    border: solid .1rem;
+    border-radius: .5rem;
+}
+
+#volumeAndShuffle{
+    margin-right: 2.4rem;
+}
+
+/* ********* FOOTER **************** */
+footer{
+    margin-left: 218px;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    padding: 6.2rem 6.3rem 9.0rem 6.0rem;
+    font-size: 1.4rem;
+}
+
+footer p {
+    text-align: center;
+    color: var(--lightGray);
+}
+footer a{
+    font-size: 1.4rem;
+}
+
+footer a:hover {
+    color: var(--colorPop);
+    cursor: pointer;
+}
+
+#lang{
+    color: var(--colorPop);
+    font-weight: bold;
+}
+
+#logoAndLanguage{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Misc Styles */
+.hide {
+    display:none;
+}
+
+
+/* LIGHT MODE SWITCH */
+.lightMode {
+    /* swapping hex values for color variables */
+    --black:#FFFFFF; /*black is now white*/
+    --darkGray: #8B8B8B; /*darkGray is now lightGray*/
+    --lightGray:#282828;  /*lightGray is now darkGray*/
+    --white: #121212; /*white is now black*/
+} 
+
+
+.ghostBtn{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 20px;
+    color: var(--white);
+    font-size: 1.6rem;
+    border-radius: 44px;
+    border: 2px solid var(--white, #ffff);
+}
+
+.ghostBtn:hover {
+    color: var(--colorPop);
+    border: 2px solid var(--colorPop);
+    cursor: pointer;
+}
+
+.h2andLink{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.6rem;
+}
+
+
+.h2andLink a{
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+

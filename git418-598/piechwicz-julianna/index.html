@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel Smythe</title>
+    
+
+    <!-- jQuery links-->
+    <script src="jquery/external/jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="jquery/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery/jquery-ui.min.css">
+
+    <!-- carousel https://kenwheeler.github.io/slick/-->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="slick/slick.min.js"></script>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Brawler&family=Cormorant+Infant:wght@500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/hvs3kig.css">
+
+    <!-- My links -->
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <!-- <script src="scriptsOBF.js" defer></script> -->
+    <script src="scripts.js" defer></script>
+
+</head>
+<body>
+    <a id="skip" href="#newReleases">Skip To Main Content</a>
+    <header>  
+        <h1><a href="#">Rachel Smythe</a></h1>
+        <nav id="top">
+            <h2 class="hidden">Main Heading</h2>
+            <ul>
+                <li><a href="#newRelseases">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#webtoonAPI">Episodes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="newReleases">
+            <div id="releaseInfo">
+                <h2>Lore Olympus: Volume Four</h2>
+                <div>
+                    <p>Coming June 6, 2023</p>
+                    <a href="#"><div class="bookBtn">Pre Order Today</div></a>
+                </div>
+                <dl>
+                    <dt>Book Description</dt>
+                    <dd>The rumor mill of Olympus is constantly churning, but Persephone and Hades are all anyone can talk about. With the constant gossip creating intense pressure on the pair, they decide to slow down their budding romance and focus on sorting out their own issues first.</dd> 
+                    <dd>But that's easier said than done. </dd>
+                </dl>
+            </div>
+            <img src="Images/Book4.jpeg" alt="Lore Olympus: Volume Four book cover. Persephone hugging Ares with one eye open looking to the front.">
+        </section>
+
+        <!-- Book descriptions are from https://www.barnesandnoble.com/s/Lore%20Olympus -->
+        <!-- Slideshow/Carousel  -->
+        <section id="books">
+            <h2>Available Books</h2>
+            <div class="carousel">
+                <section>
+                    <h3>Lore Olympus: Volume One</h3>
+                    <img src="Images/Book1.jpeg" alt="Lore Olympus: Volume One book cover. Hades is at the top of the book cover upside down in the underworld looking up. While Persephone is on the bottom riding a horse in the mortal realm looking up at Hades.">
+                    <div id="dialog" title="Book Description">
+                        <p>Persephone, young goddess of spring, is new to Olympus. Her mother, Demeter, has raised her in the mortal realm, but after Persephone promises to train as a sacred virgin, she's allowed to live in the fast moving, glamorous world of the gods. When her roommate, Artemis, takes her to a party, her entire life changes: she ends up meeting Hades and feels an immediate spark with the charming yet misunderstood ruler of the Underworld. Now Persephone must navigate the confusing politics and relationships that rule Olympus, while also figuring out her own place and her own power.</p>
+                    </div>
+                    <button id="openerOne">Book Description</button>
+                    <a href="#"><div class="bookBtn">Buy Book</div></a>
+                </section>
+                <section>
+                    <h3>Lore Olympus: Volume Two</h3>
+                    <img src="Images/Book2.jpeg" alt="Lore Olympus: Volume Two book cover. Persephone and Hades are in the underworld. Hades is facing to the left looking sad. While Persephone is holding on to him from behind. In the background you can see one of the Underworld Corps Buildings with one of Persephone's trees growing out of it.">
+                    <div id="dialogTwo" title="Book Description">
+                        <p>Persephone was ready to start a new life when she left the mortal realm for Olympus. However, she quickly discovered the dark side of her glamorous new home from the relatively minor gossip threatening her reputation to a realm shattering violation of her safety by the conceited Apollo and she's struggling to find her footing in the fast-moving realm of the gods. Hades is also off balance, fighting against his burgeoning feelings for the young goddess of spring while maintaining his lonely rule of the Underworld. As the pair are drawn ever closer, they must untangle the twisted webs of their past and present to build toward a new future. </p>
+                    </div>
+                    <button id="openerTwo">Book Description</button>
+                    <a href="#"><div class="bookBtn">Buy Book</div></a>
+                </section>
+                <section>
+                    <h3>Lore Olympus: Volume Three</h3>
+                    <img src="Images/Book3.jpeg" alt="Lore Olympus: Volume Three book cover.Persephone and Hades looking lovingly into each others eyes. Persephone is flying while Hades is standing. ">
+                    <div id="dialogThree" title="Book Description">
+                        <p>All of Olympus and the Underworld are talking about the God of the Dead and the sprightly daughter of Demeter. But despite the rumors of their romance, Hades and Persephone have plenty to navigate on their own.</p>
+                    </div>
+                    <button id="openerThree">Book Description</button>
+                    <a href="#"><div class="bookBtn">Buy Book</div></a>
+                </section>
+            </div>
+        </section>
+
+        <!-- jQuery UI Widget/Plug In and Web storage-->
+        <section id="characters">
+            <h2>Lore Olympus Characters</h2>
+            <section>
+                <h3>Main Characters</h3>
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tab1">Persephone</a></li>
+                        <li><a href="#tab2">Hades</a></li>
+                        <li><a href="#tab3">Demeter</a></li>
+                        <li><a href="#tab4">Zues</a></li>
+                        <li><a href="#tab5">Hera</a></li>
+                        <li><a href="#tab6">Eros</a></li>
+                        <li><a href="#tab7">Artemis</a></li>
+                        <li><a href="#tab8">Apollo</a></li>
+                    </ul>
+
+                    <div id="tab1">
+                    <h4>Persephone</h4>
+                    <img src="Images/Persephone.png" alt="Persephone with red eyes and a crown on. She has long pink hair and is staring straight ahead.">
+                    <!--Img resource: https://www.webtoons.com/en/romance/lore-olympus/list?title_no=1320&page=1-->
+                    <ul>
+                        <li>Persephone, born as Kore is the Goddess of Spring.</li>
+                        <li>She was born in the mortal realm to Demeter, the Goddess of the Harvest.</li>
+                        <li>When she was 19 she moved to Olympus to study biochemistry theory.</li>
+                        <li>She is a candidate for The Goddesses of Eternal Maidenhood.</li>
+                        <li>She is in intelligent, enjoys school, and is strong willed. </li>
+                    </ul>
+                    </div>
+
+                    <div id="tab2">
+                        <h4>Hades</h4>
+                        <img src="Images/Hades.png" alt="Hades in a suit looking off to the left while facing front.">
+                        <!--Img resource: https://lore-olympus.fandom.com/wiki/Hades/Gallery-->
+                        <ul>
+                            <li>Hades, born Aldoneus is the God of the Dead, King of the Underworld, and is the CEO of Underworld Corp.</li>
+                            <li>He is the older brother to Zeus and Poseiden. </li>
+                            <li>Most people are afraid of him or avoid him because of his title.</li>
+                            <li>He is polite, sensitive, melancholy, and has a temper.</li>
+                        </ul>
+                    </div>
+
+                    <div id="tab3">
+                        <h4>Demeter</h4>
+                        <img src="Images/Demeter.png" alt="Demeter with her hair up and in a while suit facing front.">
+                        <!--Img resource: https://lore-olympus.fandom.com/wiki/Demeter-->
+                        <ul>
+                            <li>Demeter is the Goddess of Harvest and Agriculture and the mother of Persephone</li>
+                            <li>She currently resides in the mortal realm. 
+                            <li>She is one of the Six Traitors Dynasty that helped over throw the Titans.</li>
+                            <li>She is hardworking, strong-willed, protective, obstinate, and headstrong.</li>
+                        </ul>
+                    </div>
+
+                    <div id="tab4">
+                        <h4>Zues</h4>
+                        <img src="Images/Zues.png" alt="Zues looking mad with lighting around his head.">
+                        <!-- Img resource: https://lore-olympus.fandom.com/wiki/Zeus-->
+                        <ul>
+                            <li>Zues, is the God of the Sky and Thunder and is the King of Gods.</li>
+                            <li>He is one of the Six Traitors Dynasty that helped over throw the Titans.</li>
+                            <li>He is the youngest brother to Hades and Poseidon and the husband of Hera.</li>
+                            <li>He is cheeky, stubborn, promiscuous, unscrupulous, dishonest, and egocentric.</li>
+                        </ul>
+                    </div>
+
+                    <div id="tab5">
+                        <h4>Hera</h4>
+                        <img src="Images/Hera.png" alt="Hera in a blue black outfit with her hair up. She is looking straight and holding a cigar.">
+                        <!-- Img resource: https://lore-olympus.fandom.com/wiki/Hera/Gallery -->
+                        <ul>
+                            <li>Hera is Goddess of Marriage and Women and the Queen of Gods.</li>
+                            <li>She is one of the Six Traitors Dynasty that helped over throw the Titans.</li>
+                            <li>She is the wife of Zeus, mother to Eris, Ares, Hebe, and Hephaestus.</li>
+                            <li>She is strong-willed, empathetic, caring, and has a bit of a temper. </li>
+                        </ul>
+                    </div>
+
+                    <div id="tab6">
+                        <h4>Eros</h4>
+                        <img src="Images/Eros.png" alt="Eros holding an arrow in a black and pink track suit. His pink wings are open behind him.">
+                        <!-- Img resource:https://lore-olympus.fandom.com/wiki/Eros -->
+                        <ul>
+                            <li>Eros is the God of Love.</li>
+                            <li>He is one of Persephone's best friends and is always there for her when she's upset.</li>
+                            <li>Eros is sweet, caring, empathetic, and mischievous.</li>
+                        </ul>
+                    </div>
+
+                    <div id="tab7">
+                        <h4>Artemis</h4>
+                        <img src="Images/Artemis.png" alt="Artemis looking confused with her right hand to her head. Her hair is up in a ponytail and shes wearing her hunting outfit.">
+                        <!-- Img resource: https://lore-olympus.fandom.com/wiki/Artemis -->
+                        <ul>
+                            <li>Artemis is the Goddess of the Hunt.</li>
+                            <li>She is a member of The Goddesses of Eternal Maidenhood (TGOEM).</li>
+                            <li>She is the twin sister to Apollo and is Persephone's roommate and best friend.</li>
+                            <li>She is mature, honest, confident, competitive, and genuine.</li>
+                        </ul>
+                    </div>
+
+                    <div id="tab8">
+                        <h4>Apollo</h4>
+                        <img src="Images/Apollo.png" alt="Apollo with his right hand on his face and golden eyes looking straight.">
+                        <!-- Img resource: https://lore-olympus.fandom.com/wiki/Apollo-->
+                        <ul>
+                            <li>Apollo is the God of the Sun, Music, and Medicine. </li>
+                            <li>He is the main antagonist in Lore Olympus and is obsessed with Persephone.</li>
+                            <li>He is Artemis's twin brother.</li>
+                            <li>He is very confident, arrogant, and possessive.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Your Favorite Characters</h3>
+                <form>         
+                    <label for="favoriteCharacter">Enter Favorite Characters</label>
+                    <input type="text" id="favoriteCharacter" name="favoriteCharacter" placeholder="Hades">
+                    <input type="submit" id="charSubmit" name="submit" value="Add">
+                    <input type="submit" id="removeChar" name="submit" value="Remove All">
+                    <p class="hidden">Please Enter a Character and Submit Again</p>  
+                </form>
+                <div id="favCharItems">
+                    <h4 class="hidden">Characters</h4>
+                    <ul id="listFavorite">
+                    </ul>
+                </div>   
+            </section>
+        </section>
+
+        <!-- Ajax/API  -->
+        <section id="webtoonAPI">
+            <h2>Webtoon Latest Episodes</h2>
+            <div id="webtoonEps"></div>
+        </section>
+
+        <section id="about">
+            <!-- Information from: https://lore-olympus.fandom.com/wiki/Rachel_Smythe -->
+            <!-- Icons from https://tablericons.com/  -->
+            
+            <h2>About Rachel Smythe</h2>
+            <div>
+                <p>Rachel Smythe is #1 New York Times Best Selling Author. She is a Harvey Award winner and Eisner Award winner. Smythe is a comic artist and folklorist, who is best known for her web comic Lore Olympus. She currently lives in Wellington, New Zealand. She likes cartoons, movies, podcasts, folklore, snacks, and coffee. Since 2007 she has been working as a freelance designer and illustrator. In 2018 she started working for Webtoon Entertainment Inc. where she works full time on Lore Olympus. </p>
+                <a href="mailto:Loreolympus@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/usedbandaid/?hl=en" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/rachel-smythe-b407b211a/?originalSubdomain=nz" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/used_bandaid?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
+            </div>
+            <img src="Images/RachelSmythe.png" alt="Rachel Smythe signing autographs at a convention. She has lanyards around her neck, glasses on, blond hair and is wearing a black tank top.">
+        </section>
+
+        <section id="contact">
+            <h2>Join the Mailing List</h2>
+            <div>
+                <p>Sign up to receive updates on new episodes and books</p>
+                <form>
+                    <label for="userName">Full Name <span class="required">*</span></label>
+                    <input type="text" name="userName" id="userName" placeholder="First Name" autocomplete="name" required>
+                    <span class="userInfo"></span>
+
+                    <label for="userEmail">E-mail<span class="required">*</span></label>
+                    <input type="email" name="userEmail" id="userEmail" placeholder="you@domain.com" autocomplete="email" required>
+                    <span class="userInfo"></span>
+                
+                    <input type="submit" name="formSubmit" id="formSubmit" value="Sign Up">
+                </form>
+                <p></p>
+            </div>
+            <!-- Img resource: https://www.webtoons.com/en/romance/lore-olympus/message-and-concept-art/viewer?title_no=1320&episode_no=13 -->
+            <img src="Images/Contact.png" alt="Concept art of Persephone and Hades from Lore Olympus Volume one">
+        </section>
+    </main>
+
+    <footer>
+        <a href="#top" id="backTo">Back To Top</a>
+        <nav>
+            <h2 class="hidden">Footer Navigation</h2>
+            <ul>
+                <li><a href="#newRelseases">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#webtoonAPI">Episodes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <small>2022 &copy; Rachel Smythe <br> For Educational Purposes Only </small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!--  
+    Content for: Joshua Becker - GIT418 Final Project
+    Author: Nicole Peterson
+    Last revised: 11/25/22  
+    
+    This website was created to practice skills 
+    learned during academic instruction.
+-->
+
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minimalism and Intentional Living Books, Blog, Speaking Events, and App | Joshua Becker</title>
+    <meta name="description"
+        content="Joshua Becker is a Wall Street Journal best-selling author, writer of the popular blog, Becoming Minimalist, and creator of the Clutterfree app.">
+    <meta name="keywords"
+        content="minimalism, minimalist, books, book tour, speaking events, simplify, clutterfree, intentional living">
+    <meta name="author" content="Nicole Peterson">
+    <meta name="application-name" content="Joshua Becker">
+    <meta name="robots" content="follow, index">
+    <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+        <![endif]-->
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Books by best-selling author, Joshua Becker">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://git-niko.github.io/joshua-becker2.0/">
+    <meta property="og:image" content="https://git-niko.github.io/joshua-becker2.0/images/og-joshua-becker-books.webp">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@joshua_becker">
+    <meta name="twitter:creator" content="@joshua_becker">
+    <meta name="twitter:title" content="Books by best-selling Author, Joshua Becker">
+    <meta name="twitter:description" content="Own less, live more, and create space for the things you love.">
+    <meta name="twitter:image" content="https://git-niko.github.io/joshua-becker2.0/images/og-joshua-becker-books.webp">
+    <!-- Fonts: Lora & Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400&display=swap"
+        as="style">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheets -->
+    <link media="screen" rel="stylesheet" href="./jquery-ui-1.13.2.custom/jquery-ui.min.css">
+    <link media="screen" rel="stylesheet" href="./jquery-ui-1.13.2.custom/jquery-ui.structure.min.css">
+    <link media="screen" rel="stylesheet" href="./jquery-ui-1.13.2.custom/jquery-ui.theme.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
+    <link media="screen" rel="stylesheet" href="styles.css">
+    <!-- JavaScript/jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <a id="skip" href="#mainContent">Skip to Main Content</a>
+    <!-- Header - background image from www.vexels.com -->
+    <header>
+        <h1>Joshua Becker</h1>
+        <p>Author. Writer. Philanthropist.</p>
+        <!-- Navigation -->
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#blogs">Blog</a></li>
+                <li><a href="#app">App</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Light/Dark mode button -->
+        <button id="colorModeBtn" aria-label="Toggle light and dark mode">
+            <img id="dark" class="hidden" aria-hidden="true" src="./images/dark-mode.svg" width="60" height="60"
+                alt="#">
+            <img id="light" src="./images/light-mode.svg" width="60" height="60" alt="#">
+        </button>
+    </header>
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Section: About -->
+        <section id="about">
+            <h2>About</h2>
+            <div>
+                <img src="./images/joshua-becker-author-600x840.webp" width="350" height="490"
+                    alt="Joshua Becker with short salt and pepper hair wearing a black t-shirt.">
+            </div>
+            <p>
+                My story begins in suburban Vermont while I was cleaning the garage, my wife was cleaning the bathrooms
+                and my 5&ndash;year old son was playing alone in the backyard. I struck up a regular conversation with
+                my neighbor who
+                commented, “Maybe you don't need to own all this stuff.”
+            </p>
+
+            <p>
+                The juxtaposition was striking. My possessions piled up in the driveway… my son in the backyard… my day
+                slipping away… I immediately recognized something needed to change. My belongings were not adding value
+                to my life. Instead,
+                they were subtracting from it.
+            </p>
+
+            <p>My family and I began donating, recycling, and removing our unnecessary personal possessions. We embarked
+                on an intentional journey to own less stuff.</p>
+
+            <p>As a result, we discovered more money, more time, more energy, more freedom, less stress, and more
+                opportunity to pursue our greatest passions&colon; faith, family, friends. And we decided to write about
+                it.</p>
+
+        </section>
+        <!-- Section: Books (jQuery widget: https://jqueryui.com/tabs/#vertical) -->
+        <section id="books">
+            <h2>Books</h2>
+            <ul>
+                <li><a href="#book-1">Things That Matter</a></li>
+                <li><a href="#book-2">The Minimalist Home</a></li>
+                <li><a href="#book-3">The More of Less</a></li>
+                <li><a href="#book-4">Simplify</a></li>
+                <li><a href="#book-5">Clutterfree with Kids</a></li>
+            </ul>
+            <div>
+                <section id="book-1">
+                    <h3>Things That Matter: Overcoming Distraction to Pursue a More Meaningful Life</h3>
+                    <img src="./images/things-that-matter-300x450.webp" width="300" height="450"
+                        alt="The Things That Matter book cover has the title in cracked gold against an off-white background.">
+                    <span>You. You matter.</span>
+                    <div>
+                        <p>
+                            Do you want to live a meaningful life &mdash; with very few regrets &mdash; and make a
+                            positive difference in the world? But is culture distracting you from doing so? Perhaps
+                            moments, days, and years go by without you
+                            stopping to ask yourself, Am I living out my true purpose? Even if that question whispers to
+                            you, are you brushing it aside because you don't know what to change in life's busyness?
+                        </p>
+                        <p>
+                            <cite>Things That Matter</cite> is a book about living well. It's about overcoming the
+                            chatter of a world focused on all the wrong things. It's about rethinking the common
+                            assumptions of today to find satisfaction and
+                            fulfillment tomorrow.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Purchase at: </p>
+                        <a href="https://amzn.to/3wVeBSh">Amazon</a>
+                        <a href="https://www.barnesandnoble.com/w/things-that-matter-joshua-becker/1139874721">Barnes
+                            &amp; Noble</a>
+                        <a
+                            href="https://www.booksamillion.com/p/9780593193976?AID=10747236&PID=8373827&SID=PRHEFFDF5A7F1--9780593193976&cjevent=4b85f971473911ec81bbf8e70a1c0e0b">Books
+                            A Million</a>
+                        <a
+                            href="https://www.target.com/p/things-that-matter-by-joshua-becker-hardcover/-/A-84092553#lnk=sametab">Target</a>
+                        <a
+                            href="https://www.walmart.com/ip/Things-That-Matter-Overcoming-Distraction-to-Pursue-a-More-Meaningful-Life-Hardcover-9780593193976/689304456">Walmart</a>
+                        <a href="https://books.apple.com/us/book/id1577293283">iBooks</a>
+                    </div>
+                </section>
+                <section id="book-2">
+                    <h3>The Minimalist Home: A Room-by-Room Guide to a Decluttered, Refocused Life</h3>
+                    <img src="./images/the-minimalist-home-300x450.webp" width="300" height="450"
+                        alt="The Minimalist Home book cover has the title in blue lettering against an image of blue building blocks in the shape of a home.">
+                    <div>
+                        <p>
+                            <cite>The Minimalist Home</cite> takes us on a decluttering tour of every room in our houses
+                            and apartments, showing how to decide what to get rid of and what to keep. Joshua offers
+                            practical guidelines for simplifying
+                            our lifestyle at home and addresses underlying issues that contribute to
+                            over&ndash;accumulation in the first place.
+                        </p>
+                        <p>The purpose is not just to create a more inviting living space. It's also to turn our life's
+                            HQ &mdash; our home &mdash; into a launching pad for a more fulfilling and productive life
+                            in the world.</p>
+                    </div>
+                    <div>
+                        <p>Purchase at: </p>
+                        <a href="https://amzn.to/2uuJEWo">Amazon</a>
+                        <a
+                            href="https://www.barnesandnoble.com/w/the-minimalist-home-joshua-becker/1128472835?ean=9781601427991&st=PLA&sid=BNB_DRS_New+Core+Shopping+Top+Margin+EANs_00000000&2sid=Google_&sourceId=PLGoP210227&gclid=CjwKCAjwyrvaBRACEiwAcyuzRJoED1ogmzWYzP2pUTY5cSfNGBzdgnQtCU_qnuIVdeSgUEgmRfOg4hoCKw8QAvD_BwE">Barnes
+                            &amp; Noble</a>
+                        <a
+                            href="http://www.booksamillion.com/p/9781601427991?AID=10876509&PID=8373827&SID=PRHEFFDF5A7F1--9781601427991">Books
+                            A Million</a>
+                        <a
+                            href="https://www.christianbook.com/minimalist-room-guide-decluttered-refocused-life/joshua-becker/9781601427991/pd/427992">CBD</a>
+                        <a href="https://www.walmart.com/ip/The-Minimalist-Home/705303077">Walmart</a>
+                        <a href="https://itunes.apple.com/us/book/the-minimalist-home/id1369986462?mt=11">iBooks</a>
+                    </div>
+                </section>
+                <section id="book-3">
+                    <h3>The More of Less: Finding the Life You Want Under Everything You Own</h3>
+                    <img src="./images/the-more-of-less-300x450.webp" width="300" height="450"
+                        alt="The More of Less book cover has the title in white and beige against a light blue background with an opened and empty suitcase.">
+                    <div>
+                        <p>We own too much stuff. We feel the weight and burden of our clutter every day. It redirects
+                            our greatest passions to things that can never fulfill. And it distracts us from the very
+                            life we wish we were living.</p>
+                        <p>In <cite>The More of Less</cite>, Joshua helps you recognize the life&ndash;giving benefits
+                            of owning less and craft a personal, practical approach to decluttering your home and life.
+                        </p>
+                        <figure>
+                            <blockquote cite="https://www.publishersweekly.com/978-1-60142-796-0">
+                                <p>With action plans, lists, and appeals to the reader's quiet nature, Becker
+                                    successfully presents a well&ndash;rounded argument that a journey toward minimalism
+                                    is possible and even enjoyable.</p>
+                            </blockquote>
+                            <figcaption>&mdash;<cite> Publisher's Weekly</cite></figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <p>Purchase at: </p>
+                        <a href="https://amzn.to/25cI5dy">Amazon</a>
+                        <a
+                            href="http://www.barnesandnoble.com/w/the-more-of-less-joshua-becker/1122655386?ean=9780735290167">Barnes
+                            &amp; Noble</a>
+                        <a
+                            href="https://www.booksamillion.com/p/More-Less/Joshua-Becker/9781601427977?id=8688323492680#">Books
+                            A Million</a>
+                        <a
+                            href="https://www.christianbook.com/find-life-want-under-everything-ebook/joshua-becker/9781601427984/pd/79858EB?event=ESRCN%7CM">CBD</a>
+                        <a href="https://itunes.apple.com/us/book/the-more-of-less/id1080186821?mt=11">iBooks</a>
+                    </div>
+                </section>
+                <section id="book-4">
+                    <h3>Simplify: 7 Guiding Principles to Help Anyone Declutter Their Home and Life</h3>
+                    <img src="./images/simplify-300x450.webp" width="300" height="450"
+                        alt="Simplify book cover has the title in black lettering against a blurred background with a black tea cup in focus.">
+                    <div>
+                        <p><cite>Simplify</cite> is a celebration of living more by owning less. It calls for the end of
+                            accumulating unnecessary possessions by highlighting the enjoyment of living with less.</p>
+                        <p><cite>Simplify</cite> will change the way you view physical possessions. And it will provide
+                            you with the motivation to realign your life around your heart's greatest passion.</p>
+                        <figure>
+                            <blockquote>
+                                <p>A must&ndash;read.</p>
+                            </blockquote>
+                            <figcaption>&mdash; Leo Babauta,<cite> Zen Habits</cite></figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <p>Purchase at: </p>
+                        <a
+                            href="https://www.amazon.com/gp/product/B006431ADS/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B006431ADS&linkCode=as2&tag=becomingminim-20">Kindle</a>
+                        <a
+                            href="http://www.barnesandnoble.com/w/simplify-joshua-becker/1107091796?ean=2940013553699">Nook</a>
+                        <a href="http://store.kobobooks.com/en-US/ebook/simplify">Kobo</a>
+                        <a href="https://www.smashwords.com/books/view/102700">PDF</a>
+                    </div>
+                </section>
+                <section id="book-5">
+                    <h3>Clutterfree with Kids</h3>
+                    <img src="./images/clutterfree-with-kids-300x450.webp" width="300" height="450"
+                        alt="Clutterfree with Kids book cover has the title in black lettering against an image of a forward facing red chair and coffee table with a vase on top in front of a light green wall.">
+                    <div>
+                        <p>Children bring smiles, laughter, and energy into our homes. They also add clutter. Sometimes,
+                            as parents, balancing life and managing clutter may appear impossible.</p>
+                        <p>
+                            <cite>Clutterfree with Kids</cite> offers a new perspective and approach to overcoming
+                            clutter. It invites us to change our thinking, discover new habits, and free our homes. And
+                            it just may inspire you to live the
+                            life you've been searching for all along.
+                        </p>
+                        <figure>
+                            <blockquote>
+                                <p>A wonderful guide that any parent will find practical and inspirational.</p>
+                            </blockquote>
+                            <figcaption>&mdash; Peter Walsh,<cite> It's All Too Much</cite></figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <p>Purchase at: </p>
+                        <a
+                            href="https://www.amazon.com/gp/product/0991438604/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0991438604&linkCode=as2&tag=becomingminim-20">Paperback</a>
+                        <a
+                            href="https://www.amazon.com/gp/product/B00HYNJKCU/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00HYNJKCU&linkCode=as2&tag=becomingminim-20">Kindle</a>
+                        <a
+                            href="http://www.barnesandnoble.com/w/clutterfree-with-kids-joshua-becker/1118142929?ean=2940148204633">Nook</a>
+                        <a href="http://store.kobobooks.com/en-US/ebook/clutterfree-with-kids">Kobo</a>
+                        <a href="https://www.e-junkie.com/ecom/gb.php?c=cart&i=1320910&cl=78094&ejc=2">PDF</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- Section: Events -->
+        <section id="events">
+            <h2 class="sr-only">Events</h2>
+            <section id="bookTourEvents">
+                <h3>Book Tour</h3>
+                <p>
+                    I will be touring 12 <abbr title="United States">US</abbr> cities &lpar;across the Midwest and
+                    South&rpar; to celebrate and discuss my newest book,
+                    <cite>Things That Matter: Overcoming Distraction to Pursue a More Meaningful Life.</cite>
+                </p>
+                <img src="./images/joshua-becker-book-tour-600x400.webp" width="600" height="400"
+                    alt="Joshua Becker standing near some Saguaro cacti holding up his book, Things That Matter, in a black button up shirt.">
+                <p class="eventsError hidden"></p>
+            </section>
+            <section id="speakingEvents">
+                <h3>Speaking Events</h3>
+                <p>Each topic is presented in a highly relevant, immediately practical way that seeks to connect with
+                    the listeners' heart through humor, personal stories, sound reasoning, and practical steps of
+                    application.</p>
+                <img src="./images/joshua-becker-speaking-600x400.webp" width="600" height="400"
+                    alt="Joshua Becker on stage at a speaking event wearing a black polo shirt and jeans.">
+                <p class="eventsError hidden"></p>
+            </section>
+        </section>
+        <!-- Section: Blog -->
+        <article id="blogs">
+            <h2 id="blog">Blog</h2>
+            <a href="https://www.becomingminimalist.com/"><img src="./images/becoming-minimalist-logo-400x100.webp"
+                    width="200" height="50" alt="Becoming Minimalist words in brown lettering on white background."></a>
+            <p><cite>Becoming Minimalist </cite> is designed to inspire people to pursue their greatest passions by
+                owning fewer possessions. With over 1<abbr title="Million">M</abbr> readers every month, we're honored
+                to
+                have new readers every
+                day. If that's you, welcome.</p>
+            <p>Subscribe for weekly posts right to your inbox. <a
+                    href="https://app.convertkit.com/landing_pages/3133">sign me up</a></p>
+            <rssapp-carousel id="u19Fb4X86Ci2HFRj"></rssapp-carousel>
+            <script src="https://widget.rss.app/v1/carousel.js" defer></script>
+        </article>
+        <!-- Section: App (jQuery plugin: https://accessible360.github.io/accessible-slick/) -->
+        <section id="app">
+            <h2>Clutterfree App</h2>
+            <a href="https://clutterfree.com/">
+                <img src="./images/clutterfree-app-icon-100x100.webp" width="50" height="50"
+                    alt="The letter C in white lettering on a ocean green background.">
+            </a>
+            <p>Declutter your home.</p>
+            <p>
+                With the Clutterfree App, you will receive a personalized, step&ndash;by&ndash;step roadmap to declutter
+                your home. Also, you can track your progress, find inspiration, document donations, complete daily
+                challenges, or tackle
+                difficult decluttering areas using the included Bonus Plans.
+            </p>
+            <a href="https://apps.apple.com/us/app/clutterfree/id1496816049">
+                <img src="./images/apple-store-badge.svg" width="165" height="55"
+                    alt="Download on the App Store badge.">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.becomingminimalist.clutterfree">
+                <img src="./images/google-play-badge.webp" width="185" height="55"
+                    alt="Get it on Google Play download badge.">
+            </a>
+            <div class="appCarousel center">
+                <div><img src="./images/clutterfree-promo1-500x889.webp" width="300" height="533"
+                        alt="Get Clutterfree. The key to owning less and creating the home you love."></div>
+                <div><img src="./images/clutterfree-promo2-500x889.webp" width="300" height="533"
+                        alt="Clutterfree app promoting the ability to personalize and track the progress of each room you're decluttering.">
+                </div>
+                <div><img src="./images/clutterfree-promo3-500x889.webp" width="300" height="533"
+                        alt=" Clutterfree app promoting a personalized, step by step roadmap to declutter your unique home.">
+                </div>
+                <div><img src="./images/clutterfree-promo4-500x889.webp" width="300" height="533"
+                        alt=" Clutterfree app promoting the ability to track progress, unlock achievements, stay focused, gain momentum, find success.">
+                </div>
+                <div><img src="./images/clutterfree-promo5-500x889.webp" width="300" height="533"
+                        alt="The dashboard of the Clutterfree app showing the numbers of items removed, donated, and achievements.">
+                </div>
+                <div><img src="./images/clutterfree-promo6-500x889.webp" width="300" height="533"
+                        alt="Clutterfree app promoting bonus plans from some of the world's top decluttering experts to tackle all your trouble areas.">
+                </div>
+            </div>
+        </section>
+        <!-- Section: Contact (jQuery widget: https://jqueryui.com/dialog/) -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>For information about media, publicity, and speaking availability, please fill out the form below.</p>
+            <form id="contactForm" method="post" novalidate>
+                <div>
+                    <div>
+                        <label for="fullName">Full Name<span class="required">*</span></label>
+                        <input type="text" name="fullName" id="fullName" autocomplete="name">
+                        <span class="errorMsg"></span>
+                    </div>
+                    <div>
+                        <label for="email">Email Address<span class="required">*</span></label>
+                        <input type="email" name="email" id="email" autocomplete="email">
+                        <span class="errorMsg"></span>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" autocomplete="tel">
+                        <span class="errorMsg"></span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="message">Message<span class="required">*</span></label>
+                        <textarea id="message" name="message"></textarea>
+                        <span class="errorMsg"></span>
+                    </div>
+                    <input id="formSubmit" type="submit" value="Submit">
+                </div>
+            </form>
+            <div id="formConfirmation" class="hidden">
+                <p id="formInfo"></p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <section id="newsletter">
+            <h2 class="sr-only">Newsletter Sign Up</h2>
+            <p>1 million readers can't be wrong.</p>
+            <p>Own less, live more, and create space for the things you love. <a
+                    href="https://app.convertkit.com/landing_pages/3133">Sign up</a> and get new posts delivered right
+                to your inbox.</p>
+        </section>
+        <section id="socialMedia">
+            <h2 class="sr-only">Social Media</h2>
+            <a href="https://www.facebook.com/becomingminimalist" aria-label="View Joshua Becker's Facebook page">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-facebook" width="50" height="50" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#D9C1A1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+            <a href="https://twitter.com/joshua_becker" aria-label="View Joshua Becker's Twitter page">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-twitter" width="50" height="50" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#D9C1A1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCBMKymQczkDxCpE1R2vvA4Q"
+                aria-label="View Joshua Becker's YouTube channel">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-youtube" width="50" height="50" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#D9C1A1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="3" y="5" width="18" height="14" rx="4" />
+                    <path d="M10 9l5 3l-5 3z" />
+                </svg>
+            </a>
+            <a href="https://www.pinterest.com/joshuabecker/" aria-label="View Joshua Becker's Pinterest">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-pinterest" width="52"
+                    height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D9C1A1" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" />
+                    <line x1="8" y1="20" x2="12" y2="11" />
+                </svg>
+            </a>
+        </section>
+        <p>
+            <small>Copyright &copy; <span id="copyrightYear"></span>, Joshua Becker. All Rights Reserved.</small>
+        </p>
+    </footer>
+    <button id="backToTop" class="hide">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-top" aria-hidden="true"
+            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="currentColor"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+                d="M9 20v-8h-3.586a1 1 0 0 1 -.707 -1.707l6.586 -6.586a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 -.707 1.707h-3.586v8a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+        </svg>
+        <span>Back</span>
+        <span>to</span>
+        <span>Top</span>
+    </button>
+</body>
+
+</html>
