@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Snowpeak Mountain</title>
+        <meta name="author" content="Zachary Fraedrich">
+        <meta name="description" content="Contact page of Snowpeak Mountain Resort">
+        
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+
+            <h1><a href="index.html">Snowpeak&nbsp;Mountain Resort</a></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <img src="images/swiss-valley.jpg" height="560" width="1440" alt="A stream running through stunning green hills and trees. Snowy mountain tops in the background on a bright sunny day.">
+            
+        </header>
+
+        <main id="main-contact">
+
+            <section id="contactus">
+
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                <p>Required fields marked with a <span class="required">*</span></p>
+                <img src="images/swiss-peak.jpg" height="455" width="350" alt="Snowy peak in background overlooking flowing river, trees shining in the sun.">
+                
+            </section>
+
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+
+                <label for="full-name">Full Name (first and last) <span class="required">*</span></label>
+                <input type="text" name="full-name" id="full-name" required>
+
+                <label for="my-email">Email Address <span class="required">*</span></label>
+                <input type="email" name="my-email" id="my-email" required>
+
+                <label for="my-number">Phone Number <span class="required">*</span></label>
+                <input type="tel" name="my-number" id="my-number" required>
+
+                <fieldset>
+                    <legend>Preferred Contact Method <span class="required">*</span></legend>
+
+                    <input type="radio" name="my-pref" id="pref-email" value="prefer-email" required checked>
+                    <label for="pref-email">Email</label>
+
+                    <input type="radio" name="my-pref" id="pref-phone" value="prefer-phone">
+                    <label for="pref-phone">Phone</label>
+                </fieldset>
+
+                <label for="my-comments">Comments <span class="required">*</span></label>
+                <textarea name="my-comments" id="my-comments" required></textarea>
+
+                <input type="submit" name="mySubmit" id="mySubmit" value="Submit Form">
+
+            </form>
+
+        </main>
+
+        <footer>
+            <p>Copyright &copy;2024 - Snowpeak Mountain Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>

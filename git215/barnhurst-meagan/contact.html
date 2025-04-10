@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Solstice Resort | Contact</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="author" content="Meagan Barnhurst">
+    <meta name="description" content="Contact Solstice Resort, your perfect escape in the Swiss Alps."> 
+    <!-- fix upper description for contact page -->
+    <meta name="keywords" content="Solstice Resort, Alps, vacation, skiing, relaxation">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo" src="logo.svg" alt="minimal mountain logo with whitespace mountain in the middle. Medium brown color">
+        </a>
+        <h1><a href="index.html">Solstice Resort</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img id="headerimg" src="images/swiss-valley.jpg" alt="Swiss mountains in the horizon with lush green pine trees on either side of a river in the foreground."  width="1440" height="560">
+    </header>
+
+    
+    <main id="contactmain">
+        <h2 id="contacth2">Contact Us</h2>
+        <p>    Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+            Required fields marked with a *</p>
+
+        <section id="form">
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <div>
+                    <label for="full-name">Full Name:*</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email Address:*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number:*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div>
+                    <label for="contact-method">Preferred Contact Method:*</label>
+                    <select id="contact-method" name="contact-method" required>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="comments">Comments:*</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                </div>
+
+                <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+            </form>
+        </section>
+        <img src="images/swiss-peak.jpg" alt="One large mountain peak with trees and a river close in the foreground." width="350" height="455">
+    </main>
+
+
+    <footer>
+        <img href="index.html" id="mini-logo" src="logo.svg" alt="minimal mountain logo with whitespace mountain in the middle. Medium brown color">
+        <p>
+            Copyright ©2023 - Solstice Resort <br>This site is for educational purposes only
+        </p>
+    </footer>
+</body>
+</html>

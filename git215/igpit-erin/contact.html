@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Southern Summit | Contact</title>
+        <meta name="author" content="Adrienne Esther Igpit">
+        <meta name="description" content="Southern Summit is a Swiss resort located just south of Zürich. We offer amenities such as our ski-in bars, nearby Italian restaurants, an upscale spa, gym, and hot tubs. Breakfast is available as well.">
+
+            <!-- Fonts -->
+            <link rel="stylesheet" href="https://use.typekit.net/dgi2amm.css">
+
+            <!-- Favicon -->
+            <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+            <!-- LINK TO EXTERNAL STYLESHEET -->
+            <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1><a id="header" class="active" href="index.html">Southern Summit</a></h1>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <img src="images/swiss-valley.jpg" alt="A photo of a Swiss valley, with trees, a river going through the center, and clear blue skies." width="1440" height="560">
+
+            <section id="contact">
+                <div id="left">
+                    <h2>Contact Us</h2>
+                        <p>
+                            Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+                            Required fields marked with a *
+                        </p>
+
+                        <img src="images/swiss-peak.jpg" alt="A photo of the peak of a Swiss mountain with green trees and a body of water in the foreground." width="590" height="360">
+                </div>
+
+                <div id="right">
+                    <form action ="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                        
+                        <!--Name: required-->
+                        <label for="my-name">Full Name*</label>
+                        <input type="text" name="my-name" id="my-name" required>
+
+                        <!--Email: Required-->
+                        <label for="my-email">Email*</label>
+                        <input type="email" name="my-email" id="my-email" required>
+
+                        <!--Phone Number-->
+                        <label for="my-phone">Phone Number*</label>
+                        <input type="tel" name="my-phone" id="my-phone" required>
+                        
+                        <!-- Preferred Method of Contact -->
+                        <fieldset>
+                            <legend>Preferred Method of Contact*</legend>
+                            
+                            <!--Email-->
+                            <input type="radio" name="pref-contact" id="pref-email" required>
+                            <label for="pref-email">Email</label>
+                            
+                            <!--Phone-->
+                            <input type="radio" name="pref-contact" id="pref-phone" required>
+                            <label for="pref-phone">Phone</label>
+                            
+                        </fieldset>
+                        
+                        <!-- Comments -->
+                        <label for="my-comments">Comments*</label>
+                        <textarea name="my-comments" id="my-comments" required></textarea>
+                        
+                        <!-- Submit Button -->
+                        <input type="submit" name="my-submit" id="my-submit" value="Submit">
+                        
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright ©2023 - Resort Name</p>
+            <p>This site is for educational purposes only.</p>
+        </footer>
+    </body>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Evergreen Retreat</title>
+        <meta name="author" content="Abbi Baker">
+        <meta name="description" content="Contact the Evergreen Resort to start planning your dream vacation today!">
+        
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <section>
+            <h1><a href="index.html">Evergreen Retreat | Contact</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            </section>
+            <img src="images/swiss-valley.jpg" alt="Luscious green valley filled with a river and beautiful pine trees" width="1440" height="560">
+        </header>
+        
+        <main>
+            <section id="contact">
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with an <span class="required">*</span></p>
+                    <img src="images/swiss-peak.jpg" alt="" width="350" height="455">
+                </div>
+
+                <div>
+                    <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+
+                        <label for="full-name">Full Name (first and last): <span class="required">*</span></label>
+                        <input type="text" name="full-name" id="full-name" required>
+
+                        <label for="email-addr">Email Address: <span class="required">*</span></label>
+                        <input type="email" name="email-addr" id="email-addr" required>
+                        
+                        <label for="phone-num">Phone Number: <span class="required">*</span></label>
+                        <input type="tel" name="phone-num" id="phone-num" required>
+
+                        <fieldset>
+                            <legend>Preferred Method of Contact: <span class="required">*</span></legend>
+                            
+                            <label for="phone">Phone</label>
+                            <input type="radio" name="pref-contact" id="phone" value="phone" required checked>
+                            
+                            <label for="email">Email</label>
+                            <input type="radio" name="pref-contact" id="email" value="email">
+                            
+                        </fieldset>
+
+                        <label for="comments">Add Your Comments Below: <span class="required">*</span></label>
+                        <textarea name="comments" id="comments" required></textarea>
+
+                        <input type="submit" name="submit" id="submit" value="Submit Form">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright &copy;2023 - Evergreen Retreat</p>
+            <p>For Educational Purposes Only</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Große Veränderung | Contact</title>
+        <meta name="author" content="Meredith Jaxon">
+        <meta name="description" content="Welcome to Große Veränderung! Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" aria-label="Go to the Große Veränderung home page"><img src="images/matterhorn-logo.png" alt=""></a>
+            <h1><a href="#" aria-label="Go to the Große Veränderung home page">Große Veränderung</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodations.html">Accommodations</a></li>
+                    <li><a href="#">Contact</a></li>                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <img class="sv-hero-image" src="images/swiss-valley.jpg" alt="verdant meadow with snowy mountains in the background and blue sky with fluffy clouds above" height="560" width="1440">
+            <h2>Contact Us</h2>
+            <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+    Required fields marked with a <span class="required">*</span></p>
+
+            <div id="pic">
+                <img src="images/swiss-sunset.jpg" alt="houses and evergreens surrounding a still lake, with snow-topped mountains and rainbow-colored clouds in the background at sunset" height="270" width="710">
+            </div> 
+
+            <div id="contact">           
+                
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                    <div class="container">
+                        <label for="my-name">Full Name: <span class="required">*</span></label>
+                        <input type="text" name="my-name" id="my-name" required>
+                        
+                        <label for="my-email">Email: <span class="required">*</span></label>
+                        <input type="email" name="my-email" id="my-email" required>
+
+                        <label for="my-phone">Phone: <span class="required">*</span></label>
+                        <input type="tel" name="my-phone" id="my-phone" required>
+                    </div>
+
+                    <div class="container">
+                        <fieldset>
+                        <legend>Preferred Method of Contact <span class="required">*</span></legend>
+                        
+                        <input type="radio" name="pref-contact" id="pref-phone" required>
+                        <label for="pref-phone">Phone</label>
+                        
+                        <input type="radio" name="pref-contact" id="pref-email" required>
+                        <label for="pref-email">Email</label>
+                        </fieldset>
+
+                        <label for="my-comments">Comments: <span class="required">*</span></label>
+                        <textarea name="my-comments" id="my-comments" required></textarea>
+                    </div>
+
+                    <div class="container">
+                        <div class="wavy-line"></div>
+                    </div>
+			
+                    <div class="container">
+                        <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+                    </div>                 
+			
+		        </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2023 - Große Veränderung</p>
+            <small>This site is for educational purposes only</small>
+        </footer>
+    </body>
+</html>

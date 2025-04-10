@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Summit Haven Resort Contact</title>
+        <meta name="author" content="Justin Bock">
+        <meta name="description" content="Contact the Summit Haven Resort team for any of your vacation needs. Fill out the contact form and we will get back to you as soon as possible.">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Summit Haven Resort</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/swiss-valley.jpg" width="1440" height="560" alt="A beautiful mountain landscape in the Swiss Alps. The valley is lush and green, with trees lining the riverbank and covering the mountainside. The trees are a mix of evergreens and deciduous. There is a blue sky with scattered clouds.">
+        </header>
+        <main id="contact-page">
+            <section id="contact-intro">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                <p>Required fields marked with a *</p>
+            </section>
+
+            <img src="images/swiss-peak.jpg" width="350" height="455" alt="In the foreground is a lake that is reflecting a shore full of pine trees. A few cabins are located near the shoreline. The background is full of tall mountain peaks in the distance. The clouds are full of color from the sunset. They are a gradient of purple, orange, yellow, and gold.">
+            
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                <label for="full-name">Full Name<span class="required">*</span></label>
+                <input type="text" name="full-name" id="full-name" required>
+        
+                <label for="email">Email Address<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="my-phone">Phone Number<span class="required">*</span></label>
+                <input type="tel" name="my-phone" id="my-phone" required>
+
+                <fieldset>
+                    <legend>Preferred Contact Method: <span class="required">*</span></legend>
+
+                    <input type="radio" name="contact-pref" id="pref-email">
+                    <label for="pref-email">Email</label>
+                    
+                    <input type="radio" name="contact-pref" id="pref-phone">
+                    <label for="pref-phone">Phone</label>
+                </fieldset>
+
+                <label for="my-comments">Comments<span class="required">*</span></label>
+                <textarea name="my-comments" id="my-comments"></textarea>
+
+                <input type="submit" name="my-submit" id="my-submit" value="Submit">
+            </form>
+        
+
+        </main>
+        <footer>
+            <p>&copy; 2023 Summit Haven Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Glacier Getaways | Contact</title>
+        <meta name="author" content="Lauren Dobbins">
+        <meta name="description" content="Glacier Getaway resort's contact form page; use this page if you need to reach out to us. We will gladly assist you with whatever you need.">
+        <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="index.html">Glacier Getaways</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#accommodations">Accommodations</a></li>
+                    <li><a href="#contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! <em>Required fields marked with a *</em></p>
+                <img src="images/swiss-sunset.jpg" alt="photograph of a beautiful sunset over the Swiss alps in the summer time"  width="710" height="270">
+            </section>
+           <!-- Form -->
+           <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+            <!-- name -->
+            <div>
+                <label for="my-name">Full Name: *</label>
+                <input type="text" name="my-name" id="my-name" required>
+            </div>
+             <!-- preferred method -->
+            <fieldset >
+                <legend>Preferred Method of Contact: *</legend>
+                <div>
+                    <span>
+                        <input type="radio" name="pref-contact" id="pref-email" checked required>
+                        <label for="pref-email">Email</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="pref-contact" id="pref-phone">
+                        <label for="pref-phone">Phone</label>
+                    </span>
+                </div>
+            </fieldset>
+            <!-- email address -->
+            <div>
+                <label for="my-email">Email Address: *</label>
+                <input type="email" name="my-email" id="my-email" required>
+            </div>
+            <!-- comments -->
+            <div class="comments">
+                <label for="my-comments">Comments: *</label>
+                <textarea name="my-comments" id="my-comments" required></textarea>
+            </div>
+            <!-- phone -->
+            <div>
+                <label for="my-phone">Phone Number: *</label>
+                <input type="tel" name="my-phone" id="my-phone" required>
+            </div>
+            <!-- submit -->
+            <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+           </form>
+        </main> 
+        <footer>
+            <p>Copyright &copy;2023 - Glacier Getaways</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>

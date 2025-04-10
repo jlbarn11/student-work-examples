@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dominik Croci">
+    <meta name="description" content="Peak Paradise Resort Contact Page">
+    <title>Peak Paradise Resort | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icons8-mountain-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@200;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94983fc221.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                <a href="index.html">Peak Paradise Resort</a>
+            </h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="no-cursor"><a class="no-cursor" href="#">Accommodations</a></li>
+                <li class="activePage"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="assets/swiss-valley.jpg" alt="Image of a Swiss Valley">
+    </header>
+    <main>
+        <section class="contact">
+            <div class="intro">
+                <h2>
+                    Contact Us
+                </h2>
+                <p>
+                    Please reach out to us with any questions or concerns. We are happy to help you plan your dream
+                    vacation
+                    with us!
+                </p>
+                <img src="assets/swiss-peak.jpg" alt="">
+            </div>
+            <div class="form">
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" name="fullname" id="fullname" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" required>
+                    <fieldset>
+                        <legend >Preferred Method </legend>
+                        <label for="phonepref">Phone</label>
+                        <input type="radio" name="prefcontact" id="phonepref" value="phone">
+                        <label for="emailpref">Email</label>
+                        <input type="radio" name="prefcontact" id="emailpref" value="email">
+                    </fieldset>
+                    <label for="comments">Comments: </label>
+                    <textarea name="comments" id="comments" rows="4"></textarea>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerinfo">
+            <p>
+                Copyright ©2023 - Peak Paradise Resort
+            </p>
+            <p>
+                This site is for educational purposes only
+            </p>
+            <a href="#" aria-label="Back to top button">
+                <i class="fa-solid fa-circle-arrow-up toparrow"></i>
+            </a>
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Caleb Lopez">
+	<meta name="description" content="Experience unforgettable adventures with SwissAlps Discoveries&copy;. From exotic paradises to coastal explorations, we have vacations tailored for every traveler.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="Images/company-favicon.png" type="image/x-icon">
+	<title>SwissAlps Discoveries</title>
+</head>
+<body>
+	<header>
+		<h1><a href="index.html">SwissAlps Discoveries</a></h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Accommodations</a></li>
+				<li><a href="contact.html" class="current">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<img id="hero-img" src="Images/swiss-valley.jpg" alt="Swiss Mountain open field">
+	<main id="form-main">
+		<div class="form-container">
+			<h2>SwissAlps Discoveries | Contact</h2>
+			<p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a <span class="required">*</span></p>
+			<img src="Images/swiss-peak.jpg" alt="The peak of the Swiss Mountains">
+		</div>
+		<div class="form-container">
+			<form action="https://wp.zybooks.com/form-viewer.php" method="post" target="_blank">
+				<label for="fullname">Full Name <span class="required">*</span></label>
+				<input type="text" name="fullname" id="fullname" required>
+				<label for="email">Email Address <span class="required">*</span></label>
+				<input type="email" name="email" id="email" required>
+				<label for="phone">Phone number <span class="required">*</span></label>
+				<input type="tel" name="phone" id="phone" required>
+				<fieldset>
+					<legend>Preferred Method of Contact</legend>
+					<input type="radio" name="contact-pref" id="pref-email" checked>
+					<label for="pref-email">Email</label>
+					<input type="radio" name="contact-pref" id="pref-phone">
+					<label for="pref-phone">Phone</label>
+				</fieldset>
+				<label for="comments">Comments</label>
+				<textarea name="comments" id="comments" rows="3"></textarea>
+				<input type="submit" name="submit" id="submit" value="Submit Form">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright ©2023 - SwissAlps Discoveries</p>
+		<p>This site is for educational purposes only</p>
+	</footer>
+</body>
+</html>

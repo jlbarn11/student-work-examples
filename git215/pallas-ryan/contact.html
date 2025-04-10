@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ryan Pallas">
+        <meta name="description" content="Have any questions, comments, or concerns about Wok Asian Cuisine? Submit a form to let us know so that we can improve your future experiences.">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>Wok Asian Cuisine | Contact</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">Wok Asian Cuisine</a></h1>
+            <nav>
+                <ul>
+                    <li><a class="home-nav" href="index.html">Home</a></li>
+                    <li><a class="menu-nav" href="#">Our Menu</a></li>
+                    <li><a class="order-nav" href="#">Order Now</a></li>
+                    <li><a class="contact-nav contact-page-nav" href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contact-main">
+            <h2 class="contact-h2">Contact Us</h2>
+            <p class="contact-p">Do you have dietary concerns? Questions about an upcoming event? Drop us a line, and we'll get back to you soon!</p>
+            <img class="contact-img" src="images/contact-img.jpg" alt="A table with a row of white tea cups with dark marble plates underneath them and a variety of other decorative items spread across the wooden table">
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                <div class="contact-name">
+                    <label for="user-name">Name:*</label>
+                    <input type="text" name="user-name" id="user-name" required>
+                </div>
+                <div class="contact-address">
+                    <label for="user-address">Address:</label>
+                    <input type="text" name="user-address" id="user-address">
+                </div>
+                <div class="contact-city">
+                    <label for="user-city">City:</label>
+                    <input type="text" name="user-city" id="user-city">
+                </div>
+                <select name="user-state" id="user-state">
+                    <option value="">Choose Your State</option>
+                    <option value="al">AL</option>
+                    <option value="ak">AK</option>
+                    <option value="az">AZ</option>
+                    <option value="ar">AR</option>
+                    <option value="ca">CA</option>
+                    <option value="co">CO</option>
+                    <option value="ct">CT</option>
+                    <option value="de">DE</option>
+                    <option value="dc">DC</option>
+                    <option value="fl">FL</option>
+                    <option value="ga">GA</option>
+                    <option value="hi">HI</option>
+                    <option value="id">ID</option>
+                    <option value="il">IL</option>
+                    <option value="in">IN</option>
+                    <option value="ia">IA</option>
+                    <option value="ks">KS</option>
+                    <option value="ky">KY</option>
+                    <option value="la">LA</option>
+                    <option value="me">ME</option>
+                    <option value="md">MD</option>
+                    <option value="ma">MA</option>
+                    <option value="mi">MI</option>
+                    <option value="mn">MN</option>
+                    <option value="ms">MS</option>
+                    <option value="mo">MO</option>
+                    <option value="mt">MT</option>
+                    <option value="ne">NE</option>
+                    <option value="nv">NV</option>
+                    <option value="nh">NH</option>
+                    <option value="nj">NJ</option>
+                    <option value="nm">NM</option>
+                    <option value="ny">NY</option>
+                    <option value="nc">NC</option>
+                    <option value="nd">ND</option>
+                    <option value="oh">OH</option>
+                    <option value="ok">OK</option>
+                    <option value="or">OR</option>
+                    <option value="pa">PA</option>
+                    <option value="ri">RI</option>
+                    <option value="sc">SC</option>
+                    <option value="sd">SD</option>
+                    <option value="tn">TN</option>
+                    <option value="tx">TX</option>
+                    <option value="ut">UT</option>
+                    <option value="vt">VT</option>
+                    <option value="va">VA</option>
+                    <option value="wa">WA</option>
+                    <option value="wv">WV</option>
+                    <option value="wi">WI</option>
+                    <option value="wy">WY</option>
+                </select>
+                <div class="contact-zip">
+                    <label for="user-zip">Zip:</label>
+                    <input type="number" name="user-zip" id="user-zip">
+                </div>
+                <div class="contact-phone">
+                    <label for="user-phone">Phone:*</label>
+                    <input type="tel" name="user-phone" id="user-phone" required>
+                </div>
+                <div class="contact-email">
+                    <label for="user-email">Email:*</label>
+                    <input type="email" name="user-email" id="user-email" required>
+                </div>
+                <fieldset class="contact-pref">
+                    <legend>Preferred Method of Contact</legend>
+                    <label for="prefer-email">Email</label>
+                    <input type="radio" name="prefer" id="prefer-email" checked>
+
+                    <label for="prefer-tel">Phone</label>
+                    <input type="radio" name="prefer" id="prefer-tel">
+                </fieldset>
+                <div class="contact-comments">
+                    <label for="user-comments">Comments:</label>
+                    <textarea name="user-comments" id="user-comments" cols="30" rows="5"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            <h3>Wok Asian Cuisine</h3>
+            <p>Copyright &copy; 2022 Wok - All Rights Reserved</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>

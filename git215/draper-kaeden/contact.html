@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Swiss Horizon's Resort & Ski </title>
+        <meta name="author" content="Kaeden Draper">
+        <meta name="description" content="Website for Swiss Horizon's Resort & Ski">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+
+        <!-- Google Fonts Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><h1>Swiss Horizon's Resort & Ski</h1></a>
+            <nav>
+                <ul>
+                    <li> <a href="index.html"><span id="home">Home</span></a></li>
+                    <li> <a href="#"><span id="accom">Accommodations</span></a></li>
+                    <li> <a class="contact" href="#"><span id="con">Contact</span></a></li>
+                </ul>
+            </nav>
+            <img src="Images/swiss-valley.jpg" alt="swiss valley with trees and mountains">
+        </header>
+
+        <main id="contact-main">
+            <div id="gridparent-contact">
+                <section id="group3">
+                    <h2> Contact Us</h2>
+                    <p> Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! </p>
+
+                    <p id="marked"> Required fields marked with a * </p>
+
+                    <img src="Images/swiss-peak.jpg" alt="mountain in snowy Alps">
+                </section>
+
+                    <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank" id="group4">
+                        
+                        <label for="full-name">Full Name:<span class="required">*</span></label>
+                        <input type="text" name="full-name" id="full-name" required>
+
+                        <label for="my-email">Email Address:<span class="required">*</span></label>
+                        <input type="email" name="my-email" id="my-email" required>
+
+                        <label for="my-phone">Phone Number:<span class="required">*</span></label>
+                        <input type="tel" name="my-phone" id="my-phone" required>
+
+                        <!-- Make a preferred contact method -->
+                        <fieldset>
+                            <legend> Preferred Method of Contact<span class="required">*</span></legend>
+
+                            <input type="radio" name="contact-pref" id="pref-email" required>
+                            <label for="pref-email"> Email:</label> 
+                        
+                            <input type="radio" name="contact-pref" id="pref-phone">
+                            <label for="pref-phone"> Phone:</label>     
+                        </fieldset>
+
+                        <label for="my-comments">Comments:<span class="required">*</span></label>
+                        <textarea name="my-comments" id="my-comments" required></textarea>
+
+                        <input type="submit" name="my-submit" id="my-submit" value="Submit">
+
+                    </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Copyright &copy; Swiss Horizon'<s></s> Resort & Ski</p>
+
+            <p> This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>

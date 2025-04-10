@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Alpine Heights | Contact</title>
+        <meta name="author" content="Emma Pivin">
+        <meta name="description" content="Contact information and form submission for Alpine Heights resort">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Fira+Sans+Condensed&family=Imperial+Script&display=swap" rel="stylesheet">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        
+        <!-- link to stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+<body>
+    <header>
+        <h1>Alpine <span>Heights</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accomodations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="images/swiss-valley.jpg" alt="A grassy valley with trees and a river in a Swiss Mountain range" width="1440" height="560">
+    </header>
+    <main>
+
+        <section id="contact-main">
+            <h2>Contact Us</h2>
+            <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+                Required fields marked with a *</p>
+
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                <div>
+                    <label for="full-name">Full Name: <span class="required">*</span></label>
+                    <input type="text" name="full-name" id="full-name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email Address: <span class="required">*</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="my-phone">Phone Number: <span class="required">*</span></label>
+                    <input type="tel" name="my-phone" id="my-phone" required>
+                </div>
+            
+
+                <div>
+                <fieldset>
+                    <legend>Preferred Contact Method: <span class="required">*</span></legend>
+            
+                    <input type="radio" name="contact-pref" id="pref-email" checked>
+                    <label for="pref-email">Email</label>
+                    
+                    <input type="radio" name="contact-pref" id="pref-phone">
+                    <label for="pref-phone">Phone</label>
+                </fieldset>
+                </div>
+            
+                <div>
+                    <label for="comments">Comments: <span class="required">*</span></label>
+                    <textarea name="comments" id="comments" required></textarea>
+                </div>
+                
+                <div>
+                <input type="submit" name="my_submit" id="my_submit" value="SUBMIT">
+                </div>
+            </form>
+
+            <img src="images/swiss-peak.jpg" alt="A tall snowy mountain above a forest and river">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright ©2023 - Alpine Heights</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
+
+</html>
+
+<!-- DO: FORM AND GRID! -->

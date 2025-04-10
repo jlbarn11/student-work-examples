@@ -1,0 +1,80 @@
+<!-- Layout 1 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Snowbird Mountain Resort</title>
+        <meta name="author" content="Minh Dang">
+        <meta name="description" content="Snowbird Mountain Resort Homepage">
+
+        <!-- FAVICON CODE  -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- ADOBE FONTS IMPORT -->
+        <link rel="stylesheet" href="https://use.typekit.net/msd3ker.css">
+        
+        <!-- LINK TO EXTERNAL STYLESHEET -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <!-- <a href="#" aria-label="go to home page"><img src="images/logo.png" alt="logo" width= "90"></a>  -->
+            <h1>Snowbird Mountain Resort</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <img src="images/swiss-valley.jpeg" alt="Picture of Swiss Valley">
+        <main>
+            <section id="contact">
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                    <p>Required fields marked with a *</p>
+                    <img src="images/swiss-peak.jpg" alt="Picture of Swiss Peak">
+                </div>
+                <div>
+                    <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                        <!-- name -->
+                        <label for="my-name">Name<span class="required">*</span>:</label>
+                        <input type="text" name="my-name" id="my-name" required>
+                        <!-- email -->
+                        <label for="my-email">Email<span class="required">*</span>:</label>
+                        <input type="email" name="my-email" id="my-email" required>
+                        <!-- phone -->
+                        <label for="my-phone">Phone<span class="required">*</span>:</label>
+                        <input type="number" name="my-phone" id="my-phone" required>
+                        <!-- preferred contact -->
+                        <fieldset>
+                            <legend>Preferred Method of Contact</legend>
+                            <div id="option">
+                                <div>
+                                    <input type="radio" name="contact-pref" id="pref-email" checked>
+                                    <label for="pref-email">Email</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="contact-pref" id="pref-phone">
+                                    <label for="pref-phone">Phone</label>
+                            </div>
+                            </div>
+                        </fieldset>
+                        <!-- comments -->
+                        <label for="my-comments">Comments<span class="required">*</span>:</label>
+                        <textarea name="my-comments" id="my-comments" required></textarea>
+                        <!-- submit -->
+                        <input type="submit" id="my-submit" name="my-submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 - Cozy Resort</p>
+            <small>This site is for educational purposes only</small>
+        </footer>
+    </body>
+</html>

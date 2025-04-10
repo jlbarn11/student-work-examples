@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Navigation and Links</title>
+        <meta name="author" content="Taisa hernandez">
+        <meta name="description" content="building a website">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/images/favicon.ico" type="image/x-icon">
+
+    </head>
+    <body>
+        <header id="top"> 
+            <h1>Glacier Valley Resort</h1>
+           <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accomodations</a></li>
+                    <li><a href="#">Contact</a></li>     
+                </ul>
+            </nav>
+            </header>
+            <div id="header-image">
+                <img src="images/images/swiss-valley.jpg" alt="header images">
+            </div>
+    <main> 
+        
+        <section id="peak">
+        <div>
+        <h2>Contact us </h2>
+        <p>Please reach out to us with any questions or concerns. 
+            We are happy to help you plan your dream vacation with us!
+            Required fields marked with a *</p>
+        
+          <img src="images/images/swiss-peak.jpg" alt="peak">
+        </div>
+        <div>
+            <form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
+
+                <label for="my-name">Full Name: <span class="required">*</span></label>
+                <input type="text" name="my_name" id="my_name" required>
+
+                <label for="my-email">Email Address: <span class="required">*</span></label>
+                <input type="email" name="my_email" id="my_email" required>
+                <fieldset>
+                    <legend>Preferred Method of Contact</legend>
+                      <div>
+                        <input type="radio" name="contact-pref" id="pref-email" checked>
+                        <label for="pref-email">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="contact-pref" id="pref-phone">
+                        <label for="pref-phone">Phone</label>
+                    </div>
+                </fieldset>
+
+                <label for="my-phone">Phone: <span class="required">*</span></label>
+                <input type="tel" name="my-phone" id="my-phone" required pattern="[0-9]+">
+                
+                <label for="comments">Comments: *</label>
+                <textarea name="comments" id="comments" required></textarea>
+
+                <input type="submit" name="my-submit" id="my_submit" value="Submit">
+            </form>
+        </div>
+        </section>
+        </main>
+        <footer>
+            <p>Copyright ©2023 - Glacier Valley Resort</p>
+            <p>This site is for educational purpose only</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Edelweiss Heights Resort | Contact</title>
+        <meta name="author" content="Elizabeth Villar">
+        <meta name="description" content="Contact us for inquiries and bookings">
+
+        <!-- favicon -->
+        <link rel="icon" href="images/favicon.ico">
+
+        <!-- fonts links -->
+        <link rel="stylesheet" href="https://use.typekit.net/cpn5lcv.css"> <!-- heading font -->
+        <link rel="stylesheet" href="https://use.typekit.net/cpn5lcv.css"> <!-- text font -->
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">EDELWEISS HEIGHTS RESORT</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ACCOMMODATIONS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="form">
+
+                <div id="contact-us">
+                    <h2>Contact Us</h2>
+                </div>
+
+                <div id="description">
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a *</p>
+                    <img src="images/swiss-peak.jpg" width="350" height="455" alt="a blue stream in the center of a grassy landscape, leading towards a dense deep green forest at the foot of a large snowy mountain">
+                </div>
+
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+
+                    <div id="name">
+                        <label for="my-name">Name<span class="required">*</span></label>
+                        <input type="text" name="my-name" id="my-name" required>
+                    </div>
+
+                    <div id="email">
+                        <label for="my-email">Email<span class="required">*</span></label>
+                        <input type="email" name="my-email" id="my-email" required>
+                    </div>
+
+                    <div id="phone">
+                        <label for="my-phone">Phone<span class="required">*</span></label>
+                        <input type="tel" name="my-phone" id="my-phone" required>
+                    </div>
+
+                    <div id="contact-method">
+                        <fieldset>
+                            <legend>Preferred Method of Contact</legend>
+                            <input type="radio" name="contact-pref" id="pref-email" checked>
+                            <label for="pref-email">Email</label>
+                            <input type="radio" name="contact-pref" id="pref-phone">
+                            <label for="pref-phone">Phone</label>
+                        </fieldset>
+                    </div>
+
+                    <div id="comments">
+                        <label for="my-comments">Comments<span class="required">*</span></label>
+                        <textarea name="my-comments" id="my-comments"></textarea>
+                    </div>
+
+                    <div id="submit">
+                        <input type="submit" name="my-submit" id="my-submit" value="SEND" style="font-family: 'quasimoda';">
+                    </div>
+
+                </form>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright &copy;2023 - Edelweiss Heights Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
